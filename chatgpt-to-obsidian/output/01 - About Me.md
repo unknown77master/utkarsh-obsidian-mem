@@ -1,0 +1,88 @@
+---
+type: "memory-category"
+source: "ChatGPT export"
+created: "2026-09-17"
+---
+# About Me
+
+- I will provide the URL for the website, the type of website, type of data collection on the site, what the site does with the data, if third-party vendors process data or display ads on the site, what city and state I live in, if the site is directed at children or not, if my site has any protection against unauthorized users, and if users are able to access or rectify or erase their data.
+  - Confidence: 0.82; Sources: 00d7a361-282f-4499-81b2-1f6fab278426 (Privacy Policy Generator), a986e1a5-6a9f-47fc-9bc5-35ef95f0c337 (New chat)
+- I am going to provide the title of one e-commerce product and I want you to come up with a minimum of three distinct content sections for the product description, each section about a unique subset of keywords relating to the product I provide you.
+  - Confidence: 0.82; Sources: 36285fdb-4cee-4d51-b049-ac4d947f8b9f (E-Commerce SEO: Keywords & Description), fd15e123-12d8-45cf-adac-17794f6436df (Shower Rod - Compelling Description)
+- If the rating falls under 30%, before asking for more information, say "I am trying to help you here, are you serious about this or not?
+  - Confidence: 0.82; Sources: 679bbe34-d52c-8007-b3fb-5e95ab476737 (LinkedIn Summary Creation Guide)
+- I am a fresher in the field of Data Science or Data Analyst or Data Scientist.
+  - Confidence: 0.82; Sources: 679bbe34-d52c-8007-b3fb-5e95ab476737 (LinkedIn Summary Creation Guide)
+- In addition to my technical skill, I am proficient in Data structures and Algorithms, problem solving, Designing and have a lifetime learner mindset, always improving myself and having a open mind.
+  - Confidence: 0.82; Sources: 679bbe34-d52c-8007-b3fb-5e95ab476737 (LinkedIn Summary Creation Guide)
+- Fun Fact that I am willing to work on real problem solving projects.
+  - Confidence: 0.82; Sources: 679bbe34-d52c-8007-b3fb-5e95ab476737 (LinkedIn Summary Creation Guide)
+- I am ectomorph.
+  - Confidence: 0.82; Sources: 67bdf666-c4b0-8007-95b5-a37706f20967 (Sprouts VS Eggs & Bulking Diet)
+- " I am willing to take SARM's
+  - Confidence: 0.82; Sources: 67bdf666-c4b0-8007-95b5-a37706f20967 (Sprouts VS Eggs & Bulking Diet)
+- sorry my mistake, i am not right to connect the correlation coefficient (r) with the regression coefficients
+  - Confidence: 0.82; Sources: 681896b0-7050-8007-8a22-487bc1e13b96 (Statistics End-Sem)
+- I am doing 40+ per week
+  - Confidence: 0.82; Sources: 686d385b-d7cc-8007-ae6c-d016aef22303 (Back Muscle Training Volume)
+- Also apologies that it was not me and sorry if I hurt someone's feelings I am terribly sorry.
+  - Confidence: 0.82; Sources: 686e90f9-835c-8007-b40c-bb160f743396 (Account Hacked Apology Notice)
+- i am making a resume, give description for education BE in AIDS
+  - Confidence: 0.82; Sources: 69674d12-e1e8-8323-a361-6f1850f103d0 (Resume Description Request)
+- no my cursor is not creating space when i am writing between brackets, it is erasing them and overwriting on <> brackets
+  - Confidence: 0.82; Sources: 6967a2da-2428-8321-8b44-0b490f528633 (Reset cursor in VSCode)
+- i am getting error on local hosted n8n
+  - Confidence: 0.82; Sources: 698ce9df-182c-83a2-92b7-95344c14d42a (XSS Warning in HTML Sanitization)
+- and i am teansfering my pervious backend service form supabase to firebase which should i enable These presets determine how you interact with your data
+
+  - Confidence: 0.82; Sources: 69a00336-9f0c-83a6-b1f8-e0d4f6d56f2a (Global Low Latency Firebase)
+- haha haha i am messing with you i did not interrupt in the first place
+  - Confidence: 0.82; Sources: 69a55b06-ebc4-8323-941c-84aa37f9b732 (SFC Error in Recovery)
+- i am in last sem of 3rd year and my exams are from 1 may after exams i want to go travelling i dont want pressure on me, to feel lift off of pressure i am travelling or maybe i will do some timepass, binge watching, or playing or scroll reels, i dont know man, i feel lost in this constant proving myself, why cant i enjoy life.
+  - Confidence: 0.82; Sources: 6a1aeb29-e600-8321-bec5-78e6363d1623 (buddy)
+- I am ready as i previously said in above chat i have finished my exams, took a break (read some of my fav manga and psychology books).
+  - Confidence: 0.82; Sources: 6a4347f2-60a8-83ee-863f-97917b9ad7a0 (Career Path Recommendation)
+- thank you, now i am trying to understand mneme
+  - Confidence: 0.82; Sources: 6a4a8ba2-5818-83ee-b816-c1dbcac25d8d (Mneme Memory Ownership)
+- I am converting PC's VGA using a VGA to HDMI converter.
+  - Confidence: 0.82; Sources: 6a674ab9-2474-83ee-bba5-2793edae817f (PC Beeping No Display)
+- i want some thing blur like this image, i am presented with these options:
+  - Confidence: 0.82; Sources: 6a6a27e4-c270-83ee-9cd0-ad829e8368b4 (Modern Calm Color Blend)
+- give me run script, i am using codex application
+  - Confidence: 0.82; Sources: 6a72ff4d-7094-83ee-93b5-1541139dedf4 (Codex Installation Troubleshooting)
+- ok i am using openrouter nvidia/nemotron-3-ultra-550b-a55b:free
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- yes then i am removing redis url and not using redis
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- i am making this agent using \[https://studio.lyzr.ai/\](https://studio.lyzr.ai/) i will tell you different things i need
+  - Confidence: 0.82; Sources: 6a76cb5c-9f94-83ee-99dd-d631dc238880 (AI Agent Ideas)
+- give boto3 script for this, and yes i am learning boto3, for practice
+  - Confidence: 0.82; Sources: 6a7aaca0-8750-83e8-a4e2-9c04d4066c52 (AWS CLI Setup Guide)
+- AND MIND U I AM ADMIN AND RUNNING POWERSHELL AS ADMIN
+  - Confidence: 0.82; Sources: 6a7b1af9-f904-83ee-85b3-75f1a653dd46 (Close Locked DLL File)
+- this pop up does not appear on screen and i am stuck here
+  - Confidence: 0.82; Sources: 6a8c3be2-f9c0-83ee-bbe5-8997b3242a2b (Fix Windows Popup Issue)
+- \[https://www.heddle.so/\](https://www.heddle.so/) heddle is the one my friend at eChai is making, i am uploading video of it, i want to make just like heddle where you paste url and prompt and video is ready, but it does not have functionality to make demo video of desktop apps or mobile apps, and i want my SaaS product to make it
+  - Confidence: 0.82; Sources: 6a95e183-1508-83ee-8856-621ea191b4a4 (AI Demo VIdeo SaaS)
+- i am trying to print heatmap using seaborn and matplotlib.
+  - Confidence: 0.82; Sources: f3228c87-4b06-4770-abc0-04a20060dddf (Fix DataFrame Correlation Error)
+- i am not using column, but instead correlational matrix as dt.corr
+  - Confidence: 0.82; Sources: f3228c87-4b06-4770-abc0-04a20060dddf (Fix DataFrame Correlation Error)
+- I am bored tell me something interesting to do
+  - Confidence: 0.82; Sources: fffa7430-c456-4188-bbe3-1d0eadafe08e (Learn a New Hobby)
+- i am on main branch and main worktree and i am not pulling any code, it is my code
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- understand what i am trying to accomplish and give prompt for codex
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- Draft message to do that, show how interested I am and what I am doing
+  - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
+- I am emailing to himanshu and in 5th point he said that got a project, demo, so tell him about my audora https://github.com/utkarsh-wadalkar/Audora go through this github, pitch him my idea
+  - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
+- I am DMing for claude code community meetup not cursor
+  - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
+- i am writing this in .env not .env.example
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- for stt i am using local modal
+  - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
+- No that is sem 7 I am asking for sem 8, they will come during this time period, check past time table
+  - Confidence: 0.82; Sources: 6a9a897e-f218-83e8-b29a-60289518fb90 (Draft Internship Exam Note)

@@ -1,0 +1,695 @@
+# Project Context — GST Operations Copilot
+
+We are building a real product, not just a hackathon demo.
+
+## 1. Product Vision
+
+Build a human-in-the-loop GST Operations Copilot for Indian businesses that reduces the repetitive operational work involved in turning scattered invoices and receipts into clean, validated, GST-ready structured data.
+
+The fundamental problem:
+
+Businesses receive invoices/receipts from many different sources:
+
+- Physical receipts/invoices
+- Photos/scans of physical documents
+- PDFs
+- Digital invoices
+- Email attachments
+- Slack or other communication platforms
+- Files uploaded manually
+- Eventually other integrations used by businesses
+
+Today, someone often has to:
+
+Collect documents
+→ open/read them
+→ manually extract information
+→ enter it into Excel/Google Sheets/accounting software/databases
+→ verify the entries
+→ find duplicates/errors
+→ reconcile discrepancies
+→ prepare the month's data for GST compliance/filing.
+
+We want to reduce this friction.
+
+Target workflow:
+
+INGEST
+→ OCR / DOCUMENT UNDERSTANDING
+→ STRUCTURE
+→ VALIDATE
+→ DETECT EXCEPTIONS
+→ HUMAN REVIEW
+→ APPROVE
+→ EXPORT / SYNC
+→ GST-READY DATA
+
+The key principle is:
+
+AI handles repetitive operational work.
+Humans remain responsible for important financial/tax decisions.
+
+This is NOT intended to blindly or autonomously file GST.
+
+---
+
+# 2. Core Product Principle: Human in the Loop
+
+Do not design this as:
+
+"Upload invoice → AI automatically files GST."
+
+Instead:
+
+"Upload/ingest invoice → system extracts and validates → uncertain/problematic cases are surfaced → human reviews/edits/approves → verified data becomes GST-ready."
+
+Every important extracted field should be editable before final approval.
+
+Low-confidence or suspicious documents should NEVER silently flow through the system.
+
+The application should make uncertainty visible.
+
+---
+
+# 3. Primary Users
+
+Initial users could include:
+
+- SMEs
+- Retail businesses
+- Manufacturing businesses
+- Finance teams
+- Accountants/bookkeepers
+- GST/compliance operators
+
+The product should eventually support organizations with multiple users and roles.
+
+For the initial implementation, keep this simple.
+
+---
+
+# 4. Document Sources
+
+## MVP
+
+Start with direct uploads.
+
+Support:
+
+- Images of physical receipts/invoices
+- Camera-captured receipts
+- PDF invoices
+- Digital invoice files
+
+Mobile is especially important because physical receipts can be photographed directly.
+
+## Future ingestion sources
+
+The architecture should allow adapters/connectors for:
+
+- Gmail/email
+- Google Drive
+- Slack
+- other communication platforms
+- accounting systems
+- APIs
+- bulk uploads
+
+Do NOT implement every integration immediately.
+
+Design a clean ingestion abstraction so additional sources can be added later without rewriting the processing pipeline.
+
+---
+
+# 5. Applications
+
+The long-term product should support:
+
+## Mobile
+
+React Native application targeting:
+
+- Android
+- iOS
+
+Mobile should support:
+
+- Camera capture
+- Gallery/file upload
+- PDF upload
+- Receipt/invoice review
+- Exception resolution
+- Dashboard
+
+Physical receipt capture belongs primarily here.
+
+## Desktop
+
+Electron application targeting:
+
+- Windows
+- macOS
+
+Desktop does NOT need camera capture.
+
+It should support:
+
+- file upload
+- PDFs
+- downloaded digital invoices
+- review workflows
+- bulk operations
+- dashboards
+- exports/integrations
+
+We may also have a web application/dashboard if appropriate.
+
+Do not duplicate business logic between clients.
+
+All important processing should live behind backend APIs.
+
+---
+
+# 6. OCR / Document Intelligence
+
+Documents need to be converted into structured invoice/receipt data.
+
+We need to handle Indian invoices and receipts, potentially containing:
+
+- English
+- Hindi
+- Marathi
+- other Indian languages
+- mixed-language documents
+
+The OCR/document extraction layer should therefore be provider-independent.
+
+Do NOT tightly couple the application to one OCR vendor/model.
+
+Create a clear interface such as:
+
+DocumentExtractor
+
+which can have implementations/adapters for different OCR/document intelligence providers.
+
+We may evaluate multilingual OCR APIs such as Sarvam or other capable document models.
+
+Do not introduce local LLM fine-tuning unless there is evidence that it is necessary.
+
+Fine-tuning is NOT an MVP requirement.
+
+---
+
+# 7. Important Fields to Extract
+
+The normalized invoice schema should be capable of representing fields such as:
+
+Document metadata:
+- document ID
+- source
+- original filename
+- document type
+- upload timestamp
+
+Invoice information:
+- invoice number
+- invoice date
+- vendor/supplier name
+- vendor GSTIN
+- buyer name
+- buyer GSTIN
+- place of supply
+
+Financial information:
+- subtotal/taxable value
+- CGST
+- SGST
+- IGST
+- cess if applicable
+- discounts if present
+- total invoice amount
+- currency
+
+Line items where available:
+- description
+- quantity
+- unit price
+- HSN/SAC
+- taxable value
+- tax rate
+- tax amount
+
+Extraction metadata:
+- OCR confidence
+- field-level confidence where possible
+- raw OCR/document output
+- extractor/provider
+- processing status
+
+Do not assume every receipt contains every field.
+
+Fields must support missing/unknown states.
+
+---
+
+# 8. Normalized Data Model
+
+OCR provider output must NEVER become our application data model directly.
+
+Pipeline:
+
+Raw document
+→ OCR provider response
+→ normalization layer
+→ canonical Invoice schema
+→ validation
+→ exception generation
+→ human review
+→ approved record
+
+This separation is important because OCR providers may change later.
+
+Use strongly typed schemas and explicit contracts.
+
+---
+
+# 9. Validation Layer
+
+OCR is only extraction.
+
+After extraction, validate the resulting data.
+
+Examples:
+
+- GSTIN format validation
+- invoice number presence
+- invoice date validity
+- arithmetic consistency
+- subtotal + taxes ≈ total
+- CGST/SGST consistency
+- IGST consistency
+- tax percentage calculations
+- missing mandatory fields
+- malformed monetary values
+- duplicated invoice numbers
+- potential duplicate documents
+- suspicious OCR output
+
+Validation rules should be deterministic wherever possible.
+
+Do NOT use an LLM for something that can be reliably validated with normal code.
+
+AI should complement deterministic validation, not replace it.
+
+---
+
+# 10. Exception Engine
+
+Instead of treating every issue as a generic "OCR failed" error, create structured exceptions.
+
+Examples:
+
+MISSING_GSTIN
+INVALID_GSTIN
+LOW_OCR_CONFIDENCE
+MISSING_INVOICE_NUMBER
+DUPLICATE_INVOICE
+TOTAL_MISMATCH
+TAX_MISMATCH
+UNREADABLE_DOCUMENT
+MISSING_DATE
+AMBIGUOUS_FIELD
+
+Each exception should contain:
+
+- type
+- severity
+- affected field(s)
+- explanation
+- suggested action where appropriate
+- resolution status
+
+This becomes the core of the human review experience.
+
+---
+
+# 11. Human Review Workflow
+
+Documents should have explicit states.
+
+Example:
+
+UPLOADED
+→ PROCESSING
+→ NEEDS_REVIEW
+→ APPROVED
+→ EXPORTED
+
+And failure states where necessary.
+
+A reviewer should be able to:
+
+- see the original document
+- see extracted fields
+- see confidence/validation warnings
+- edit incorrect fields
+- resolve exceptions
+- approve the document
+- reject/delete invalid documents
+
+Maintain an audit trail.
+
+For important changes record:
+
+- original value
+- edited value
+- user
+- timestamp
+- reason/action where appropriate
+
+Financial workflows need traceability.
+
+---
+
+# 12. Duplicate Detection
+
+Duplicate receipts are a realistic problem.
+
+Use multiple signals rather than filename alone.
+
+Potential signals:
+
+- file hash
+- perceptual/image similarity where useful
+- GSTIN
+- invoice number
+- invoice date
+- amount
+- vendor
+
+Initially implement simple reliable duplicate detection.
+
+Do not overengineer ML-based similarity unless necessary.
+
+---
+
+# 13. Storage
+
+We need to distinguish:
+
+1. Original documents
+2. Raw OCR results
+3. Normalized structured records
+4. Validated/approved records
+5. Audit history
+
+Do not put everything into one giant database table.
+
+Use object storage for uploaded files and a relational database for application/financial metadata.
+
+Preserve the original document for auditing/review.
+
+---
+
+# 14. Output / Integrations
+
+Once records are approved, businesses should be able to use the data in their existing workflow.
+
+MVP:
+
+- CSV export
+- Excel export
+
+Future:
+
+- Google Sheets
+- databases
+- accounting systems
+- ERP integrations
+- APIs/webhooks
+
+Build exports around the canonical internal schema rather than OCR-specific output.
+
+---
+
+# 15. GST Filing Boundary
+
+This is important.
+
+The initial product should create:
+
+GST-READY / FILING-READY DATA
+
+rather than automatically submitting tax returns without human oversight.
+
+Future GST portal/API integration can be investigated separately.
+
+Any actual filing operation must require explicit human confirmation and appropriate compliance/security controls.
+
+Never fabricate tax rules or assume regulatory behavior.
+
+Keep GST-specific business rules isolated so they can be tested and updated as regulations change.
+
+---
+
+# 16. AI / Agent Architecture
+
+Do not add AI frameworks simply because this is an AI product.
+
+LangChain, LangGraph, n8n, LlamaIndex, local LLMs, fine-tuning, agents, etc. should only be introduced when they solve a concrete requirement.
+
+For the core document pipeline, prefer straightforward application code:
+
+Upload
+→ Queue
+→ OCR
+→ Normalize
+→ Validate
+→ Generate exceptions
+→ Persist
+→ Review
+
+If we later introduce workflows requiring stateful AI orchestration, LangGraph can be evaluated.
+
+If simple external business automations/integrations become necessary, n8n can be evaluated.
+
+Neither should become the core architecture by default.
+
+Avoid framework-driven architecture.
+
+---
+
+# 17. Reliability
+
+Document processing should be asynchronous.
+
+Uploading a document should not require the client to keep an HTTP request open while OCR completes.
+
+Think in terms of jobs.
+
+Example:
+
+POST document
+→ document stored
+→ processing job created
+→ worker processes OCR
+→ normalized data stored
+→ validation executed
+→ status updated
+→ client receives/polls status
+
+Processing must support:
+
+- retries
+- idempotency
+- provider timeouts
+- malformed documents
+- partial OCR responses
+- provider outages
+- duplicate submissions
+
+Never create duplicate financial records because a job was retried.
+
+---
+
+# 18. Security
+
+Invoices contain sensitive business/financial information.
+
+Treat security as a first-class requirement.
+
+At minimum consider:
+
+- authentication
+- authorization
+- organization-level data isolation
+- secure object storage
+- encrypted transport
+- secrets management
+- audit logs
+- minimal retention of unnecessary OCR/provider data
+- signed/private document URLs
+- safe file validation
+- upload size limits
+- MIME/type validation
+
+Never expose original documents publicly.
+
+---
+
+# 19. UX Philosophy
+
+The UI should NOT look like a generic AI dashboard.
+
+Avoid:
+
+- excessive gradients
+- glowing AI elements
+- meaningless AI animations
+- giant chatbot interfaces
+- clutter
+
+The product is an operations tool.
+
+Design should feel:
+
+- professional
+- calm
+- trustworthy
+- fast
+- financial/business oriented
+- information dense where appropriate
+- easy to audit
+
+AI should mostly work behind the scenes.
+
+The main UX should revolve around:
+
+Dashboard
+Documents
+Review Queue
+Approved Records
+Exceptions
+Exports
+Integrations
+
+One of the most important screens will likely be the review interface:
+
+Original invoice on one side
++
+Structured extracted fields on the other
++
+Clearly highlighted exceptions/confidence issues.
+
+---
+
+# 20. MVP
+
+Do NOT attempt the entire vision immediately.
+
+A strong first vertical slice is:
+
+1. User authentication
+2. Upload receipt/invoice image or PDF
+3. Store original securely
+4. Send document through OCR/document extractor
+5. Normalize result into canonical schema
+6. Run deterministic validations
+7. Generate structured exceptions
+8. Show document + extracted data in review UI
+9. Allow human corrections
+10. Approve record
+11. Store audit history
+12. Export approved records as CSV/Excel
+
+That gives us the complete core loop:
+
+UPLOAD
+→ UNDERSTAND
+→ VALIDATE
+→ REVIEW
+→ APPROVE
+→ EXPORT
+
+After this works reliably, add integrations.
+
+---
+
+# 21. Engineering Principles
+
+This project should be architecture-first but NOT overengineered.
+
+Follow these principles:
+
+- Keep the codebase clean and maintainable.
+- Avoid spaghetti code.
+- Avoid unnecessary microservices.
+- Avoid premature abstractions.
+- Avoid unnecessary AI frameworks.
+- Prefer deterministic code over LLM calls where possible.
+- Use strict typed contracts between layers.
+- Separate provider-specific code from domain logic.
+- Keep financial validation independently testable.
+- Make processing idempotent.
+- Design for provider replacement.
+- Preserve auditability.
+- Build one complete vertical slice before expanding features.
+- Do not repeatedly redesign the architecture once implementation begins unless we discover a genuine blocking flaw.
+
+We want a stable foundation that can grow from prototype → MVP → production.
+
+---
+
+# 22. Your Role
+
+Act as the senior engineer/architect working with me on this project.
+
+Before writing large amounts of code:
+
+1. Inspect the existing repository completely.
+2. Understand what already exists.
+3. Do not overwrite working code unnecessarily.
+4. Identify the current architecture and dependencies.
+5. Compare it against the product requirements above.
+6. Identify missing decisions or contradictions.
+7. Propose the smallest clean architecture that supports the MVP.
+8. Define the domain model and processing lifecycle.
+9. Define clear module boundaries.
+10. Create an implementation plan in dependency order.
+
+Do not immediately generate dozens of files.
+
+Do not implement speculative future features.
+
+Do not introduce LangChain/LangGraph/n8n/fine-tuning/vector databases unless a concrete requirement justifies them.
+
+Before implementation, give me:
+
+A. Repository assessment
+B. Proposed MVP architecture
+C. Exact technology choices and why
+D. Canonical invoice/document schema
+E. Processing state machine
+F. Module/repository structure
+G. Database entities and relationships
+H. OCR provider abstraction
+I. Validation + exception architecture
+J. Security considerations
+K. Phased implementation plan
+
+Then stop and wait for my approval before making architectural changes.
+
+Our immediate objective is not "build everything."
+
+Our objective is to build the smallest production-minded vertical slice where:
+
+a real invoice/receipt
+→ enters the system
+→ is understood
+→ becomes structured data
+→ gets validated
+→ gets reviewed by a human
+→ gets approved
+→ can be exported.
+
+Everything should serve that loop.

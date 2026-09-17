@@ -1,0 +1,622 @@
+## Updated plan
+
+### 1. Public website
+
+Build a public website where users can enter either:
+
+```
+```
+
+```
+utkarsh-wadalkar
+```
+
+or:
+
+```
+```
+
+```
+https://whoburnedmore.com/u/utkarsh-wadalkar
+```
+
+The site should normalize the input, validate the profile, fetch the public stats, and show live previews.
+
+Supported styles:
+
+```
+```
+
+```
+Landscape
+Hero
+Report
+```
+
+### 2. Live card API
+
+Expose dynamic endpoints such as:
+
+```
+```
+
+```
+/api/card/:handle/landscape.svg
+/api/card/:handle/hero.svg
+/api/card/:handle/report.svg
+```
+
+Example:
+
+```
+```
+
+```
+https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg
+```
+
+The SVG should be generated dynamically from the latest profile data, so the user does not have to regenerate or edit their README when stats change.
+
+### 3. Card generator UI
+
+After entering the handle, show:
+
+```
+```
+
+```
+Live Preview
+
+[ Landscape ] [ Hero ] [ Report ]
+```
+
+Then generate four outputs.
+
+#### Direct card URL
+
+```
+```
+
+```
+https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg
+```
+
+#### GitHub Markdown
+
+```
+```
+
+```
+[![WhoBurnedMore](https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg)](https://whoburnedmore.com/u/utkarsh-wadalkar)
+```
+
+#### HTML
+
+```
+```
+
+```
+<a href="https://whoburnedmore.com/u/utkarsh-wadalkar">
+  <img
+    src="https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg"
+    alt="WhoBurnedMore stats"
+  />
+</a>
+```
+
+#### CLI
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar
+```
+
+Every output gets a **Copy** button.
+
+---
+
+## 4. CLI package
+
+Create a small npm CLI package:
+
+```
+```
+
+```
+whoburnedmore-card
+```
+
+Users can run:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar
+```
+
+and receive something like:
+
+```
+```
+
+```
+WhoBurnedMore Card
+
+Handle: utkarsh-wadalkar
+Style: landscape
+
+Direct URL:
+https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg
+
+GitHub Markdown:
+[![WhoBurnedMore](https://yourdomain.com/api/card/utkarsh-wadalkar/landscape.svg)](https://whoburnedmore.com/u/utkarsh-wadalkar)
+```
+
+The CLI should also support profile URLs:
+
+```
+```
+
+```
+npx whoburnedmore-card https://whoburnedmore.com/u/utkarsh-wadalkar
+```
+
+and style selection:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --style hero
+```
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --style report
+```
+
+I'd also support:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --format markdown
+```
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --format html
+```
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --format url
+```
+
+And a convenient copy option:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --copy
+```
+
+So the complete CLI interface can remain very small:
+
+```
+```
+
+```
+whoburnedmore-card <handle-or-url>
+
+--style landscape|hero|report
+--format markdown|html|url
+--copy
+```
+
+---
+
+## 5. Website should generate CLI commands too
+
+On the website, the CLI section can automatically reflect the selected style.
+
+For example, if the user selects **Hero**:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --style hero
+```
+
+If they select **Report**:
+
+```
+```
+
+```
+npx whoburnedmore-card utkarsh-wadalkar --style report
+```
+
+So website users can choose either workflow:
+
+```
+```
+
+```
+Paste into README
+        or
+Run in terminal
+```
+
+---
+
+## 6. Recommended repository structure
+
+I would use a monorepo:
+
+```
+```
+
+```
+whoburnedmore-card/
+│
+├── apps/
+│   └── web/
+│       ├── app/
+│       │   ├── page.tsx
+│       │   ├── generate/
+│       │   └── api/
+│       │       └── card/
+│       │           └── [handle]/
+│       │               └── [style]/
+│       │                   └── route.ts
+│       │
+│       ├── components/
+│       │   ├── HandleInput.tsx
+│       │   ├── CardPreview.tsx
+│       │   ├── StyleSelector.tsx
+│       │   └── CopySnippet.tsx
+│       │
+│       └── lib/
+│           ├── handle.ts
+│           ├── stats.ts
+│           └── svg/
+│
+├── packages/
+│   ├── core/
+│   │   ├── handle.ts
+│   │   ├── urls.ts
+│   │   └── types.ts
+│   │
+│   └── cli/
+│       ├── src/
+│       │   └── index.ts
+│       └── package.json
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+The important part is having:
+
+```
+```
+
+```
+packages/core
+```
+
+for shared logic.
+
+Both the website and CLI should use the same functions for:
+
+```
+```
+
+```
+handle normalization
+profile URL parsing
+style names
+card URL generation
+Markdown generation
+HTML generation
+```
+
+That prevents duplicated logic.
+
+---
+
+## 7. Keep the MVP stateless
+
+Initially, don't add:
+
+```
+```
+
+```
+Login
+User accounts
+Database
+Dashboard
+Saved cards
+OAuth
+```
+
+The whole system can work as:
+
+```
+```
+
+```
+                  WhoBurnedMore
+                       ↓
+                 Stats fetcher
+                       ↓
+                  Card renderer
+                       ↓
+             Dynamic SVG endpoint
+                 ↙           ↘
+             Website          GitHub
+                ↑
+             User input
+
+CLI
+ ↓
+Shared core package
+ ↓
+Card URL / Markdown / HTML
+```
+
+That gives you a genuinely useful product without unnecessary infrastructure.
+
+## Final requirements section
+
+You can put this directly into your implementation plan:
+
+```
+```
+
+```
+## Website, CLI, documentation and deployment
+
+- Scaffold the repository as a Vercel-ready TypeScript monorepo.
+
+- Build a public card-generator website where users can enter either:
+  - a WhoBurnedMore handle;
+  - or a full WhoBurnedMore profile URL.
+
+- Normalize and validate the provided profile input.
+
+- Show live previews for all supported card styles:
+  - Landscape
+  - Hero
+  - Report
+
+- Expose dynamic SVG endpoints:
+
+  /api/card/:handle/landscape.svg
+  /api/card/:handle/hero.svg
+  /api/card/:handle/report.svg
+
+- Cards must remain live and automatically reflect updated public profile statistics without requiring users to regenerate the card or modify their README.
+
+- For the selected card, generate copyable:
+  - Direct SVG URL
+  - GitHub Markdown
+  - HTML embed
+  - CLI command
+
+- Add one-click copy controls for every generated output.
+
+- Create an npm CLI package usable through:
+
+  npx whoburnedmore-card YOUR-HANDLE
+
+- The CLI must accept either a handle or full profile URL.
+
+- Support CLI options:
+
+  --style landscape|hero|report
+  --format markdown|html|url
+  --copy
+
+- Example:
+
+  npx whoburnedmore-card utkarsh-wadalkar --style landscape --format markdown
+
+- Share handle parsing, URL generation, types, and snippet generation between the web application and CLI through a common core package.
+
+- Keep the initial product stateless:
+  - no login;
+  - no database;
+  - no saved cards;
+  - no user accounts.
+
+- Document all supported website, API, Markdown, HTML, and CLI usage in the README.
+
+- Include README snippets for every style with a replaceable handle:
+
+  <img src="https://YOUR-DEPLOYMENT/api/card/YOUR-HANDLE/landscape.svg" />
+
+- Document local development, npm CLI usage, and Vercel deployment.
+
+- Deploy the web application/API to Vercel.
+
+- Publish the CLI package to npm when ready.
+
+- After production deployment, replace placeholder URLs throughout the README with the real production domain.
+```
+
+This gives the project **three ways to use the same system**: website for normal users, direct API for embedding, and CLI for developers.
+
+svg
+
+4\. CLI package
+
+Create a small npm CLI package:
+
+ok, make these instruction which will be included in readme.md part of fronted of website , because repo will be private, not public
+
+Yes — since the repo will be private, the public-facing usage instructions should live on the website itself, not depend on `README.md`.
+
+I’d update that part of the plan to this:
+
+```
+```
+
+```
+## Website documentation and user onboarding
+
+- Treat the website as the primary public documentation surface because the source repository will remain private.
+
+- Add a dedicated "How to use" / "Docs" section to the frontend explaining all supported ways to generate and use cards.
+
+- The frontend must document:
+
+  ### 1. Website flow
+  - Enter a WhoBurnedMore handle or full profile URL.
+  - Choose a card style:
+    - Landscape
+    - Hero
+    - Report
+  - Preview the live card.
+  - Copy the desired output.
+
+  ### 2. GitHub Markdown
+  Show a copyable example generated using the user's current handle:
+
+  [![WhoBurnedMore](https://YOUR-DOMAIN/api/card/YOUR-HANDLE/landscape.svg)](https://whoburnedmore.com/u/YOUR-HANDLE)
+
+  Explain that the card is live and updates automatically as the user's statistics change.
+
+  ### 3. HTML embed
+  Show a copyable HTML example:
+
+  <a href="https://whoburnedmore.com/u/YOUR-HANDLE">
+    <img
+      src="https://YOUR-DOMAIN/api/card/YOUR-HANDLE/landscape.svg"
+      alt="WhoBurnedMore stats"
+    />
+  </a>
+
+  ### 4. Direct card URL
+  Show the direct live card URL:
+
+  https://YOUR-DOMAIN/api/card/YOUR-HANDLE/landscape.svg
+
+  ### 5. CLI usage
+  Document the CLI directly on the website.
+
+  Basic usage:
+
+  npx whoburnedmore-card YOUR-HANDLE
+
+  Accept a full profile URL as well:
+
+  npx whoburnedmore-card https://whoburnedmore.com/u/YOUR-HANDLE
+
+  Style selection:
+
+  npx whoburnedmore-card YOUR-HANDLE --style landscape
+  npx whoburnedmore-card YOUR-HANDLE --style hero
+  npx whoburnedmore-card YOUR-HANDLE --style report
+
+  Output formats:
+
+  npx whoburnedmore-card YOUR-HANDLE --format markdown
+  npx whoburnedmore-card YOUR-HANDLE --format html
+  npx whoburnedmore-card YOUR-HANDLE --format url
+
+  Copy directly to clipboard:
+
+  npx whoburnedmore-card YOUR-HANDLE --copy
+
+- The website should generate these examples dynamically using:
+  - the user's entered handle;
+  - the currently selected card style;
+  - the real production domain.
+
+- Add one-click Copy buttons beside:
+  - Direct SVG URL
+  - GitHub Markdown
+  - HTML embed
+  - CLI command
+
+- Add a short explanation such as:
+
+  "Your card stays live. Add it to your GitHub README once and the displayed stats will update automatically."
+
+- Add a visible API/usage reference for supported card URLs:
+
+  /api/card/:handle/landscape.svg
+  /api/card/:handle/hero.svg
+  /api/card/:handle/report.svg
+
+- Do not rely on access to the private GitHub repository for any end-user setup or documentation.
+
+- Keep README.md focused on internal developer documentation:
+  - project setup;
+  - architecture;
+  - environment variables;
+  - local development;
+  - deployment notes;
+  - internal CLI publishing steps.
+
+- Public user documentation, usage examples, and onboarding must all be available from the deployed website.
+```
+
+For the frontend, I’d make this a proper section rather than a huge wall of docs. Something like:
+
+```
+```
+
+```
+Generate your card
+
+[ Enter handle or profile URL ]
+
+[ Landscape ] [ Hero ] [ Report ]
+
+        LIVE PREVIEW
+
+
+Use your card
+
+[ GitHub ] [ HTML ] [ Direct URL ] [ CLI ]
+
+┌─────────────────────────────────────────────┐
+│ npx whoburnedmore-card utkarsh-wadalkar    │
+└───────────────────────────────────── [Copy]
+
+
+How it works
+
+1. Add the card once
+2. We fetch your latest public stats
+3. The card updates automatically
+4. No README changes required
+```
+
+And I’d still keep the **CLI package public on npm**, even though the main source repo is private. Users only need:
+
+```
+```
+
+```
+npx whoburnedmore-card ...
+```
+
+They do not need access to your GitHub repository at all.

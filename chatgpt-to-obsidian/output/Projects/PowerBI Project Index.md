@@ -1,0 +1,29 @@
+---
+type: "project-index"
+scope: "project"
+project: "PowerBI"
+generated_by: "chatgpt-to-obsidian"
+updated: "2026-09-17"
+durable_context_count: 0
+chat_count: 0
+local_repository_count: 0
+github_repository_count: 1
+---
+# PowerBI Project Index
+
+This note groups only project names stated explicitly in the export. It links to the canonical transcripts and their preserved resources; it does not copy or reinterpret them.
+
+## Public GitHub repositories
+
+- [PowerBI](https://github.com/utkarsh-wadalkar/PowerBI) — 2026-03-15T17:45:18Z
+
+## Durable context
+
+- No durable ChatGPT context has been extracted for this project yet.
+
+## Related chats
+
+
+## Resources
+
+- [PowerBI repository](https://github.com/utkarsh-wadalkar/PowerBI)

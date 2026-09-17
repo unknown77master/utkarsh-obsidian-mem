@@ -1,0 +1,216 @@
+ # EchoQuery AI/RAG Engine Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Build a reproducible multilingual RAG core covering ingestion, three chunking strategies, embeddings, vector retrieval, reranking, generation orchestration, grounding guardrails, and latency/quality benchmarks.
+
+**Architecture:** Keep the numbered `03-ai-rag-engine/` directory as a Python source root with focused top-level packages. Dataset-specific logic stops at a canonical document boundary; chunking and indexing run offline, while the query path remains lean and observable. External model and Qdrant integrations are added only after their preceding dataset and benchmark milestones pass.
+
+**Tech Stack:** Python 3.11+, standard library core, optional Pydantic/jsonschema/Qdrant/model dependencies declared in `pyproject.toml`, `unittest` for offline verification.
+
+**Spec:** `Utkarsh-TASK.md` from the Git index and `09-docs/decisions/0001-core-architecture-decisions.md`
+
+## Execution Gate
+
+The Notion pages `HH RAG Task`, `work to-do`, `HH notes`, `Dataset Notes`, and `00-contracts` require component-by-component delivery. Execute only the current milestone, verify it, and review the observed dataset behavior before starting the next task. The current milestone is Task 1; Tasks 2 onward are roadmap context and must not be implemented in the same change.
+
+## Global Constraints
+
+- Do not edit `00-contracts/`, `01-backend-api/`, `02-frontend/`, `04-external-services/`, or `08-infrastructure/` without team approval.
+- Preserve `request_id` across Query, logs, pipeline stages, and Answer.
+- Support exactly: `en-IN`, `hi-IN`, `bn-IN`, `ta-IN`, `te-IN`, `kn-IN`, `ml-IN`, `mr-IN`, `gu-IN`, `pa-IN`, `od-IN`.
+- Never remove non-ASCII text; normalize ingested text to Unicode NFC.
+- Treat `grounded: false` as a successful answer state; no relevant context is a typed error before generation.
+- Report STT, RAG, and end-to-end latency separately, with internal RAG stage attribution and P50/P70/P95/P100 values.
+- The `<200 ms` target applies to total RAG wall-clock latency from RAG request entry to final serialized output, excluding STT. It includes any online chunking/preprocessing, embedding, vector DB search, retrieval, reranking, context construction, generation, grounding/guardrails, and serialization. P100 is the pass/fail ceiling.
+- Keep generated datasets, indexes, and raw benchmark results out of Git.
+
+---
+
+### Task 1: MSMARCO-XI Dataset Ingestion
+
+**Files:**
+- Create: `03-ai-rag-engine/ingestion/__init__.py`
+- Modify: `03-ai-rag-engine/ingestion/metadata.py`
+- Modify: `03-ai-rag-engine/ingestion/loader.py`
+- Modify: `03-ai-rag-engine/ingestion/cleaner.py`
+- Modify: `07-scripts/ingest.py`
+- Test: `03-ai-rag-engine/tests/test_ingestion.py`
+
+**Interfaces:**
+- Consumes: AI4Bharat `MSMARCO-XI` parquet at revision `bf5cdc1f26e581e519018e434db14edd1b77602b`.
+- Produces: `MSMarcoRecord`, `CanonicalDocument`, `iter_parquet_records()`, `iter_documents()`, `iter_clean_documents()`, and deterministic JSONL output.
+- Guarantees: streaming parquet reads, schema validation, equal passage/label lengths, Unicode NFC, stable document IDs, untouched raw data, and preserved query/passage metadata.
+
+- [x] Write tests from the inspected nested parquet schema, including Indic text and malformed passage arrays.
+- [x] Run the focused tests and confirm failure because the ingestion API is absent.
+- [x] Implement the canonical record/document models and streaming loader without chunking, embeddings, or retrieval imports.
+- [x] Implement deterministic JSONL serialization and an ingestion CLI with explicit source/output/limit options.
+- [x] Re-run the focused test and an offline parquet smoke fixture.
+
+**Verified 2026-08-21:** 20 focused tests pass; `compileall` and CLI help exit successfully; repeated fixture ingestion is byte-identical and emits four bilingual canonical documents. Production chunking selection remains gated on processed-output and license/provenance review.
+
+### Task 2: Chunking Baseline and Strategy Benchmarks
+
+**Files:**
+- Modify: `03-ai-rag-engine/chunking/base.py`
+- Modify: `03-ai-rag-engine/chunking/fixed.py`
+- Modify: `03-ai-rag-engine/chunking/sentence.py`
+- Modify: `03-ai-rag-engine/chunking/semantic.py`
+- Modify: `03-ai-rag-engine/chunking/strategy.py`
+- Create: `06-evaluation/benchmarks/chunking.py`
+- Test: `03-ai-rag-engine/tests/test_chunking.py`
+
+**Interfaces:**
+- Produces: a common chunk interface and benchmark data for fixed, sentence-aware, and semantic strategies.
+- Guarantees: chunking remains offline; query-time RAG never chunks documents.
+
+- [x] Start with the fixed-size baseline and validate metadata/overlap behavior.
+- [x] Add sentence-aware and semantic candidates behind the same interface only for comparison.
+- [ ] Benchmark candidates on the processed corpus before freezing a production strategy.
+
+**Verified 2026-08-21:** 16 focused chunking tests and all 36 engine tests pass; `compileall`, chunking CLI help, and `git diff --check` succeed. The programmatic/CLI benchmark is verified on multilingual fixtures. The real-corpus comparison, production strategy selection, and ADR 0003 remain gated on processed-output and license/provenance review.
+
+### Task 3: Embeddings and Persistent Index
+
+**Files:**
+- Modify: `03-ai-rag-engine/embeddings/base.py`
+- Modify: `03-ai-rag-engine/embeddings/provider.py`
+- Modify: `03-ai-rag-engine/retrieval/vector_store.py`
+- Modify: `07-scripts/build_index.py`
+- Create: `06-evaluation/benchmarks/embeddings.py`
+- Test: `03-ai-rag-engine/tests/test_vector_store.py`
+
+**Interfaces:**
+- Produces: batch `Embedder` protocol, one benchmark-selected production provider, persistent Qdrant index adapter, and index-build measurements.
+- Guarantees: metadata preservation, idempotent upserts, configurable model, precomputed corpus embeddings.
+
+- [ ] Benchmark genuinely multilingual candidates in the shared cross-lingual space before selecting one.
+- [x] Implement the provider/store boundary, deterministic fixture baseline, and optional injected Qdrant adapter without selecting a production winner.
+- [x] Verify local point count, metadata, resume/reconciliation behavior, and fixture index-build measurements.
+
+**Verified 2026-08-22:** 19 focused embedding/index tests and the full 68-test engine suite pass; `compileall`, index CLI help, and scoped `git diff --check` succeed. Local snapshots are versioned and atomic, resume fails closed on provider/config changes, stale chunks are reconciled, and the optional Qdrant adapter uses deterministic UUID point IDs. The real multilingual provider benchmark, production winner, live Qdrant validation, ADR 0002, and ADR 0005 remain open external gates.
+
+### Task 4: Top-K Retrieval and Reranking
+
+**Files:**
+- Modify: `03-ai-rag-engine/retrieval/retriever.py`
+- Modify: `03-ai-rag-engine/retrieval/reranker.py`
+- Modify: `06-evaluation/metrics/retrieval.py`
+- Modify: `06-evaluation/benchmarks/retrieval.py`
+- Test: `03-ai-rag-engine/tests/test_retrieval.py`
+
+**Interfaces:**
+- Produces: `retrieve(query, top_k)` returning chunk ID, text, score, metadata, and latency; optional reranking from broad candidates to final evidence.
+- Guarantees: retrieval quality is measured before generation is connected.
+
+- [x] Add Recall@k, MRR@k, and graded nDCG@k fixtures with monolingual/cross-lingual and per-query-locale breakdowns.
+- [x] Measure local fixture reranking gain against its latency cost without selecting a winner.
+- [ ] Freeze retrieval and reranker decisions in ADRs before moving on.
+
+**Verified 2026-08-22:** 13 focused retrieval tests and the full 68-test engine suite pass; compilation, benchmark smoke, and scoped diff checks succeed. Retrieval enforces `top_k` 1..20, hard-bounds reranking candidates by `fetch_k`, validates payload/reranker identity, and reports embedding/search/reranking/total latency. The fixture benchmark reports quality and latency deltas only; the real multilingual retrieval/reranker benchmark and ADR 0004 remain open.
+
+### Task 5: Grounded RAG Generation
+
+**Files:**
+- Modify: `03-ai-rag-engine/generation/schemas.py`
+- Modify: `03-ai-rag-engine/generation/prompts.py`
+- Modify: `03-ai-rag-engine/generation/llm.py`
+- Modify: `03-ai-rag-engine/guardrails/input_guard.py`
+- Modify: `03-ai-rag-engine/guardrails/relevance.py`
+- Modify: `03-ai-rag-engine/guardrails/grounding.py`
+- Test: `03-ai-rag-engine/tests/test_guardrails_generation.py`
+
+**Interfaces:**
+- Produces: structured answer from query plus retrieved chunks, same-language prompt enforcement, relevance and grounding outcomes.
+- Guarantees: no agents, no unsupported-fact instruction, no generation before retrieval quality is demonstrated.
+
+- [ ] Add supported-language, no-context, prompt, timeout, and `grounded: false` tests.
+- [ ] Connect Sarvam-105B only after retrieval meets its quality gate.
+- [ ] Verify answers across the eleven supported locales.
+
+### Task 6: Observable RAG Orchestrator
+
+**Files:**
+- Modify: `03-ai-rag-engine/orchestration/stages.py`
+- Modify: `03-ai-rag-engine/orchestration/errors.py`
+- Modify: `03-ai-rag-engine/orchestration/pipeline.py`
+- Modify: `03-ai-rag-engine/observability/logger.py`
+- Modify: `03-ai-rag-engine/observability/metrics.py`
+- Test: `03-ai-rag-engine/tests/test_pipeline.py`
+
+**Interfaces:**
+- Produces: one backend-facing RAG pipeline protocol and implementation coordinating validation, retrieval, reranking, context, generation, grounding, guardrails, and structured response.
+- Guarantees: request IDs, stage timings, bounded retries/timeouts, structured errors, logs, and visible failures.
+
+- [ ] Write success and failure-path orchestration tests before the implementation.
+- [ ] Keep stage logic out of the orchestrator; it coordinates existing components.
+- [ ] Verify the backend consumes only the agreed protocol/result objects.
+
+### Task 7: Evaluation and Latency Dashboards
+
+**Files:**
+- Modify: `03-ai-rag-engine/orchestration/stages.py`
+- Modify: `03-ai-rag-engine/orchestration/errors.py`
+- Modify: `03-ai-rag-engine/orchestration/pipeline.py`
+- Modify: `03-ai-rag-engine/observability/logger.py`
+- Modify: `03-ai-rag-engine/observability/metrics.py`
+- Test: `03-ai-rag-engine/tests/test_pipeline.py`
+
+**Interfaces:**
+- Produces: `RAGPipeline.run(Query, stage_callback=None) -> Answer`, `PipelineError`, `LatencyTracker`, structured request logger.
+- Guarantees: exact stage names, stage callback isolation, request-level traceability, wall-clock totals, typed errors.
+
+- [ ] Write failing success, no-context, unsupported-language, grounded-false, callback, and latency-invariant tests.
+- [ ] Implement orchestration and metrics.
+- [ ] Re-run the complete core test suite.
+
+### Task 8: Deployment Handoff
+
+**Files:**
+- Modify: `06-evaluation/metrics/retrieval.py`
+- Modify: `06-evaluation/metrics/latency.py`
+- Create: `06-evaluation/metrics/grounding.py`
+- Create: `06-evaluation/benchmarks/embeddings.py`
+- Modify: `06-evaluation/benchmarks/retrieval.py`
+- Modify: `06-evaluation/benchmarks/latency.py`
+- Modify: `06-evaluation/benchmarks/end_to_end.py`
+- Test: `03-ai-rag-engine/tests/test_evaluation.py`
+
+**Interfaces:**
+- Produces: Recall@k, MRR@k, nDCG@k, grounding precision/recall/F1, latency P50/P70/P95/P100, async benchmark reports.
+
+- [ ] Write exact-value metric tests and benchmark aggregation tests.
+- [ ] Implement metrics and harnesses without third-party dependencies.
+- [ ] Re-run evaluation and core tests.
+
+### Task 9: Reproducible Operational CLIs
+
+**Files:**
+- Modify: `07-scripts/ingest.py`
+- Modify: `07-scripts/build_index.py`
+- Modify: `07-scripts/benchmark.py`
+- Create: `07-scripts/validate_contracts.py`
+- Test: `03-ai-rag-engine/tests/test_scripts.py`
+
+**Interfaces:**
+- Produces: deterministic JSONL ingestion/chunking, resumable JSON snapshot index build, benchmark JSON reports, local contract reference validation.
+
+- [ ] Write failing CLI parser and deterministic-output tests.
+- [ ] Implement commands with explicit input/output arguments and non-zero failures.
+- [ ] Run CLI help, focused tests, and a temporary end-to-end fixture.
+
+### Task 10: Final Integration Verification
+
+**Files:**
+- Create: `AI-RAG-TASKS.md`
+- Modify: `09-docs/evaluation/benchmark-results.md`
+- Modify: `05-data/README.md`
+
+**Interfaces:**
+- Produces: usage instructions, remaining external integration tasks, and measured local benchmark output clearly labeled by environment.
+
+- [ ] Run `python -m unittest discover -s 03-ai-rag-engine/tests -v`.
+- [ ] Run ingestion, index building, retrieval benchmark, and end-to-end benchmark on a temporary multilingual fixture.
+- [ ] Record only observed figures, including P50/P70/P95/P100 and whether the run is single-request/offline.
+- [ ] Update the task checklist with completed and externally blocked items.

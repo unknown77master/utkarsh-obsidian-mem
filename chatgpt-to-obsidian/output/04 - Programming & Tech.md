@@ -1,0 +1,249 @@
+---
+type: "memory-category"
+source: "ChatGPT export"
+created: "2026-09-17"
+---
+# Programming & Tech
+
+- I want you to then take this information and generate a privacy policy that I will be able to list on my website.
+  - Confidence: 0.82; Sources: 00d7a361-282f-4499-81b2-1f6fab278426 (Privacy Policy Generator), a986e1a5-6a9f-47fc-9bc5-35ef95f0c337 (New chat)
+- I Want You To Act As A Content Writer Very Proficient SEO Writer Writes Fluently English.
+  - Confidence: 0.82; Sources: 00f06f57-4f77-4323-88c2-dd113123a916 (Shower Curtain Rod Guide), 0b574e4f-74fd-41a9-a0bd-a8e58c13cfc5 (Curtain Rods Guide), 0fd33761-c792-4f12-9ccd-547a1fe7de42 (Shower Curtain Guide), 21906fa8-48ab-4432-993b-582eff7a6623 (Sheer Curtains: Elegance & Functionality), 766cccdc-e9fe-4b3a-9188-fa7e5748be3a (Curtain Styles for Living.), 8a166fd8-d8eb-44e9-b622-48d29c6ebb75 (New chat), b7d3a2ad-b7cd-4c77-be83-5228b36f8766 (Unique Baby Boy "A" Names), e8ce283e-38d4-4453-8352-4e8dcf375730 (Bedroom Curtains: Style & Functionality)
+- As a Product Research Specialist with proficient product and market research skills and fluent in English, I need you to gather data on unique and attractive products that are not yet available in the market or have the potential to make an impact in people's lives.
+  - Confidence: 0.82; Sources: 0b9a5a00-00c8-4c95-8408-a8f96530bb33 (Product Research Specialist Recommendations), ce26c44e-5d3a-4c62-aeaf-ee9d34ae4ecd (AI Winning Product Research), eabca80f-dc20-4a91-91b0-f7b22393eba3 (AI Winning Product Research)
+- I want you to respond only in language English.
+  - Confidence: 0.82; Sources: 14522a23-c222-4691-ba20-afa116470573 (Keyword Strategy for Parenting), 6832ea0a-52ee-4af8-b3c1-ecd379adea9d (SEO Keyword Strategy for "apk"), 91b23d3c-4cc8-4f6f-88d6-56668250569e (New chat), 9411a7a8-f8ee-4e5f-b102-8021b7a1aec8 (Easier Rod Pocket Curtains), d91aa913-9541-4ac4-b4b3-6b8e86785cf6 (Curtain Styles 101), d99a6010-8728-4888-8c2a-0a0d238f20c6 (Curtain Placement Guide), e3f2c93d-bb81-4e21-96f6-cdd10417fbf5 (SEO Content Plan - Curtains)
+- I want you to act as a market research expert that speaks and writes fluent English.
+  - Confidence: 0.82; Sources: 14522a23-c222-4691-ba20-afa116470573 (Keyword Strategy for Parenting), 6832ea0a-52ee-4af8-b3c1-ecd379adea9d (SEO Keyword Strategy for "apk"), e3f2c93d-bb81-4e21-96f6-cdd10417fbf5 (SEO Content Plan - Curtains)
+- I want you to pretend that you are an E-commerce SEO expert who writes compelling product descriptions for users looking to buy online.
+  - Confidence: 0.82; Sources: 36285fdb-4cee-4d51-b049-ac4d947f8b9f (E-Commerce SEO: Keywords & Description), fd15e123-12d8-45cf-adac-17794f6436df (Shower Rod - Compelling Description)
+- I like the summary you give
+  - Confidence: 0.82; Sources: 670b835b-9550-8007-b5fa-b976d805d692 (Python to C++ Conversion), 6745d720-1cd4-8007-8e42-f31defaa53c9 (Seasonal Color Analysis Guide)
+- I want to tag peoples linkedin profile in text
+  - Confidence: 0.82; Sources: 6713ecc8-2448-8007-87c0-61256b68951b (LinkedIn Post Writing Help)
+- I want you to interview the user to gather all the information you need to complete a summary for LinkedIn.
+  - Confidence: 0.82; Sources: 679bbe34-d52c-8007-b3fb-5e95ab476737 (LinkedIn Summary Creation Guide)
+- i want the output to be expected 100, 200, 300\n
+  - Confidence: 0.82; Sources: 67a0c09b-fab4-8007-87b5-6f2e4b7f1aac (swym)
+- print(remdup(\[3, 1, 3, 5\])) what if i want output \[1,3,5\] keeping only the last occurrence of each number.
+  - Confidence: 0.82; Sources: 67a0c09b-fab4-8007-87b5-6f2e4b7f1aac (swym)
+- Passed after ignoring Presentation Error i want to remove \n form output
+  - Confidence: 0.82; Sources: 67a0c09b-fab4-8007-87b5-6f2e4b7f1aac (swym)
+- using cd command i want to go back how do i do it
+  - Confidence: 0.82; Sources: 67a8b103-3ab8-8007-92c9-48f8557b8574 (cd command usage)
+- i want to import entire live news article with entire text of article not snippets of article in sheets.
+  - Confidence: 0.82; Sources: 67b0ce0a-31e4-8007-9f54-d618e986f00e (Import News API Sheets)
+- which API should i use
+  - Confidence: 0.82; Sources: 67b0ce0a-31e4-8007-9f54-d618e986f00e (Import News API Sheets)
+- i want to import all news along with their entire text of every news
+  - Confidence: 0.82; Sources: 67b0ce0a-31e4-8007-9f54-d618e986f00e (Import News API Sheets)
+- I want you to read these notes and answers some question paper which I will upload
+  - Confidence: 0.82; Sources: 67d0929f-eb5c-8007-ab9e-3a8e004a2e3d (Software Engineering Notes)
+- I want to describe a scene.
+  - Confidence: 0.82; Sources: 67fab140-f724-8007-b901-8c040a5d0a61 (Silver Surfer Comparison)
+- I want you to transfer all content inside the format document and according to the format.
+  - Confidence: 0.82; Sources: 68173e31-6d7c-8007-aa9e-7d1287754451 (Content Integration Request)
+- The justification for this project lies in the increasing need to combat fake news and its societal implications.
+  - Confidence: 0.82; Sources: 68173e31-6d7c-8007-aa9e-7d1287754451 (Content Integration Request)
+- This project is motivated by the challenge of detecting and classifying news articles as true or false, which is essential to maintain the integrity of news sources and prevent the damage caused by false information.
+  - Confidence: 0.82; Sources: 68173e31-6d7c-8007-aa9e-7d1287754451 (Content Integration Request)
+- Relevant references used for this project are listed below, following a standard academic format.
+  - Confidence: 0.82; Sources: 68173e31-6d7c-8007-aa9e-7d1287754451 (Content Integration Request)
+- with reference of this synopsis i want you to write on these topics, use your creativity
+  - Confidence: 0.82; Sources: 68173e31-6d7c-8007-aa9e-7d1287754451 (Content Integration Request)
+- i want you to give me answer accordingly
+  - Confidence: 0.82; Sources: 681f1723-6cd4-8007-a7f9-cfa429d484cb (OS End-Sem)
+- how do i develop these skills, guide me.
+  - Confidence: 0.82; Sources: 682462ba-fd94-8007-9b74-3e0641028898 (Frontend Skills Roadmap)
+- I want you to write a instagram story to tell my friends that my Instagram account "utkarsh.w_" was hacked and is being misused by hacker.
+  - Confidence: 0.82; Sources: 686e90f9-835c-8007-b40c-bb160f743396 (Account Hacked Apology Notice)
+- i want to name this output
+  - Confidence: 0.82; Sources: 68866123-688c-8007-b001-8a8e1f1c82c2 (Create tables and insert data)
+- open it in canvas i want to edit
+  - Confidence: 0.82; Sources: 68959b17-bf04-8329-83cf-98c4cb32b90f (HCI Insem)
+- Give summary of what i did in this project, so that i can use to upload on github summary section
+  - Confidence: 0.82; Sources: 689ef275-386c-8327-bf4f-835926829e3b (GitHub project summary)
+- when does IRCTC booking start for next 2 months day like i want to book for 17 oct
+  - Confidence: 0.82; Sources: 68a235f2-d04c-832e-9fd8-54cd374a0d0f (IRCTC booking start date)
+- } not below i want right
+  - Confidence: 0.82; Sources: 69689233-d3d8-8324-8df4-83c8b0280dcf (Props in React)
+- Where do we use liner regression and random forest
+  - Confidence: 0.82; Sources: 696f6631-a7b8-8323-9ad5-ef599d83a528 (Linear Regression vs Random Forest)
+- which one should i use i order to replace this the work done by gemini-2.0-flash
+  - Confidence: 0.82; Sources: 69872b8b-b684-83a8-a489-baec6179bca6 (n8n output webhook setup)
+- i want to create this
+  - Confidence: 0.82; Sources: 6989f9f4-f594-8323-affd-1fac010257df (Get API Key Instructions), 6a95e183-1508-83ee-8856-621ea191b4a4 (AI Demo VIdeo SaaS), 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- but i want generationConfig\": {\n \"responseModalities\": \[\n \"TEXT\",\n \"IMAGE\"
+  - Confidence: 0.82; Sources: 6989f9f4-f594-8323-affd-1fac010257df (Get API Key Instructions)
+- i want to make this reop private, will code rabbit be able to work properly
+  - Confidence: 0.82; Sources: 69981de2-d330-8320-a184-6c2e1e109f16 (Git fetch rebase workflow)
+- what if i want both users america and india
+  - Confidence: 0.82; Sources: 69a00336-9f0c-83a6-b1f8-e0d4f6d56f2a (Global Low Latency Firebase)
+- I need to extract the auth-dependent section into a client component.
+  - Confidence: 0.82; Sources: 69a00336-9f0c-83a6-b1f8-e0d4f6d56f2a (Global Low Latency Firebase)
+- For the callback endpoint specifically, I need to decide between using the Firestore REST API with security rules or initializing the Firebase client SDK on the server side.
+  - Confidence: 0.82; Sources: 69a00336-9f0c-83a6-b1f8-e0d4f6d56f2a (Global Low Latency Firebase)
+- I want to backup program files also, I don't want to loose software installed on this pc
+  - Confidence: 0.82; Sources: 69a55b06-ebc4-8323-941c-84aa37f9b732 (SFC Error in Recovery)
+- What is Z doing here previously H C I drives were there I need to l backup those drives also
+  - Confidence: 0.82; Sources: 69a55b06-ebc4-8323-941c-84aa37f9b732 (SFC Error in Recovery)
+- I need everything, every pice of data on this pc must be backedup
+  - Confidence: 0.82; Sources: 69a55b06-ebc4-8323-941c-84aa37f9b732 (SFC Error in Recovery)
+- I want to retry for those failed files only not others
+  - Confidence: 0.82; Sources: 69a55b06-ebc4-8323-941c-84aa37f9b732 (SFC Error in Recovery)
+- I want to increase font size of x axis elements
+  - Confidence: 0.82; Sources: 69f0dbbb-7c30-83e8-af87-9d84924e2cd0 (Python Code for Data Analysis)
+- I want you to answer them according to TE AIDS HCI syllabus
+  - Confidence: 0.82; Sources: 6a1957b0-b460-8324-9f0e-1c66d868b889 (Writing Style Instructions)
+- i want to be that disciplined version again
+  - Confidence: 0.82; Sources: 6a1aeb29-e600-8321-bec5-78e6363d1623 (buddy)
+- I need to print this chat after-wards so using less pages to print chat is good
+  - Confidence: 0.82; Sources: 6a206839-b068-8322-969f-1c943877b298 (CS)
+- ok now i will give you another subject to solve, i want you to do the same
+  - Confidence: 0.82; Sources: 6a21337e-4910-83ab-9881-9486a42594d5 (CS ANN)
+- form this i want to submit in google form
+  - Confidence: 0.82; Sources: 6a369cc1-85c8-83e8-8fbc-a2fa9aae95d8 (Internship Details for Google Form)
+- Now i want to peruse AI engineer.
+  - Confidence: 0.82; Sources: 6a4347f2-60a8-83ee-863f-97917b9ad7a0 (Career Path Recommendation)
+- Yes I want to build it
+  - Confidence: 0.82; Sources: 6a4a8ba2-5818-83ee-b816-c1dbcac25d8d (Mneme Memory Ownership)
+- what about that time when i build a automation to download apple music songs in high quality ALAC
+  - Confidence: 0.82; Sources: 6a4a8ba2-5818-83ee-b816-c1dbcac25d8d (Mneme Memory Ownership)
+- https://github.com/utkarsh-wadalkar add more relevant projects, because i want to appear for interview of python/ai/ml:
+  - Confidence: 0.82; Sources: 6a4cf3ea-f630-83e8-a470-d4966e71ebd8 (LaTeX Resume)
+- give all these ports, i want to learn them
+  - Confidence: 0.82; Sources: 6a587917-e970-83ee-8274-644c8882a140 (HTTP HTTPS Port Numbers), 6a9acb11-f954-83e8-a1ac-49cdbcb93919 (AI Engineer Learning Roadmap)
+- and will limits reset after 2 days to 0 and i can use again and again, only if i need limits above 10$ i need to buy subscription else it is free
+  - Confidence: 0.82; Sources: 6a69fac4-177c-83e8-a3db-730e54b16ace (Voxtral Mini Usage Free)
+- and for process, i want to include all process, browser, applications, winodows setting taskmanager ets
+  - Confidence: 0.82; Sources: 6a6a27e4-c270-83ee-9cd0-ad829e8368b4 (Modern Calm Color Blend)
+- prepare me for this role, what projects do i need to do to gain these skills.
+  - Confidence: 0.82; Sources: 6a6f7f2c-e4f0-83ee-ad93-a24a8c555201 (AI Platform Engineer Projects)
+- i want to include this in codex application
+  - Confidence: 0.82; Sources: 6a72ff4d-7094-83ee-93b5-1541139dedf4 (Codex Installation Troubleshooting)
+- i want to inplememt this project but not in java springboot, from what u know about me sugest me some other tech stack
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- and one more thing will this project have its own venv or use my c:\users\asus env
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- which free models should i use in open router
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- i want to do git commit --ammend to untrack docs files which were added in these commit
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- i think i need to give actual env
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- i want it to show all ques which were generated also
+  - Confidence: 0.82; Sources: 6a747601-01b4-83e8-a684-0477c0bcf5ea (ai-interview-Qs)
+- i want people to join agentrouter, write a post which reddit wont remove using all this information and now they provide opus-5 and gpt-5.6-sol also:
+  - Confidence: 0.82; Sources: 6a756f0f-0ea4-83ee-8507-e875d2ee23d5 (Reddit Post)
+- i want to do this, guide me
+  - Confidence: 0.82; Sources: 6a7aaca0-8750-83e8-a4e2-9c04d4066c52 (AWS CLI Setup Guide)
+- As u can see it became 2 page resume and i want inly 1 page, so short decription in every project, such that recruiter gets hint of what i did but he gets intrigued to ask me questions about my own projects.
+  - Confidence: 0.82; Sources: 6a7b0bba-0828-83e8-9104-df626cfecf49 (Res-Audors)
+- I need 1 or 2 at max people.
+  - Confidence: 0.82; Sources: 6a808a73-cef4-83e8-82b7-a7ee448cf63e (HH Goa context)
+- **Do I need to keep my 🍎 Music subscription?**
+  - Confidence: 0.82; Sources: 6a84173a-d6a8-83ee-bf61-cc08f6e77696 (Answer This Form)
+- **How much space do I need?**
+  - Confidence: 0.82; Sources: 6a84173a-d6a8-83ee-bf61-cc08f6e77696 (Answer This Form)
+- I don't want to check competition, I want to copy pre existing projects
+  - Confidence: 0.82; Sources: 6a8aa87b-a044-83ee-a277-ed67d5344134 (Find Similar SIH Projects)
+- Now I want to explain this ps in simple words to my teammates
+  - Confidence: 0.82; Sources: 6a8aa87b-a044-83ee-a277-ed67d5344134 (Find Similar SIH Projects)
+- now i want to add .claude plugins in codex, either from marketplace or from:
+  - Confidence: 0.82; Sources: 6a8febb2-853c-83ee-91a2-42544b24c129 (Configure Codex Plus Subscription)
+- ok i have installed plugin, i want to point them such that codex can use them in codex application
+  - Confidence: 0.82; Sources: 6a8febb2-853c-83ee-91a2-42544b24c129 (Configure Codex Plus Subscription)
+- I want you to act as a very proficient SEO and high end copy writer that speaks and writes fluent English.
+  - Confidence: 0.82; Sources: 91b23d3c-4cc8-4f6f-88d6-56668250569e (New chat), 9411a7a8-f8ee-4e5f-b102-8021b7a1aec8 (Easier Rod Pocket Curtains), d99a6010-8728-4888-8c2a-0a0d238f20c6 (Curtain Placement Guide)
+- I want you to pretend that you can write content so good in English that it can outrank other websites.
+  - Confidence: 0.82; Sources: 91b23d3c-4cc8-4f6f-88d6-56668250569e (New chat), 9411a7a8-f8ee-4e5f-b102-8021b7a1aec8 (Easier Rod Pocket Curtains), d99a6010-8728-4888-8c2a-0a0d238f20c6 (Curtain Placement Guide)
+- Then I want you to write an article in a formal "we form" that helps me outrank the article I gave you, in Google.
+  - Confidence: 0.82; Sources: 91b23d3c-4cc8-4f6f-88d6-56668250569e (New chat), 9411a7a8-f8ee-4e5f-b102-8021b7a1aec8 (Easier Rod Pocket Curtains), d99a6010-8728-4888-8c2a-0a0d238f20c6 (Curtain Placement Guide)
+- I want it in an organized table format in alphabetical order.
+  - Confidence: 0.82; Sources: 934de734-88b4-4089-a824-70333fbd4d86 (Baby Name Criteria)
+- I want you to act as a very proficient seo and high-end copywriter that speaks and writes fluently English.
+  - Confidence: 0.82; Sources: d91aa913-9541-4ac4-b4b3-6b8e86785cf6 (Curtain Styles 101)
+- I want to make sure that other non-tech guys can also use this
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- which license should i use while creating repo, i want complete ownership of this code and application
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i install docker, i want to move it to d drive again, everything .vhhx also
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i want to keep it
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i want to remove 1.4.0 fromthat commit andd i want o add another commit for 1.4.0
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i want tag on relese commit
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i dont care for those 24 files i can downlod them again any time, that is not the problem, i want good user experience
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i want new one
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- i want this tree steucture
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- what i want is two prompt for codex, one to make website using skills i installed:
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- "ok, i like this, now add songs disk along with cover image on that player's at base of it and disk gets swap when user click it and live music is also played when user click Play button "Start record" and user can change to next song, prev song when clicked on arrow button
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- this category/section name it as "Some Songs I like"
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- they are available at "D:\ALL Programming\git_clone\Some Songs I Like" this loaction
+  - Confidence: 0.82; Sources: 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+- Grateful for the experience and looking forward to applying these learnings to what I build next.
+  - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
+- i want to comment on this post, write suggestions for what shold i comment
+  - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
+- me and my team of 2 other members are working to build this before, tasks needs to be delegated, tell me what should i work on
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- ok give me entire idea of what are we doing here, and i will be using codex, but i need plan orchestration and things to keep eye on because i have worked previously with speach to text model which was voxtral mini multi langual
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- what was the part of project which i need to cover and other 2
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- ok now i need to start doind this, i have not downloaded dataset so lets start setting up entire thing manually
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- The success of this project would forever change the world forever making it known that something this powerful can be manmade.', 'The Manhattan Project was the name for a project conducted during World War II, to develop the first atomic bomb.
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- my friend pushed frontend code i want to pull in my pc but not in worktree
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- just one sem one subject one topic because i want to record a video for shortlisting process
+  - Confidence: 0.82; Sources: 6a89d21e-12a0-83e8-8202-ba608ffb9656 (iQOO)
+- this is the message i get i want it to view my screen
+  - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
+- i want openwisper to view my screen
+  - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
+- This project should be architecture-first but NOT overengineered.
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- Act as the senior engineer/architect working with me on this project.
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- yes this is what i want to make fro gthe start
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- i want 3rd option
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- now i want to redesign preexisting fronted of https://github.com/DgrnBoi/statskill-ai, user has added me as contributor, so i can make changes, give me prompt for this
+  - Confidence: 0.82; Sources: 6a9d8ccb-d424-83e8-b5ae-8416e35b1de9 (Codex, Claude Skills List)
+- how can i use 8500 rs to buy gpt plus plan with those credits only not from my bank
+  - Confidence: 0.82; Sources: 6a9dd2a9-6638-83ee-943d-bfd46a6cb6ea (Using Credits For Plus)
+- i want to change this svg to like in picture, but it should be live, it should update automatically in by github readme.md
+  - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
+- i have used tidb and this is what it provides for free, how about we use this and tell me most optimal way to use it
+  - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
+- yes i want to showoff that users are actually using this service at a status endpoint of website
+  - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
+- i want to delete this
+  - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
+- I want to present this PDF for my fourth-year project, and this PDF will act as an ideation idea presentation to my teacher.
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (Modify SIH26097 PDF)
+- but please i want graphical remote access, i donr like using cmd to do things on pc
+  - Confidence: 0.82; Sources: 6aa6bd79-08cc-83ee-b7b1-8795f3222aa4 (Omarchy USB Setup)
+- Yes thanks what I want
+  - Confidence: 0.82; Sources: 6aa6bd79-08cc-83ee-b7b1-8795f3222aa4 (Omarchy USB Setup)
+
+## Technologies
+
+- [[Technologies/Docker]]
+- [[Technologies/Git]]
+- [[Technologies/Go]]
+- [[Technologies/Java]]
+- [[Technologies/Linux]]
+- [[Technologies/Python]]
+- [[Technologies/Windows]]
