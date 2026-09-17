@@ -5,13 +5,15 @@ This dependency-free Python tool converts an extracted ChatGPT data export into 
 ## Usage
 
 ```powershell
-python migrate.py --source "D:\path\to\extracted-export" --output "D:\Obsidian\ChatGPT Memory"
+python migrate.py --source "D:\path\to\extracted-export"
 ```
+
+Without `--output`, the permanent vault location is `chatgpt-to-obsidian\utkarsh-vault`. Pass `--output` only when deliberately creating a different vault.
 
 To keep the vault’s project catalogue current with your coding workspace and public GitHub repositories:
 
 ```powershell
-python migrate.py --source "D:\path\to\extracted-export" --output "D:\Obsidian\ChatGPT Memory" --projects-root "D:\ALL Programming" --github-user "utkarsh-wadalkar"
+python migrate.py --source "D:\path\to\extracted-export" --projects-root "D:\ALL Programming" --github-user "utkarsh-wadalkar"
 ```
 
 The project roots and GitHub users are saved in the migration state after that first run. Later normal migrations rescan them automatically. Private repositories are never requested from GitHub; a private project is catalogued from its local Git repository when its parent root is configured.
@@ -19,19 +21,19 @@ The project roots and GitHub users are saved in the migration state after that f
 To keep refreshing until stopped, add `--watch`. Local roots and the ChatGPT export are checked every five minutes by default; public GitHub is checked at most once per hour in watch mode. Change those intervals with `--watch-interval` and `--github-refresh-interval`:
 
 ```powershell
-python migrate.py --source "D:\path\to\extracted-export" --output "D:\Obsidian\ChatGPT Memory" --watch --watch-interval 300 --github-refresh-interval 3600
+python migrate.py --source "D:\path\to\extracted-export" --watch --watch-interval 300 --github-refresh-interval 3600
 ```
 
 Inspect a large export without changing the destination:
 
 ```powershell
-python migrate.py --source "D:\path\to\extracted-export" --output "D:\Obsidian\ChatGPT Memory" --dry-run
+python migrate.py --source "D:\path\to\extracted-export" --dry-run
 ```
 
 Searchable transcripts and the full raw export mirror are created by every normal migration. `--archive-conversations` remains accepted for compatibility:
 
 ```powershell
-python migrate.py --source "D:\path\to\extracted-export" --output "D:\Obsidian\ChatGPT Memory" --archive-conversations
+python migrate.py --source "D:\path\to\extracted-export" --archive-conversations
 ```
 
 ## What it processes

@@ -3758,6 +3758,206 @@
   ],
   "project_catalog": [
     {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": ".github",
+      "github_url": "https://github.com/utkarsh-wadalkar/.github",
+      "description": "Config files for my GitHub profile.",
+      "language": "",
+      "updated_at": "2026-09-16T10:34:12Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "AI-interview-Qs-gen",
+      "github_url": "https://github.com/utkarsh-wadalkar/AI-interview-Qs-gen",
+      "description": "",
+      "language": "JavaScript",
+      "updated_at": "2026-08-11T05:49:30Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Audora",
+      "github_url": "https://github.com/utkarsh-wadalkar/Audora",
+      "description": "Music downloader on your local device ",
+      "language": "Python",
+      "updated_at": "2026-09-16T14:13:47Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Django_1",
+      "github_url": "https://github.com/utkarsh-wadalkar/Django_1",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-06-30T13:45:13Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "DSA",
+      "github_url": "https://github.com/utkarsh-wadalkar/DSA",
+      "description": "A collection of LeetCode questions",
+      "language": "Python",
+      "updated_at": "2026-07-16T12:20:16Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "FaceChain",
+      "github_url": "https://github.com/utkarsh-wadalkar/FaceChain",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-09-07T21:46:04Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Fake-News-ML",
+      "github_url": "https://github.com/utkarsh-wadalkar/Fake-News-ML",
+      "description": "This is Supervised ML project consisting of Logistic Regression, Decision Tree Classifier,  Random Forest Classifier algo. Made for pattern recognition of fake news. Completed entire implementation, from frontend to backend of this ML project",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-05-20T07:56:00Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Hands-On-PY-Pandas",
+      "github_url": "https://github.com/utkarsh-wadalkar/Hands-On-PY-Pandas",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-02-17T14:51:45Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "HTML-CSS",
+      "github_url": "https://github.com/utkarsh-wadalkar/HTML-CSS",
+      "description": "",
+      "language": "HTML",
+      "updated_at": "2025-02-17T14:08:29Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "JavaScript-Assignments",
+      "github_url": "https://github.com/utkarsh-wadalkar/JavaScript-Assignments",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-03-13T13:30:05Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "KaushalVaani",
+      "github_url": "https://github.com/utkarsh-wadalkar/KaushalVaani",
+      "description": "Voice-First Livelihood Intelligence using Knowledge Graphs Multilingual beneficiary profiling -> graph-based skill-gap reasoning -> NSQF-aligned training -> local livelihood pathway",
+      "language": "Python",
+      "updated_at": "2026-09-17T15:48:54Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "ML-Pipeline",
+      "github_url": "https://github.com/utkarsh-wadalkar/ML-Pipeline",
+      "description": "This project covers understanding for creating a MLOps pipeline and working using DVC for experiment tracking and data versioning using AWS S3",
+      "language": "",
+      "updated_at": "2026-07-16T12:28:44Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "MLops-DVC",
+      "github_url": "https://github.com/utkarsh-wadalkar/MLops-DVC",
+      "description": "This repo implements the idea of data versioning using DVC tool",
+      "language": "Python",
+      "updated_at": "2026-07-11T16:49:27Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "MongoTodo",
+      "github_url": "https://github.com/utkarsh-wadalkar/MongoTodo",
+      "description": "Full-stack todo app with React, Node.js, Express, and MongoDB",
+      "language": "CSS",
+      "updated_at": "2026-02-03T23:23:36Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Parkinson-Disease-Prediction",
+      "github_url": "https://github.com/utkarsh-wadalkar/Parkinson-Disease-Prediction",
+      "description": "Machine learning model to predict Parkinson’s disease using biomedical voice features with EDA, preprocessing, and multi-model evaluation.",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-08-15T09:15:46Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "PowerBI",
+      "github_url": "https://github.com/utkarsh-wadalkar/PowerBI",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-03-15T17:45:18Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Sales-Forecasting-using-Machine-Learning",
+      "github_url": "https://github.com/utkarsh-wadalkar/Sales-Forecasting-using-Machine-Learning",
+      "description": "End-to-end ML pipeline for retail sales forecasting with data cleaning, feature engineering, EDA, and advanced model tuning.",
+      "language": "HTML",
+      "updated_at": "2025-08-15T09:09:16Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "SQL",
+      "github_url": "https://github.com/utkarsh-wadalkar/SQL",
+      "description": "",
+      "language": "",
+      "updated_at": "2025-02-17T14:07:25Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "TeachBack",
+      "github_url": "https://github.com/utkarsh-wadalkar/TeachBack",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-09-01T06:42:39Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Youtube-Agent",
+      "github_url": "https://github.com/utkarsh-wadalkar/Youtube-Agent",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-02-09T16:24:12Z",
+      "fork": true
+    },
+    {
       "catalog_source": "local",
       "catalog_root": "D:\\ALL Programming",
       "name": "01-backend-api",
@@ -4176,206 +4376,6 @@
         "https://github.com/utkarsh-wadalkar/whoburnedmore-endpoint.git"
       ],
       "github_url": "https://github.com/utkarsh-wadalkar/whoburnedmore-endpoint"
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": ".github",
-      "github_url": "https://github.com/utkarsh-wadalkar/.github",
-      "description": "Config files for my GitHub profile.",
-      "language": "",
-      "updated_at": "2026-09-16T10:34:12Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "AI-interview-Qs-gen",
-      "github_url": "https://github.com/utkarsh-wadalkar/AI-interview-Qs-gen",
-      "description": "",
-      "language": "JavaScript",
-      "updated_at": "2026-08-11T05:49:30Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Audora",
-      "github_url": "https://github.com/utkarsh-wadalkar/Audora",
-      "description": "Music downloader on your local device ",
-      "language": "Python",
-      "updated_at": "2026-09-16T14:13:47Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Django_1",
-      "github_url": "https://github.com/utkarsh-wadalkar/Django_1",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-06-30T13:45:13Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "DSA",
-      "github_url": "https://github.com/utkarsh-wadalkar/DSA",
-      "description": "A collection of LeetCode questions",
-      "language": "Python",
-      "updated_at": "2026-07-16T12:20:16Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "FaceChain",
-      "github_url": "https://github.com/utkarsh-wadalkar/FaceChain",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-09-07T21:46:04Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Fake-News-ML",
-      "github_url": "https://github.com/utkarsh-wadalkar/Fake-News-ML",
-      "description": "This is Supervised ML project consisting of Logistic Regression, Decision Tree Classifier,  Random Forest Classifier algo. Made for pattern recognition of fake news. Completed entire implementation, from frontend to backend of this ML project",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-05-20T07:56:00Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Hands-On-PY-Pandas",
-      "github_url": "https://github.com/utkarsh-wadalkar/Hands-On-PY-Pandas",
-      "description": "",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-02-17T14:51:45Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "HTML-CSS",
-      "github_url": "https://github.com/utkarsh-wadalkar/HTML-CSS",
-      "description": "",
-      "language": "HTML",
-      "updated_at": "2025-02-17T14:08:29Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "JavaScript-Assignments",
-      "github_url": "https://github.com/utkarsh-wadalkar/JavaScript-Assignments",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-03-13T13:30:05Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "KaushalVaani",
-      "github_url": "https://github.com/utkarsh-wadalkar/KaushalVaani",
-      "description": "Voice-First Livelihood Intelligence using Knowledge Graphs Multilingual beneficiary profiling -> graph-based skill-gap reasoning -> NSQF-aligned training -> local livelihood pathway",
-      "language": "Python",
-      "updated_at": "2026-09-17T15:48:54Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "ML-Pipeline",
-      "github_url": "https://github.com/utkarsh-wadalkar/ML-Pipeline",
-      "description": "This project covers understanding for creating a MLOps pipeline and working using DVC for experiment tracking and data versioning using AWS S3",
-      "language": "",
-      "updated_at": "2026-07-16T12:28:44Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "MLops-DVC",
-      "github_url": "https://github.com/utkarsh-wadalkar/MLops-DVC",
-      "description": "This repo implements the idea of data versioning using DVC tool",
-      "language": "Python",
-      "updated_at": "2026-07-11T16:49:27Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "MongoTodo",
-      "github_url": "https://github.com/utkarsh-wadalkar/MongoTodo",
-      "description": "Full-stack todo app with React, Node.js, Express, and MongoDB",
-      "language": "CSS",
-      "updated_at": "2026-02-03T23:23:36Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Parkinson-Disease-Prediction",
-      "github_url": "https://github.com/utkarsh-wadalkar/Parkinson-Disease-Prediction",
-      "description": "Machine learning model to predict Parkinson’s disease using biomedical voice features with EDA, preprocessing, and multi-model evaluation.",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-08-15T09:15:46Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "PowerBI",
-      "github_url": "https://github.com/utkarsh-wadalkar/PowerBI",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-03-15T17:45:18Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Sales-Forecasting-using-Machine-Learning",
-      "github_url": "https://github.com/utkarsh-wadalkar/Sales-Forecasting-using-Machine-Learning",
-      "description": "End-to-end ML pipeline for retail sales forecasting with data cleaning, feature engineering, EDA, and advanced model tuning.",
-      "language": "HTML",
-      "updated_at": "2025-08-15T09:09:16Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "SQL",
-      "github_url": "https://github.com/utkarsh-wadalkar/SQL",
-      "description": "",
-      "language": "",
-      "updated_at": "2025-02-17T14:07:25Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "TeachBack",
-      "github_url": "https://github.com/utkarsh-wadalkar/TeachBack",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-09-01T06:42:39Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Youtube-Agent",
-      "github_url": "https://github.com/utkarsh-wadalkar/Youtube-Agent",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-02-09T16:24:12Z",
-      "fork": true
     }
   ],
   "project_sources": {
@@ -4386,7 +4386,7 @@
       "utkarsh-wadalkar"
     ],
     "github_checked_at": {
-      "utkarsh-wadalkar": 1789666929
+      "utkarsh-wadalkar": 1789667693
     }
   }
 }

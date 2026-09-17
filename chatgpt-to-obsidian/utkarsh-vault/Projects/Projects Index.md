@@ -26,7 +26,7 @@ Use this map to retrieve local repositories, public GitHub repositories, durable
 - [[Projects/DSA Project Index|DSA]] — 1 GitHub
 - [[Projects/EchoQuery-RAG-based-STT Project Index|EchoQuery-RAG-based-STT]] — 1 local
 - [[Projects/FaceChain Project Index|FaceChain]] — 1 local, 1 GitHub
-- [[Projects/Fake News ML Project Index|Fake News ML]] — 1 local, 1 GitHub
+- [[Projects/Fake-News-ML Project Index|Fake-News-ML]] — 1 local, 1 GitHub
 - [[Projects/frontend Project Index|frontend]] — 3 local
 - [[Projects/Hands-On-PY-Pandas Project Index|Hands-On-PY-Pandas]] — 1 local, 1 GitHub
 - [[Projects/homepage Project Index|homepage]] — 1 local

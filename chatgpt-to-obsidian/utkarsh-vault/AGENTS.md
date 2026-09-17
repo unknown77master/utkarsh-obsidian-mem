@@ -1,5 +1,9 @@
 # Agent Memory Retrieval Guide
 
+## Canonical vault
+
+This personal-memory vault is located at `D:\ALL Programming\obsidian_mem\chatgpt-to-obsidian\utkarsh-vault`. Start with [[00 - Agent Memory]] whenever a task needs Utkarsh's personal context, projects, preferences, or ChatGPT history.
+
 ## Authority order
 
 1. `Raw/Export/` is the faithful local export mirror and is authoritative for original data.
