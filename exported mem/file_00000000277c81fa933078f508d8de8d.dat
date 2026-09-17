@@ -1,0 +1,59 @@
+# Desktop Music Downloader & Library Manager
+
+This document specifies the project vision, architecture, features, tech
+stack, API, workflow, and roadmap.
+
+## Overview
+
+Build a modern Electron + React desktop application with a Python
+FastAPI backend that wraps an existing Docker-based Apple Music ALAC
+downloader. Hide Docker and terminal interactions behind a polished GUI.
+
+## Tech Stack
+
+-   React + TypeScript + Tailwind CSS + Electron
+-   Python + FastAPI + Docker SDK
+-   SQLite + SQLAlchemy
+-   Electron Builder
+
+## Architecture
+
+User -\> Electron/React -\> FastAPI -\> Docker SDK -\> Wrapper Container
+-\> Downloader Container -\> Downloads
+
+## Features
+
+-   Paste Apple Music URL
+-   One-click download
+-   Queue management
+-   Live progress and logs
+-   Download history
+-   Local music library
+-   Built-in player
+-   Settings
+-   Notifications
+-   Robust error handling
+
+## Backend Modules
+
+app.py, docker_manager.py, download_manager.py, wrapper_manager.py,
+library_manager.py, settings.py, database.py, logger.py, progress.py,
+models.py, schemas.py, utils.py
+
+## API
+
+GET /health GET /docker/status POST /wrapper/start POST /wrapper/stop
+POST /download POST /cancel GET /progress GET /queue GET /history GET
+/library GET /logs GET /settings POST /settings
+
+## Workflow
+
+Paste URL -\> Validate -\> Check Docker -\> Start Wrapper -\> Wait Ready
+-\> Start Downloader -\> Stream Logs/Progress -\> Save History -\>
+Refresh Library -\> Notify User.
+
+## Roadmap
+
+Phase 1: App setup, Docker integration, download. Phase 2: Queue, logs,
+settings, history. Phase 3: Library, player, notifications, installer.
+Phase 4: Cross-platform, auto updates, optimization.

@@ -1,0 +1,359 @@
+# SIH 2026 Software Problems — Full Domain Analysis and Plain-Language Guide
+
+**Source:** User-supplied workbook `SIH_2026_Software_Problems_Grouped(1).xlsx`. The report covers all rows in its `Software_Grouped` sheet.
+
+> **Important:** “Easy,” “Moderate,” “Advanced,” and “Very high” are execution estimates for a capable student software/AI team. They are not official SIH scores. The simplified wording preserves the intent of the official titles but should be checked against the original statement before submission.
+
+## Executive recommendation
+
+Do not choose only because a statement contains “AI.” Choose a problem where the team can demonstrate a complete user workflow, has access to the needed data, can create a fallback when an API fails, and can measure success. For a normal 4–5 person team, the strongest choices are workflow-heavy software in Clean & Green, Smart Automation, Transportation & Logistics, Heritage & Culture, Travel & Tourism, selected Education, Agriculture, and selected Miscellaneous statements.
+
+A problem is marked **Eliminate for now** when a convincing solution would require research-grade models, specialized scientific data, defense/security expertise, clinical validation, hardware/field trials, autonomous control, cryptography, quantum computing, or operational safety guarantees. That does not mean the problem is impossible; it means it is a poor default choice without specialist capability.
+
+## 1. Decision categories
+
+| Decision | Meaning | What to build if selected |
+|---|---|---|
+| Shortlist / workable | Best candidates for a complete prototype | End-to-end product, one bounded AI feature, seeded/public data, measurable demo. |
+| Keep with domain caveat | Workable workflow, sensitive claims | Decision-support or management tool; show limitations and expert review. |
+| Specialist / bounded prototype | Possible with specialist team | Simulator, offline analyzer, dashboard, or research proof of concept. |
+| Eliminate for now | High delivery and credibility risk | Do not select unless your team already has the required expertise, data, and infrastructure. |
+
+## 2. Overall distribution
+
+The workbook contains **172 software problem statements** across **18 domains**.
+
+| Difficulty | Count | Decision implication |
+|---|---:|---|
+| Easy | 91 | Usually workable |
+| Moderate | 17 | Usually workable |
+| Advanced | 24 | Needs specialist scope |
+| Very high | 40 | Eliminate by default |
+
+## 3. Domain-level analysis
+
+| Domain | Count | Easy | Moderate | Advanced | Very high | Practical judgement |
+|---|---:|---:|---:|---:|---:|---|
+| Agriculture, FoodTech & Rural Development | 8 | 5 | 3 | 0 | 0 | Good with narrowed scope and available data. |
+| Blockchain & Cybersecurity | 20 | 0 | 0 | 0 | 20 | High caution; select only with domain specialist/data. |
+| Clean & Green Technology | 2 | 2 | 0 | 0 | 0 | Prioritize; strong software workflow fit. |
+| Disaster Management | 24 | 0 | 0 | 16 | 8 | High caution; select only with domain specialist/data. |
+| Fitness & Sports | 5 | 4 | 0 | 0 | 1 | Good with narrowed scope and available data. |
+| Heritage & Culture | 3 | 3 | 0 | 0 | 0 | Prioritize; strong software workflow fit. |
+| MedTech / BioTech / HealthTech | 9 | 5 | 0 | 3 | 1 | High caution; select only with domain specialist/data. |
+| Miscellaneous | 32 | 24 | 6 | 1 | 1 | Good with narrowed scope and available data. |
+| Renewable / Sustainable Energy | 2 | 2 | 0 | 0 | 0 | Good with narrowed scope and available data. |
+| Robotics and Drones | 7 | 0 | 0 | 4 | 3 | High caution; select only with domain specialist/data. |
+| Smart Automation | 24 | 22 | 2 | 0 | 0 | Prioritize; strong software workflow fit. |
+| Smart Education | 11 | 6 | 2 | 0 | 3 | Good with narrowed scope and available data. |
+| Smart Resource Conservation | 2 | 2 | 0 | 0 | 0 | Prioritize; strong software workflow fit. |
+| Smart Vehicles | 2 | 0 | 1 | 0 | 1 | High caution; select only with domain specialist/data. |
+| Space Technology | 9 | 6 | 1 | 0 | 2 | High caution; select only with domain specialist/data. |
+| Toys & Games | 2 | 2 | 0 | 0 | 0 | Prioritize; strong software workflow fit. |
+| Transportation & Logistics | 7 | 6 | 1 | 0 | 0 | Prioritize; strong software workflow fit. |
+| Travel & Tourism | 3 | 2 | 1 | 0 | 0 | Prioritize; strong software workflow fit. |
+
+## 4. Domains eliminated by default
+
+| Domain/risk family | Why eliminate by default | Acceptable exception |
+|---|---|---|
+| Cybersecurity/cryptography/dark web | Requires attacker models, secure engineering, adversarial testing, forensic validity, and specialist data. | Narrow offline log analyzer or compliance checklist with a security mentor. |
+| Medical diagnosis/mental-health prediction | Requires clinical validation, privacy, bias controls, and safety review. | Non-diagnostic workflow, education, or referral assistant. |
+| Weather/disaster prediction | Requires calibrated scientific models, multi-source data, false-alarm handling, and operational validation. | Visualization, alert explanation, or simulator. |
+| Satellite/ocean/space science | Requires remote-sensing data, scientific modelling, and validation. | Image exploration/search/segmentation proof of concept. |
+| Autonomous robotics/vehicles/drones | Requires sensors, simulation, real-time control, safety, and field testing. | Planning simulator or offline route optimization. |
+| Quantum/quantum-inspired claims | Requires algorithmic expertise and classical baselines; advantage claims are difficult to prove. | Educational simulator or classical-vs-quantum comparison. |
+| Defense/electronic warfare | Requires restricted/specialized data, domain knowledge, and safety/security controls. | Do not select without authorized expert support. |
+
+## 5. Remaining problem statements: plain-language translations
+
+The tables below contain every software row that is not classified “Eliminate for now.” The **Official title** is preserved, and the **Simple meaning** explains it in plain language without intentionally adding requirements.
+
+### Agriculture, FoodTech & Rural Development
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26017 | Easy | Shortlist / workable | Predictive Analytics System for Early Detection of Land Acquisition Delays | A predictive analytics system to provide early detection of potential delays in land acquisition. | AI can assist; build workflow first. |
+| SIH26034 | Easy | Shortlist / workable | Software System to check compliance of Packaged Commodities under Legal Metrology(Packaged Commodities) Rules, 2011 by scanning products, images and labels. | A software system to verify whether packaged commodities comply with the Legal Metrology (Packaged Commodities) Rules, 2011 by scanning products, images, and labels. | Use AI only where data and evaluation are available. |
+| SIH26051 | Moderate | Shortlist / workable | Software Based Model Development for Design of Area Specific Shelter for Thermal Comfort Maintenance. | Create a software-based model to design area-specific shelters that maintain thermal comfort. | AI can assist; build workflow first. |
+| SIH26111 | Easy | Shortlist / workable | Smart Al-Enabled Rapid Feed and Silage Quality Testing System for Dairy Farmers | Smart AI-enabled rapid system to test feed and silage quality for dairy farmers. | AI can assist; build workflow first. |
+| SIH26128 | Moderate | Shortlist / workable | Efficient systems for early detection,prevention,and management of livestock diseases and animal health issues | Efficient systems that enable early detection, prevention, and management of livestock diseases and other animal health issues. | AI can assist; build workflow first. |
+| SIH26131 | Moderate | Shortlist / workable | Early detection and management of crop diseases and pest infestations | Early detection and management of diseases and pest infestations in crops. | AI can assist; build workflow first. |
+| SIH26132 | Easy | Shortlist / workable | Strengthening market linkages and price discovery for farmers | Improve farmers' market connections and their ability to discover market prices. | Use AI only where data and evaluation are available. |
+| SIH26197 | Easy | Shortlist / workable | Student Innovation | Innovation created by students. | Use AI only where data and evaluation are available. |
+### Clean & Green Technology
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26038 | Easy | Shortlist / workable | Explainable AI for Diabetic Retinopathy Screening in Rural India | Explainable AI to support screening for diabetic retinopathy in rural India. | AI can assist; build workflow first. |
+| SIH26055 | Easy | Shortlist / workable | Smart Scan strategy for Electronic Warfare | Develop a smart scanning strategy for electronic warfare. | Use AI only where data and evaluation are available. |
+### Disaster Management
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26001 | Advanced | Specialist / bounded prototype | AI-Based early warning and landslide Risk Monitoring System in NER | An AI-based system for early warning and monitoring of landslide risk in the NER. | AI can assist; build workflow first. |
+| SIH26013 | Advanced | Specialist / bounded prototype | Automated lntegration and lntelligent Harmonization of Multi-source Geospatial Data for urban Land Record Management. | Automatically combine and intelligently reconcile geospatial data from multiple sources for urban land record management. | Use AI only where data and evaluation are available. |
+| SIH26015 | Advanced | Specialist / bounded prototype | Application of Geospatial Techniques for visualization and analysis to interpret Geo-Coded lmages to enhance watershed Development Outcomes. | Apply geospatial visualization and analysis to interpret geo‑coded images to help improve watershed development outcomes. | Use AI only where data and evaluation are available. |
+| SIH26028 | Advanced | Specialist / bounded prototype | Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains | Dynamically predict coaching trains' expected time of arrival (ETA). | AI can assist; build workflow first. |
+| SIH26043 | Advanced | Specialist / bounded prototype | A digital platform to crowdsource societal challenges and facilitate collaborative problem solving through universities and industry partnerships | A digital platform that crowdsources societal challenges and facilitates collaborative problem solving through partnerships between universities and industry. | Use AI only where data and evaluation are available. |
+| SIH26060 | Advanced | Specialist / bounded prototype | Digital Platform for efficient remote management of Indian Antarctic Research Stations | Digital platform to enable efficient remote management of India's Antarctic research stations. | Use AI only where data and evaluation are available. |
+| SIH26068 | Advanced | Specialist / bounded prototype | WeatherGPT: Conversational AI for Weather Forecasting, Alerts, and Climate Information | WeatherGPT: a conversational AI that provides weather forecasts, alerts, and climate information. | AI can assist; build workflow first. |
+| SIH26069 | Advanced | Specialist / bounded prototype | National Weather Big Data Analytics Platform | A national-scale platform for big-data analytics of weather data. | Use AI only where data and evaluation are available. |
+| SIH26073 | Advanced | Specialist / bounded prototype | AI/ML-Based Intelligent Anomaly Detection for Automatic Weather Stations (AWS) | Detect anomalies in Automatic Weather Station (AWS) data using AI/ML. | AI can assist; build workflow first. |
+| SIH26074 | Advanced | Specialist / bounded prototype | Downscaling of weather forecast from Block level to Panchayat level: Inferring high-resolution plots/ data/ information from low-resolution plot /data /information /variables for agro-meteorological advisory services. | Downscale weather forecasts from Block-level to Panchayat-level by inferring high-resolution plots, data, information, or variables from low-resolution inputs for agro-meteorological advisory services. | AI can assist; build workflow first. |
+| SIH26078 | Advanced | Specialist / bounded prototype | AI-Driven Spatio-Temporal Tracking of Extreme Weather Anomalies in Medium-Range Forecasts | Apply AI to track where and when extreme weather anomalies occur in medium-range forecasts. | AI can assist; build workflow first. |
+| SIH26079 | Advanced | Specialist / bounded prototype | AI-Based Forecast Bust Detection for Medium-Range Weather Forecasts | Use AI to detect forecast busts in medium-range weather predictions. | AI can assist; build workflow first. |
+| SIH26080 | Advanced | Specialist / bounded prototype | Regime-Aware AI Post-Processing of Monsoon Rainfall Forecasts | Use AI to post-process monsoon rainfall forecasts so they account for different weather regimes. | AI can assist; build workflow first. |
+| SIH26083 | Advanced | Specialist / bounded prototype | Extreme Heatwave Early Warning and Human Thermal Stress Index | An early-warning system for extreme heatwaves and a human thermal-stress index | Use AI only where data and evaluation are available. |
+| SIH26191 | Advanced | Specialist / bounded prototype | Intelligent Identification of Hazard-Based Red Zones, Carrying Capacity Assessment, and Immediate Relocation Needs for Vulnerable Habitations | Intelligent identification of hazard-based red zones, assessment of carrying capacity, and determination of immediate relocation needs for vulnerable habitations. | AI can assist; build workflow first. |
+| SIH26206 | Advanced | Specialist / bounded prototype | Student Innovation | Projects developed by students that focus on innovation. | Use AI only where data and evaluation are available. |
+### Fitness & Sports
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26031 | Easy | Shortlist / workable | Quality assessment and grading of onions are often subjective and vary across procurement centers, resulting in disputes and inconsistencies. | Onion quality grading is often subjective and varies between procurement centers, leading to disputes and inconsistent outcomes. | AI can assist; build workflow first. |
+| SIH26124 | Easy | Shortlist / workable | AI-Powered Mobile Urban Intelligence Platform Using Public Transport Fleet | An AI-powered mobile platform that delivers urban intelligence by using the public transport fleet. | AI can assist; build workflow first. |
+| SIH26194 | Easy | Shortlist / workable | Student Innovation | New ideas and projects developed by students. | Use AI only where data and evaluation are available. |
+| SIH26199 | Easy | Shortlist / workable | Student Innovation | Innovations created by students or designed for student use. | Use AI only where data and evaluation are available. |
+### Heritage & Culture
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26032 | Easy | Shortlist / workable | Farmers often face long waiting times, lack of information regarding procurement schedules, and uncertainty about procurement status. | Farmers often face long waiting times, limited information about procurement schedules, and uncertainty about procurement status. | AI can assist; build workflow first. |
+| SIH26195 | Easy | Shortlist / workable | Student Innovation | New ideas, projects, or solutions proposed or created by students. | Use AI only where data and evaluation are available. |
+| SIH26208 | Easy | Shortlist / workable | Student Innovation | Innovative projects, ideas, or solutions developed primarily by students. | Use AI only where data and evaluation are available. |
+### MedTech / BioTech / HealthTech
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26018 | Easy | Keep with domain caveat | Intelligent Land Record Digitization and Validation System | An intelligent system that digitizes land records and validates their correctness. | AI can assist; build workflow first. |
+| SIH26033 | Easy | Keep with domain caveat | Multiple intermediaries reduce farmers earnings and increase consumer prices. | Multiple intermediaries can reduce farmers' earnings while increasing consumer prices. | Use AI only where data and evaluation are available. |
+| SIH26094 | Advanced | Specialist / bounded prototype | AI-Powered Dynamic Mental Health Monitoring and Distress Prediction System for Victims of Atrocities | AI-powered system for continuous mental-health monitoring and prediction of distress risk in victims of atrocities. | AI can assist; build workflow first. |
+| SIH26115 | Advanced | Specialist / bounded prototype | Design and Develop a Smart Mobile Medical-Waste Collection and Segregation System | Design and develop a smart, mobile system to collect and segregate medical waste. | Use AI only where data and evaluation are available. |
+| SIH26133 | Easy | Keep with domain caveat | Accessibility and quality of public healthcare services,particularly in rural and underserved areas | Access to and quality of public healthcare services, particularly in rural and underserved areas. | AI can assist; build workflow first. |
+| SIH26186 | Advanced | Specialist / bounded prototype | AI-Based Predictive Personnel Stress and Welfare Monitoring System for Uniformed Forces | An AI-based predictive system to monitor personnel stress and welfare in uniformed forces. | AI can assist; build workflow first. |
+| SIH26196 | Easy | Keep with domain caveat | Student Innovation | Innovations created by students. | Use AI only where data and evaluation are available. |
+| SIH26200 | Easy | Keep with domain caveat | Student Innovation | Projects and ideas created by students that demonstrate innovation. | Use AI only where data and evaluation are available. |
+### Miscellaneous
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26016 | Moderate | Shortlist / workable | Real-Time National Land Acquisition & Management System for End-to-End Digital Monitoring and Decision Support | A real-time national system for land acquisition and management that provides end-to-end digital monitoring and decision support. | Use AI only where data and evaluation are available. |
+| SIH26023 | Advanced | Specialist / bounded prototype | AI-Powered Geological, Mining and other Reporting Solution for CMPDI/CIL subsidiaries | An AI-powered reporting solution for geological, mining, and other reporting needs of CMPDI and its CIL subsidiaries. | AI can assist; build workflow first. |
+| SIH26044 | Easy | Shortlist / workable | Portal for Academia - Industry collaboration for Skill Mapping, Internships and Placement | A portal for academia–industry collaboration to map skills and support internships and placements. | Use AI only where data and evaluation are available. |
+| SIH26061 | Easy | Shortlist / workable | AI-Driven Smart Energy Management System for Polar Research Stations | An AI-based system to manage energy use at polar research stations. | AI can assist; build workflow first. |
+| SIH26076 | Easy | Shortlist / workable | Development of personalized homepage for 'Mausam' mobile application: | Develop a personalized homepage for the "Mausam" mobile application. | AI can assist; build workflow first. |
+| SIH26081 | Moderate | Shortlist / workable | Hybrid AINWP Multi-Model Forecast Blending System | A hybrid system that blends forecasts from multiple models using AI-assisted numerical weather prediction (AI‑NWP). | AI can assist; build workflow first. |
+| SIH26086 | Moderate | Shortlist / workable | Hyperlocal Monsoon Onset & Break Prediction System (Block/Village Scale) | A system to predict monsoon onset and break periods at the hyperlocal (block and village) scale. | AI can assist; build workflow first. |
+| SIH26090 | Easy | Shortlist / workable | AI-Driven Market Linkage and Smart Cataloging Mobile Application for Marginalized Artisans | A mobile app using AI to connect marginalized artisans with markets and provide intelligent product cataloging. | AI can assist; build workflow first. |
+| SIH26091 | Easy | Shortlist / workable | AI-Driven Hyper-Local Business Advisory and Financial Structuring Assistant for Rural Micro-Entrepreneurs | An AI-powered, hyper-local assistant offering business advisory and financial-structuring guidance for rural micro-entrepreneurs. | AI can assist; build workflow first. |
+| SIH26092 | Easy | Shortlist / workable | AI-Driven Scheme Matching for Marginalized Entrepreneurs | AI-driven matching of relevant support schemes and programs to marginalized entrepreneurs. | AI can assist; build workflow first. |
+| SIH26095 | Moderate | Shortlist / workable | Smart Real-Time Monitoring & Inspection Mobile App | A mobile app enabling smart, real-time monitoring and inspection. | Use AI only where data and evaluation are available. |
+| SIH26102 | Easy | Shortlist / workable | Development of an AI-powered system to detect anomalies, fraud, and inefficiencies in MPLAD Scheme implementation regd. | Develop an AI-powered system to detect anomalies, fraud, and inefficiencies in the implementation of the MPLAD (Members of Parliament Local Area Development) Scheme. | AI can assist; build workflow first. |
+| SIH26104 | Moderate | Shortlist / workable | AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Attacks | AI-powered, real-time detection and prevention of attacks that use cloned voices to impersonate someone. | AI can assist; build workflow first. |
+| SIH26119 | Easy | Shortlist / workable | Indigenous GPU-Accelerated Optimization Solver (Sovereign Alternative to Express / CEPLEX) | Develop an indigenous, GPU-accelerated optimization solver as a sovereign alternative to Express/CPLEX. | AI can assist; build workflow first. |
+| SIH26134 | Easy | Shortlist / workable | Challenges in aligning skill development programs with industry requirements and emerging job market demands | Difficulties aligning skill development programs with industry requirements and emerging job-market demands. | Use AI only where data and evaluation are available. |
+| SIH26147 | Easy | Shortlist / workable | Automated model for analysis of .IQ and .wav files along with signal parameter extraction | Automated model for analyzing .IQ and .wav files and extracting signal parameters. | Use AI only where data and evaluation are available. |
+| SIH26152 | Easy | Shortlist / workable | Social Media Analytics | Analyze user behavior, content, and trends on social media platforms. | Use AI only where data and evaluation are available. |
+| SIH26156 | Easy | Shortlist / workable | Universal Log Pre-processing Framework | A general-purpose framework for pre-processing log data across different systems and formats. | Use AI only where data and evaluation are available. |
+| SIH26157 | Easy | Shortlist / workable | Supervisory Analytics Tool for SOC Assessment (SAT-SA) | A tool that provides supervisory analytics for SOC assessment (SAT-SA). | Use AI only where data and evaluation are available. |
+| SIH26163 | Easy | Shortlist / workable | Security Assessment of the World Monitor application | Assess the security of the World Monitor application. | Use AI only where data and evaluation are available. |
+| SIH26165 | Easy | Shortlist / workable | AI/NLP Engine to Detect Serious Injury & Fatality (SIF) Precursors in OIL's Unsafe-Act/Unsafe-Condition and Near-Miss Reports | Build an AI/NLP system that detects serious injury and fatality (SIF) precursors in OIL's unsafe-act/unsafe-condition and near-miss reports. | AI can assist; build workflow first. |
+| SIH26168 | Easy | Shortlist / workable | AI-ML based Intelligent Dead Reckoning system for seamless navigation | A dead-reckoning system that uses AI and machine learning to provide seamless navigation. | AI can assist; build workflow first. |
+| SIH26169 | Easy | Shortlist / workable | Development of an AI-Based Virtual Camera Tracking System for Coarse Alignment of Mobile Free Space Optical Communication (FSOC) Terminals | Develop an AI-based virtual camera tracking system to provide coarse alignment of mobile free-space optical communication (FSOC) terminals. | AI can assist; build workflow first. |
+| SIH26171 | Easy | Shortlist / workable | On-device Visual Perception for Light-weight Browser Agents | Enable lightweight browser agents to perform visual perception directly on the user's device. | Use AI only where data and evaluation are available. |
+| SIH26173 | Easy | Shortlist / workable | iTantra -Indian Multilingual TTS & STT Aided Neural Transceiver Radio Access for low bitrate links | iTantra: an Indian multilingual system using speech-to-text and text-to-speech to assist a neural transceiver providing radio access over low-bitrate links. | AI can assist; build workflow first. |
+| SIH26174 | Easy | Shortlist / workable | AI Human Activity Recognition for On-board BAS Experiments | Use AI to recognize human activities during on-board BAS experiments. | AI can assist; build workflow first. |
+| SIH26175 | Easy | Shortlist / workable | DepthWizard - Single-View Height Estimation and 3D Flythrough | DepthWizard: estimate heights from a single image and generate a 3D flythrough visualization. | Use AI only where data and evaluation are available. |
+| SIH26176 | Easy | Shortlist / workable | ORCA Marine EcOsystem Reasoning with Collaborative Agents | ORCA: collaborative agents for reasoning about marine ecosystems. | Use AI only where data and evaluation are available. |
+| SIH26188 | Easy | Shortlist / workable | Al-Based Fake Identity & Document Screening System | AI-based system for screening identities and documents to flag potential fakes or forgeries. | Use AI only where data and evaluation are available. |
+| SIH26190 | Moderate | Shortlist / workable | Secure Digital Document Management System for Legal and Investigation Documents | A secure digital document management system for legal and investigation documents. | Use AI only where data and evaluation are available. |
+| SIH26204 | Easy | Shortlist / workable | Student Innovation | Innovative ideas or projects developed and led by students. | Use AI only where data and evaluation are available. |
+### Renewable / Sustainable Energy
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26057 | Easy | Shortlist / workable | AI-Powered Automated Underwater Marine Debris and Anomaly Detection System using Side-Scan Sonar Imagery | AI-based automated system for detecting marine debris and underwater anomalies using side-scan sonar imagery. | AI can assist; build workflow first. |
+| SIH26203 | Easy | Shortlist / workable | Student Innovation | Innovative ideas and projects developed by students. | AI can assist; build workflow first. |
+### Robotics and Drones
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26012 | Advanced | Specialist / bounded prototype | AI-Based Automated Urban Parcel Mapping and Cadastral Feature Extraction System using Drone lmagery | AI-based automated system that maps urban parcels and extracts cadastral features from drone imagery. | AI can assist; build workflow first. |
+| SIH26014 | Advanced | Specialist / bounded prototype | An lntegrated GIS-based Digital Public lnfrastructure for Land Governance | A unified GIS-based digital public infrastructure to support land governance. | Use AI only where data and evaluation are available. |
+| SIH26054 | Advanced | Specialist / bounded prototype | AI-Enabled Real-Time Digital Twin System for Health Monitoring, Fault Prediction and Mission Reliability Enhancement of Aero Piston Engines used in MALE UAVs. | AI-enabled, real-time digital twin system for health monitoring, fault prediction, and mission reliability enhancement of aero piston engines used in medium-altitude, long-endurance (MALE) UAVs. | AI can assist; build workflow first. |
+| SIH26158 | Advanced | Specialist / bounded prototype | Single-Pass Drone Video to Accurate 3D Model Generation System | A system that converts a single-pass drone video into an accurate 3D model. | Use AI only where data and evaluation are available. |
+### Smart Automation
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26002 | Easy | Shortlist / workable | Al-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER) | AI-based platform for smart logistics and accessibility intelligence across the North Eastern Region (NER). | Use AI only where data and evaluation are available. |
+| SIH26009 | Easy | Shortlist / workable | Using AI/ML and Space Technology to Identify Manganese Reserves and Overcome Production Shortfalls. | Use AI/ML and space technology to identify manganese reserves and help address production shortfalls. | AI can assist; build workflow first. |
+| SIH26021 | Easy | Shortlist / workable | Honey Chain: A block chain-based system for honey traceability and smart beekeeping management. | Honey Chain: a blockchain-based system to trace honey and support smart beekeeping management. | AI can assist; build workflow first. |
+| SIH26024 | Easy | Shortlist / workable | AI-Based Smart Governance and Compliance Monitoring System for Coal Mines | An AI-based system for smart governance and compliance monitoring in coal mines. | AI can assist; build workflow first. |
+| SIH26047 | Easy | Shortlist / workable | Patient Case-Taking Software | Software that supports taking and recording patient case information during clinical encounters. | Use AI only where data and evaluation are available. |
+| SIH26067 | Easy | Shortlist / workable | Develop a web-based interactive 3D visualization platform that integrates numerical ocean model outputs and in-situ observations. | Create a web-based, interactive 3D visualization platform that integrates numerical ocean model outputs with in‑situ observations. | Use AI only where data and evaluation are available. |
+| SIH26089 | Easy | Shortlist / workable | Cooperative Gig Services Platform for Household & Community Services | Develop a cooperative gig-services platform that connects people offering and requesting household and community services. | Use AI only where data and evaluation are available. |
+| SIH26093 | Moderate | Shortlist / workable | AI-Based Real-Time Stress and Trauma Assessment Module for Victims/Complainants Accessing NHAA (14566) and Integrated Portal | A real-time AI module to assess stress and trauma in victims or complainants using NHAA (14566) and its integrated portal. | AI can assist; build workflow first. |
+| SIH26099 | Easy | Shortlist / workable | AI-Driven Standardization and Harmonization of Material Codes Across CPSEs | Use AI to standardize and harmonize material codes used across Central Public Sector Enterprises (CPSEs). | AI can assist; build workflow first. |
+| SIH26100 | Easy | Shortlist / workable | AI-Powered Integrated Bid Compliance Verification Platform for GeM Procurement | An AI-powered integrated platform that checks whether bids submitted on GeM meet procurement compliance requirements. | AI can assist; build workflow first. |
+| SIH26103 | Easy | Shortlist / workable | Use case on web-based integrated project-monitoring platform | Define a use case for a web-based, integrated project-monitoring platform. | Use AI only where data and evaluation are available. |
+| SIH26107 | Easy | Shortlist / workable | Al-powered Intelligent Assistant for Indian Standards and BIS Services for Industries and Consumers | AI-powered intelligent assistant for Indian Standards and BIS (Bureau of Indian Standards) services for industries and consumers. | AI can assist; build workflow first. |
+| SIH26108 | Easy | Shortlist / workable | AI-Powered Recommendation Engine for Identifying Applicable Indian Standards for Procurement Specifications | Build an AI-powered recommendation engine that identifies which Indian standards apply to given procurement specifications. | AI can assist; build workflow first. |
+| SIH26114 | Easy | Shortlist / workable | Smart City Site Planning using Autodesk Forma Site Design | Site planning for smart cities using Autodesk Forma Site Design. | Use AI only where data and evaluation are available. |
+| SIH26117 | Easy | Shortlist / workable | Sovereign On-Premise Agentic AI Workbench using Open-Weight Multimodal LLMs for Confidential Industrial Work | Sovereign on-premise workbench that runs agentic workflows using open-weight multimodal LLMs for confidential industrial work. | AI can assist; build workflow first. |
+| SIH26120 | Easy | Shortlist / workable | Digital Twin for Well-to-Surface Optimization of Cyclic Steam Stimulation (CSS) and Sucker Rod Pump (SRP) Operations for Heavy Oil Wells of Baghewala Field. | A digital twin to optimize well-to-surface operations of cyclic steam stimulation (CSS) and sucker rod pumps (SRP) for heavy oil wells in the Baghewala Field. | AI can assist; build workflow first. |
+| SIH26121 | Easy | Shortlist / workable | eRTMAC-NWIS (Nearby Wells Intelligence System): An AI-Powered Offset Well Knowledge and Decision Support Platform for Drilling Operations | eRTMAC-NWIS (Nearby Wells Intelligence System) is an AI-powered platform that provides knowledge about offset wells and decision support for drilling operations. | AI can assist; build workflow first. |
+| SIH26122 | Moderate | Shortlist / workable | Intelligent Data Capture & Schedule-Linking Layer for Infrastructure Project Management: Real-Time Actual Progress Tracking (Planning-to-Execution Bridge) | An intelligent data-capture and schedule-linking layer for infrastructure project management that provides real-time tracking of actual progress, bridging planning and execution. | AI can assist; build workflow first. |
+| SIH26129 | Easy | Shortlist / workable | System integration and interoperability among government digital platforms,resulting in fragmented service delivery | Insufficient integration and interoperability among government digital platforms lead to fragmented service delivery. | Use AI only where data and evaluation are available. |
+| SIH26130 | Easy | Shortlist / workable | Efficiency in streamlining industrial approvals,compliance processes,and access to government support services | Making industrial approvals, compliance processes, and access to government support services more efficient. | AI can assist; build workflow first. |
+| SIH26136 | Easy | Shortlist / workable | Startup friendly public procurement mechanism that enables government departments to identify,pilot, procure,and scale innovative solutions from eligible startups | A startup-friendly public procurement mechanism that enables government departments to identify, pilot, procure, and scale innovative solutions from eligible startups. | Use AI only where data and evaluation are available. |
+| SIH26154 | Easy | Shortlist / workable | Gen AI Platform for Automated Content Transformation | A generative AI platform that automatically transforms content. | AI can assist; build workflow first. |
+| SIH26170 | Easy | Shortlist / workable | AI-Driven Anomaly Detection in Component Burn-In & Screening | Use artificial intelligence to detect anomalies during component burn-in and screening. | AI can assist; build workflow first. |
+| SIH26187 | Easy | Shortlist / workable | AI-Based Intelligent Video Analytics Platform for Border Surveillance using existing CCTV Infrastructure. | AI-based intelligent video analytics platform for border surveillance that uses existing CCTV infrastructure. | AI can assist; build workflow first. |
+### Smart Education
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26042 | Moderate | Shortlist / workable | Al-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education | AI-powered local-language teaching methods and a real-time translation tool for mother-tongue-based primary education. | Use AI only where data and evaluation are available. |
+| SIH26059 | Moderate | Shortlist / workable | AI-Enabled Antarctic Sea-Ice, Iceberg Trajectory, and Navigation Decision Support System | AI-enabled decision-support system for Antarctic sea-ice conditions, iceberg trajectories, and navigation decisions. | AI can assist; build workflow first. |
+| SIH26075 | Easy | Shortlist / workable | Participants are invited to design and develop **CAPACITY CONNECT A Digital Capacity Building and Learning Management Portal** to support organizational training, competency development, and knowledge sharing through a centralized web-based platform. | Participants are invited to design and develop CAPACITY CONNECT, a digital capacity-building and learning-management web portal to support organizational training, competency development, and knowledge sharing. | AI can assist; build workflow first. |
+| SIH26097 | Easy | Shortlist / workable | AI-Driven voice Assistant for livelihood Mapping and NSQF-Aligned Skilling Recommendations for SC Communities under GIA component of PM-AJAY | AI-powered voice assistant to map livelihoods and provide NSQF-aligned skilling recommendations for Scheduled Caste communities under the GIA component of PM-AJAY. | AI can assist; build workflow first. |
+| SIH26101 | Easy | Shortlist / workable | Develop an AI enabled learning platform that identifies competency gaps, recommends personalized training through integration with the iGOT Karmayogi ecosystem, and capable of generating Quizzes and Multiple choice questions (MCQs) from uploaded learning materials to strengthen capacity building in India's Official Statistical System. | Build an AI-enabled learning platform that identifies competency gaps, recommends personalized training integrated with the iGOT Karmayogi ecosystem, and generates quizzes and MCQs from uploaded materials to strengthen capacity in India's Official Statistical System. | AI can assist; build workflow first. |
+| SIH26116 | Easy | Shortlist / workable | Urban Mixed-Use Design Challenge-Design a centrally located mixed-use building in Autodesk Revit with commercial spaces (Ground + 1st floor) and residential units (up to 8 floors). 1 Level of Basement (Car Parking + EV Charging), Total (B+G+9)(Note: Plot size and all required dimensions may be assumed by students (in mm units). | Design a centrally located mixed-use building in Autodesk Revit: commercial on ground + 1st floors, up to 8 residential floors above, one basement for car parking and EV charging, total B+G+9; assume plot size and dimensions in mm. | Use AI only where data and evaluation are available. |
+| SIH26135 | Easy | Shortlist / workable | Difficulties in tracking employment outcomes,skill gaps, and the impact of skilling initiatives | Challenges in tracking employment outcomes, identifying skill gaps, and measuring the impact of skilling initiatives. | Use AI only where data and evaluation are available. |
+| SIH26205 | Easy | Shortlist / workable | Student Innovation | Innovative ideas, projects, or solutions developed by students. | Use AI only where data and evaluation are available. |
+### Smart Resource Conservation
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26193 | Easy | Shortlist / workable | Student Innovation | Innovations created by students. | Use AI only where data and evaluation are available. |
+| SIH26201 | Easy | Shortlist / workable | Student Innovation | Innovation developed by a student or a group of students. | Use AI only where data and evaluation are available. |
+### Smart Vehicles
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26035 | Moderate | Keep with domain caveat | Development of a Software Program/Application for Generation of Test Reports for Non-Automatic Weighing Instruments (NAWI) as per OIML Recommendation R- 76 | Develop a software application to generate test reports for Non-Automatic Weighing Instruments (NAWI) according to OIML Recommendation R-76. | AI can assist; build workflow first. |
+### Space Technology
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26003 | Easy | Keep with domain caveat | AI-Based Cognitive Gaming and Memory Assistance Platform for Elderly Dementia Patients in North Eastern Region (NER) | An AI-based platform that offers cognitive games and memory support for elderly people with dementia in the North Eastern Region (NER). | AI can assist; build workflow first. |
+| SIH26011 | Easy | Keep with domain caveat | 3D ULPIN Generation and vertical Property Mapping SYstem | A system that generates 3D ULPINs and maps vertical (multi‑storey) properties. | Use AI only where data and evaluation are available. |
+| SIH26046 | Moderate | Keep with domain caveat | AIIA Clinical Trials Dashboard - a real-time, cloud-based, GCP-compliant Clinical Trial Management System (CTMS) for Ayurveda research, with CDISC/FHIR-interoperable data, role-based KPIs, and integrated ethics, regulatory (CTRI / NDCT Rules 2019) and pharmacovigilance tracking. | AIIA Clinical Trials Dashboard — a real-time, cloud-based CTMS for Ayurveda research that is GCP-compliant, CDISC/FHIR-interoperable, provides role-based KPIs, and integrates ethics, regulatory (CTRI/NDCT Rules 2019), and pharmacovigilance tracking. | AI can assist; build workflow first. |
+| SIH26063 | Easy | Keep with domain caveat | Integrated Polar Science Outreach, Knowledge Repository and Media Dissemination Portal | An integrated portal for polar science that supports outreach, serves as a knowledge repository, and enables media dissemination. | Use AI only where data and evaluation are available. |
+| SIH26166 | Easy | Keep with domain caveat | Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS) | Find image correspondences across multiple Chandrayaan-2 optical sensors (OHRC, TMC, IIRS) that are invariant to sun angle and scale. | Use AI only where data and evaluation are available. |
+| SIH26167 | Easy | Keep with domain caveat | SatQuery AI - An Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis through Text Queries | SatQuery AI — an interactive vision-language assistant that analyzes multimodal remote-sensing images in response to text queries. | AI can assist; build workflow first. |
+| SIH26209 | Easy | Keep with domain caveat | Student Innovation | Student innovation refers to original ideas, projects, or methods developed by students to create new or improved solutions. | Use AI only where data and evaluation are available. |
+### Toys & Games
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26045 | Easy | Shortlist / workable | IP-SAKTI Sahayak a multilingual, RAG-based (source-cited) AI assistant for Intellectual Property and regulatory guidance in Ayurveda, across national and international regimes. | IP-SAKTI Sahayak is a multilingual, RAG-based (source-cited) AI assistant offering intellectual property and regulatory guidance for Ayurveda across national and international regimes. | AI can assist; build workflow first. |
+| SIH26062 | Easy | Shortlist / workable | Integrated Polar Expedition Logistics and Asset Management System | An integrated system for coordinating logistics and managing assets during polar expeditions. | Use AI only where data and evaluation are available. |
+### Transportation & Logistics
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26006 | Moderate | Shortlist / workable | Development of an Intelligent Freight Forecasting Model for Optimized Vessel Chartering and Bulk Cargo Procurement from overseas to East Coast of India | Develop an intelligent freight-forecasting model to optimize vessel chartering and bulk cargo procurement for shipments from overseas to India’s East Coast. | AI can assist; build workflow first. |
+| SIH26027 | Easy | Shortlist / workable | Al-Powered Automatic Block Planning to Maximize Asset Availability for Train Operations on Indian Railways | AI-powered automatic block planning to maximize asset availability for train operations on Indian Railways. | AI can assist; build workflow first. |
+| SIH26036 | Easy | Shortlist / workable | Development of an Online Verification System for Weighing and Measuring Instruments | Develop an online system to verify weighing and measuring instruments. | Use AI only where data and evaluation are available. |
+| SIH26053 | Easy | Shortlist / workable | Adaptive Variable Resolution 2.5D Lidar Mapping for Dynamic Environment Perception | Adaptive, variable-resolution 2.5D LiDAR mapping for perceiving dynamic environments. | Use AI only where data and evaluation are available. |
+| SIH26127 | Easy | Shortlist / workable | City-Wide AI Engine for Multi-Camera ANPR Trajectory Tracking and Urban Traffic Analytics | A city-wide AI engine that uses multiple cameras and Automatic Number Plate Recognition (ANPR) for vehicle trajectory tracking and urban traffic analytics. | AI can assist; build workflow first. |
+| SIH26146 | Easy | Shortlist / workable | AI-Powered Monitoring & Analysis of Bitcoin Transaction Traffic | Use AI to monitor and analyze Bitcoin transaction traffic. | AI can assist; build workflow first. |
+| SIH26198 | Easy | Shortlist / workable | Student Innovation | Innovations created by students. | Use AI only where data and evaluation are available. |
+### Travel & Tourism
+
+| ID | Difficulty | Decision | Official title | Simple meaning | AI/build note |
+|---|---|---|---|---|---|
+| SIH26056 | Moderate | Shortlist / workable | Development of a Real-time Airfare Price Index for India through Automated Web Scraping of Airline and Online Travel Aggregator Portals for Augmentation of the Consumer Price Index (CPI). | Develop a real-time airfare price index for India using automated web scraping of airline and online travel aggregator sites to augment the Consumer Price Index (CPI). | AI can assist; build workflow first. |
+| SIH26202 | Easy | Shortlist / workable | Student Innovation | Innovations developed by students. | Use AI only where data and evaluation are available. |
+| SIH26207 | Easy | Shortlist / workable | Student Innovation | Innovations developed by students. | Use AI only where data and evaluation are available. |
+
+## 6. Eliminated problem statements
+
+The following statements are not recommended for a general team seeking a fast, credible, working product. They can be reconsidered if the team has the relevant experts, datasets, hardware, access permissions, and validation plan.
+
+| ID | Domain | Difficulty | Official title | Why eliminated by default |
+|---|---|---|---|---|
+| SIH26019 | Blockchain & Cybersecurity | Very high | National Digital Platform for Research, Policy Innovation, and Evidence-Based Land Governance | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26041 | Blockchain & Cybersecurity | Very high | AR-Based Vocational Training Simulator for Industrial Safety in Jharkhand's Mining & Manufacturing Sector | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26105 | Blockchain & Cybersecurity | Very high | AI-Powered Continuous Cyber Risk Quantification and Investment Optimization Platform | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26106 | Blockchain & Cybersecurity | Very high | AI-Powered Email Threat Detection, GeoLocation and Forensic Intelligence Platform | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26125 | Blockchain & Cybersecurity | Very high | Blockchain-Based Secure Platform for Identity,Access Control, and Digital Asset Management | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26141 | Blockchain & Cybersecurity | Very high | Quantum-Inspired Cyber Threat Detection for Digital Signature Security | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26145 | Blockchain & Cybersecurity | Very high | AI-Based Detection of Cyber Threats in Unidirectional IP Traffic | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26148 | Blockchain & Cybersecurity | Very high | Creation of scripts/functions with new programming language to commence Computer & Network forensic analysis without triggering security solutions | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26149 | Blockchain & Cybersecurity | Very high | Design and Development of an Integrated Secure Data Erasure and Advanced File Recovery Tool for Digital Forensics and Data Sanitization | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26150 | Blockchain & Cybersecurity | Very high | Development of a Multi-Vendor DVR/NVR Forensic Analysis Tool for Standardized Acquisition, Recovery, and Analysis of Surveillance Evidence. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26151 | Blockchain & Cybersecurity | Very high | Dark web threat actor de-anonymization | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26153 | Blockchain & Cybersecurity | Very high | AI based Network Attack Forecasting from Network Traffic Data | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26155 | Blockchain & Cybersecurity | Very high | AI-Driven Multi-Vendor Network Security Compliance Auditor | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26159 | Blockchain & Cybersecurity | Very high | SecureMailScope: AI-Assisted Cryptographic Security Posture Assessment for Secure Email Communications | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26160 | Blockchain & Cybersecurity | Very high | AI-Powered IPsec VPN Protocol Analyzer and Security Assessment Framework | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26164 | Blockchain & Cybersecurity | Very high | Enterprise Cryptographic Discovery & Analysis Tool (ECDAT) | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26182 | Blockchain & Cybersecurity | Very high | Automated Attribution of Unknown Cryptocurrency Wallets to Nearest Virtual Asset Service Providers (VASPs) through Blockchain Intelligence APIs | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26183 | Blockchain & Cybersecurity | Very high | Real-Time Identification of Fraud-Linked Cryptocurrency Exchanges from Victim-Reported Suspect Wallet Addresses through Automated Blockchain Analytics | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26184 | Blockchain & Cybersecurity | Very high | Development of a Predictive Analytics Framework for Cybercrime Complaints to Forecast Likely Cash Withdrawal Locations in Advance, Enabling Generation of Actionable Intelligence for Timely and Proactive Cybercrime Intervention. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26189 | Blockchain & Cybersecurity | Very high | AI-Powered Criminal Network Analysis System | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26071 | Disaster Management | Very high | AI/ML-Based Integrated heavy rainfall Early Warning and Inundation Prediction System using Satellite, Radar, observational Weather and numerical weather prediction model data. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26072 | Disaster Management | Very high | AIML based Nowcasting of thunderstorm and lightning using atmospheric observation including multiple radars, satellite, lightning and model data. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26077 | Disaster Management | Very high | AI-Driven Hyper-Local Early Warning System for Severe Weather Nowcasting | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26082 | Disaster Management | Very high | Air PollutionWeather Coupled Forecasting System (Delhi NCR Focus) | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26084 | Disaster Management | Very high | Convective scale nowcasting for Thunderstorms, Hail & Cloudbursts (06 hr) | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26085 | Disaster Management | Very high | Urban Flood Nowcasting System (Drainage and Rainfall Coupling) | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26161 | Disaster Management | Very high | Dam Break Inundation Modelling Using Hydrodynamic Modelling of any River | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26192 | Disaster Management | Very high | Flash Flood Prediction System for Hilly Regions using Multi-Source Data Theme | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26137 | Fitness & Sports | Very high | Quantum-Inspired Intelligent Traffic Route Optimization in Transportation Systems Using Metaheuristic Optimization | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26139 | MedTech / BioTech / HealthTech | Very high | Hybrid Quantum Machine Learning Platform for Early Disease Detection | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26162 | Miscellaneous | Very high | AI-Based Detection and Classification of Industrial Fires and Persistent Thermal Sources Using NASA FIRMS, OSM & Satellite Data | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26037 | Robotics and Drones | Very high | Adaptive Path Planning and Collision Avoidance for Autonomous Vehicles on Unstructured Indian Roads | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26123 | Robotics and Drones | Very high | Edge-AI Based Distributed Fleet Coordination for Autonomous Mobile Robots (AMRs) in Smart Warehouses | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26126 | Robotics and Drones | Very high | Vision Based Autonomous Navigation for Unmanned Ground Vehicle for Outdoor environment | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26070 | Smart Education | Very high | To develop an Artificial Intelligence (AI) / Machine Learning (ML) based system for identification, classification, and prediction of different tropical cyclone patterns using multi-source satellite data. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26140 | Smart Education | Very high | AI-Based Interactive Quantum Algorithm Learning Platform | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26142 | Smart Education | Very high | Deep Learning Based Super Resolution Mapping (SRM) from Medium Resolution Satellite Imageries | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26138 | Smart Vehicles | Very high | Quantum-Inspired Fuel Consumption Prediction and Green Fleet Optimization | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26066 | Space Technology | Very high | OceanEmbed - Satellite Embedding-Based Deep Learning Framework for Reconstruction of Subsurface Ocean Temperature from Surface Satellite Observations. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+| SIH26143 | Space Technology | Very high | Leveraging satellite imagery to determine Oil spills at sea along with AIS data correlations to identify vessel responsible for the spill. | Research-grade data, infrastructure, safety, security, hardware, or scientific validation likely required. |
+
+## 7. AI suitability: what is genuinely feasible
+
+| AI capability | Good use | Avoid claiming |
+|---|---|---|
+| LLM assistant | FAQs, onboarding, report guidance, summarization, natural-language search. | Official legal/medical/security advice or autonomous action. |
+| OCR/document extraction | Read labels, forms, invoices, IDs, and compliance fields. | Perfect extraction without human review. |
+| Image classification | Suggest waste type, crop disease class, quality grade, or document category. | Diagnostic certainty or unsupported confidence. |
+| Similarity/deduplication | Find related complaints, documents, or records. | Identity attribution or criminal certainty. |
+| Anomaly detection | Flag unusual logs, sensor values, or transaction patterns. | Guaranteed threat/fraud detection. |
+| Prediction/recommendation | Prioritize work, suggest routes, or recommend next action. | Guaranteed weather, disease, crime, or safety prediction. |
+| Translation/speech | Vernacular help, voice input, accessibility. | Perfect translation for high-stakes instructions without review. |
+
+## 8. Selection scorecard
+
+Score each candidate from 1–5 before choosing. A high total with no critical blocker is preferable to a flashy but unverifiable idea.
+
+| Criterion | Question | Weight |
+|---|---|---:|
+| Problem fit | Does it directly answer the official statement? | 5 |
+| Data availability | Can we obtain representative data or use an authorized public dataset? | 5 |
+| End-to-end buildability | Can we show the full workflow without manual intervention? | 5 |
+| AI leverage | Does AI add useful assistance rather than decoration? | 3 |
+| Validation | Can we measure quality and failure cases? | 4 |
+| Integration risk | Are APIs, hardware, permissions, or deployment under control? | 4 |
+| Domain safety | Can we make claims responsibly? | 4 |
+| Demo clarity | Will a judge understand value in five minutes? | 5 |
+
+## 9. Recommended strategy for your team
+
+First shortlist three statements from workable domains. For each, create a one-page concept containing the user, current pain, input data, core workflow, AI role, database entities, measurable output, demo scenario, and risks. Reject a candidate if you cannot name the dataset, first user, success metric, and fallback behaviour.
+
+For CleanTrack specifically, verify the exact official problem ID because the workbook’s Clean & Green rows are different from the earlier civic-dumping brief. If CleanTrack is from another official list, use the exact matching ID and wording in the final submission.
+
+## 10. Caveats
+
+The spreadsheet’s “Submitted Idea(s) Count” values are not used as a measure of competition or difficulty. Difficulty and feasibility here are analytical estimates based on the statement titles, domains, likely dependencies, and typical student-team constraints. The simplified translations are intended for team understanding, not as replacements for the official wording in a submission.
+
+## References
+
+The complete source is the user-provided workbook `SIH_2026_Software_Problems_Grouped(1).xlsx`.

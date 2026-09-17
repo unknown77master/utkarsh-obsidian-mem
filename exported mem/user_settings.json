@@ -1,0 +1,86 @@
+[
+  {
+    "announcements": {
+      "oai/apps/hasDismissedAG8PqS2q": "2024-06-14T16:34:30.563826",
+      "oai/apps/hasDismissedCanvasContextualOnboarding": "2025-05-17T05:56:54.403560+00:00",
+      "oai/apps/hasSeenAdvancedVoice/2024-09-24": "2024-12-18T11:30:40.835348+00:00",
+      "oai/apps/hasSeenAdvancedVoiceOnMobile/2024-09-26": "2024-10-06T18:07:51.121860+00:00",
+      "oai/apps/hasSeenAdvancedVoiceRealWebNuxTooltip": "2024-12-08T12:58:46.285914+00:00",
+      "oai/apps/hasSeenArchiveConversationOnboarding": "2025-04-30T13:43:46.173911+00:00",
+      "oai/apps/hasSeenArtifactsLearnMoreModal": "2026-08-27T08:30:15.058160+00:00",
+      "oai/apps/hasSeenAutoSwitchNux": "2025-12-01T06:43:56.300763+00:00",
+      "oai/apps/hasSeenBidiNux": 1,
+      "oai/apps/hasSeenBigPasteCoachmark": "2026-06-13T14:52:35.913015+00:00",
+      "oai/apps/hasSeenBurritoNux": "2025-08-12T03:04:50.164278+00:00",
+      "oai/apps/hasSeenCanvasCodeExecutionNux": "2025-02-04T13:48:21.524401+00:00",
+      "oai/apps/hasSeenCanvasShareButtonNux": "2025-02-11T15:56:24.808902+00:00",
+      "oai/apps/hasSeenCodexAppHomeBanner": "2026-09-06T21:25:29.411255+00:00",
+      "oai/apps/hasSeenComposerSearchButtonTooltip": "2024-12-08T10:17:11.129698+00:00",
+      "oai/apps/hasSeenComposerSystemHintButtonTooltip": "2024-12-14T07:35:45.146876+00:00",
+      "oai/apps/hasSeenContextConnectorTooltip": "2024-06-14T16:34:38.118370",
+      "oai/apps/hasSeenFreeGoChatModelPickerNux": "2026-08-14T06:11:31.181042+00:00",
+      "oai/apps/hasSeenGoTwelveMonthFreeTrial": "2025-11-05T06:28:37.301959+00:00",
+      "oai/apps/hasSeenImage2026RevampNux": "2026-04-28T16:04:32.260352+00:00",
+      "oai/apps/hasSeenMemoryInSearch": "2025-04-17T03:23:50.917033+00:00",
+      "oai/apps/hasSeenMemoryOnboarding": "2024-10-13T08:30:47.452216+00:00",
+      "oai/apps/hasSeenMemoryUpdatedTooltip": "2025-07-31T16:25:33.656622+00:00",
+      "oai/apps/hasSeenMentionGPTs": "2024-09-21T18:54:08.309168+00:00",
+      "oai/apps/hasSeenMfaEnrollmentNux": "2026-08-05T09:40:21.379001+00:00",
+      "oai/apps/hasSeenMoonshineNuxV2": "2025-06-05T17:41:26.717123+00:00",
+      "oai/apps/hasSeenNewCoTExpNUX": "2025-02-09T13:27:11.528103+00:00",
+      "oai/apps/hasSeenOnboarding": "2023-12-10T11:29:30.687260",
+      "oai/apps/hasSeenPhoenixFreeNux": "2025-04-26T05:17:43.108028+00:00",
+      "oai/apps/hasSeenPurpleRainNux": "2025-12-16T11:21:37.399999+00:00",
+      "oai/apps/hasSeenShibaHomeNux": "2025-04-03T16:22:37.574120+00:00",
+      "oai/apps/hasSeenTaskSuggestionConnectorFillers": "2026-09-10T11:21:20.466062+00:00",
+      "oai/apps/hasSeenTatertotNux": "2025-08-14T11:00:07.530441+00:00",
+      "oai/apps/hasSeenTemporaryChatOnboarding": "2024-10-11T03:47:06.356984+00:00",
+      "oai/apps/hasSeenThinkInComposer": "2025-02-01T19:27:14.238063+00:00",
+      "oai/apps/hasSeenWebComposerStraw": "2024-12-18T10:26:53.728568+00:00",
+      "oai/apps/hasSeenWhamCodexAppFirstHero": 1,
+      "oai/apps/hasSeenl1239dk1CodeReviewTab": "2026-09-06T21:13:08.851608+00:00",
+      "oai/apps/hasUserContextFirstTime/2023-06-29": "2024-03-22T09:56:14.714803",
+      "paid-sticker-homepage-promotion": "2026-09-09T07:45:36.543082+00:00",
+      "paid-sticker-homepage-promotion-impressions": 3
+    },
+    "announcements_loaded": true,
+    "beta_settings": {},
+    "habitat_object_version": 36496490,
+    "settings": {
+      "accessory_id": "codex",
+      "chat_theme": "black",
+      "connector_search_enabled": true,
+      "contrast_mode": "default",
+      "developer_mode": true,
+      "first_party_project_pins_unmigrated": true,
+      "last_used_model_config": {
+        "juices": {
+          "android_app": {
+            "gpt-5-6-thinking": "standard"
+          },
+          "default": {
+            "gpt-5-6-thinking": "extended"
+          },
+          "web": {
+            "gpt-5-6-thinking": "extended"
+          }
+        },
+        "slugs": {
+          "android_app": "gpt-5-6-thinking",
+          "default": "gpt-5-6-thinking",
+          "web": "gpt-5-6-thinking"
+        }
+      },
+      "lockdown_mode_enabled": false,
+      "moonshine": true,
+      "potion_enabled": true,
+      "project_pins_backfilled": true,
+      "show_expanded_code_view": true,
+      "study_mode_project_pins_unmigrated": true,
+      "sunshine": true,
+      "training_allowed": false,
+      "voice_name": "cove"
+    },
+    "user_id": "user-wbocfBTQwtFQStHCmSSts29n"
+  }
+]
