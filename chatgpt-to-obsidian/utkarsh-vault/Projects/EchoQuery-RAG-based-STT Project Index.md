@@ -3,9 +3,9 @@ type: "project-index"
 scope: "project"
 project: "EchoQuery-RAG-based-STT"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-17"
-durable_context_count: 0
-chat_count: 0
+updated: "2026-09-18"
+durable_context_count: 2
+chat_count: 1
 local_repository_count: 1
 github_repository_count: 0
 ---
@@ -20,10 +20,12 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Durable context
 
-- No durable ChatGPT context has been extracted for this project yet.
+- The original EchoQuery phase was scoped as a three-person, multilingual voice-to-grounded-answer system: speech-to-text, vector retrieval and reranking, LLM answer generation, grounding checks, and guardrails.
+- Utkarsh had previously worked with Voxtral Mini for multilingual speech-to-text and planned to use Codex while developing this project.
 
 ## Related chats
 
+- [[Archive/2026/2026-08-16/EchoQuery--6a81ac51-789|EchoQuery]]
 
 ## Resources
 

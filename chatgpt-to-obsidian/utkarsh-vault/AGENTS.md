@@ -22,3 +22,11 @@ This personal-memory vault is located at `D:\ALL Programming\obsidian_mem\chatgp
 - Do not edit `Raw/Export/`, `.export-mirror-manifest.json`, or `.chatgpt-migration-state.json`.
 - Do not convert an assistant inference into a user fact without source evidence.
 - Preserve unresolved references and consult [[review_queue]] when context is uncertain.
+
+## Vault Git authorization
+
+- The user gives standing permission to commit and push completed Obsidian vault updates to the vault's configured GitHub remote.
+- This permission applies only to files inside `D:\ALL Programming\obsidian_mem\chatgpt-to-obsidian\utkarsh-vault` and does not authorize commits or pushes in any other repository.
+- After a validated vault update, stage only the intended vault files, create a focused commit, and push it unless higher-level instructions or the runtime explicitly prohibit the operation.
+- Preserve unrelated working-tree changes. Never include non-vault files in a vault commit.
+- If commit or push is unavailable, keep the local update and clearly report that GitHub was not updated.

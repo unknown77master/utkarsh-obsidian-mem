@@ -19,7 +19,7 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Durable context
 
-- No durable ChatGPT context has been extracted for this project yet.
+- [[Projects/GitHub Profile README Redesign]] — Hackmaass-inspired cyber-terminal profile implemented on 2026-09-20 with a custom header, neofetch identity card, flagship repositories, technology matrix, live telemetry, and contact uplinks.
 
 ## Related chats
 

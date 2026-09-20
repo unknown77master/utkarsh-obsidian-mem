@@ -48,6 +48,24 @@ The destination stores `.chatgpt-migration-state.json`, containing conversation 
 
 The vault is self-contained. It contains category notes, searchable conversation transcripts under `Archive/<year>/<date>/`, and a checksum-verified copy of every original export file under `Raw/Export/`. Archive folders use descriptive index notes—`Chat History Index.md`, `<year> Chat Index.md`, and `<date> Chat Index.md`—that link directly to conversation titles. Each transcript preserves structured local attachments, external references, and unresolved export IDs in its `## Resources` section.
 
+## Safe vault Git sync
+
+From the `obsidian_mem` repository root, preview a safe sync before changing the working tree:
+
+```powershell
+.\sync-vault.ps1 -Preview
+```
+
+To fetch `origin/main`, fast-forward when safe, and reapply preserved local edits:
+
+```powershell
+.\sync-vault.ps1
+```
+
+The wrapper aborts for staged changes, divergent history, in-progress Git operations, or any local/incoming change to protected raw-export and migration-manifest files. It never force-resets, cleans, or force-checks out files.
+
+Unstaged tracked deletions are considered accidental during vault sync. To intentionally delete a tracked vault file, stage and commit the deletion explicitly.
+
 `AGENTS.md` is the canonical retrieval guide for AI agents, while `00 - Agent Memory.md` is the compact human- and machine-readable entry point. The raw mirror includes binary attachments, JSON, HTML, and metadata, so the vault does not require the original export to remain available. On repeat runs, unchanged files are verified and skipped; changed raw files are replaced and raw files no longer in the latest export are removed from the mirror.
 
 ## Project navigation
