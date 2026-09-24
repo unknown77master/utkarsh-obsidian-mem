@@ -16,10 +16,11 @@ This note groups only project names stated explicitly in the export. It links to
 ## Local repositories
 
 - `D:\ALL Programming\0-WebDev\Hacker_House\Agentic Fraud Investigation` — detected by `.git`
+  - Remote: [https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation.git](https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation.git)
 
 ## Public GitHub repositories
 
-- [Agentic-Fraud-Investigation](https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation) — 2026-09-24T09:37:08Z
+- [Agentic-Fraud-Investigation](https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation) — Python; 2026-09-24T13:14:04Z
 
 ## Durable context
 

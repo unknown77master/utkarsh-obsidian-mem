@@ -3773,8 +3773,8 @@
       "name": "Agentic-Fraud-Investigation",
       "github_url": "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation",
       "description": "",
-      "language": "",
-      "updated_at": "2026-09-24T09:37:08Z",
+      "language": "Python",
+      "updated_at": "2026-09-24T13:14:04Z",
       "fork": false
     },
     {
@@ -4013,8 +4013,10 @@
       "name": "Agentic Fraud Investigation",
       "path": "D:\\ALL Programming\\0-WebDev\\Hacker_House\\Agentic Fraud Investigation",
       "marker": ".git",
-      "remotes": [],
-      "github_url": null
+      "remotes": [
+        "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation.git"
+      ],
+      "github_url": "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation"
     },
     {
       "catalog_source": "local",
@@ -4445,7 +4447,7 @@
       "utkarsh-wadalkar"
     ],
     "github_checked_at": {
-      "utkarsh-wadalkar": 1790243595
+      "utkarsh-wadalkar": 1790256890
     }
   }
 }
