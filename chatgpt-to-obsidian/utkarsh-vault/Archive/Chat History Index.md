@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "archive"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-17"
+updated: "2026-09-24"
 transcript_count: 352
 ---
 

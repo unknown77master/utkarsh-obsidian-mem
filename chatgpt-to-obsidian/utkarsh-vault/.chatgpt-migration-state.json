@@ -3764,7 +3764,17 @@
       "github_url": "https://github.com/utkarsh-wadalkar/.github",
       "description": "Config files for my GitHub profile.",
       "language": "",
-      "updated_at": "2026-09-16T10:34:12Z",
+      "updated_at": "2026-09-20T19:15:26Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Agentic-Fraud-Investigation",
+      "github_url": "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-09-24T09:37:08Z",
       "fork": false
     },
     {
@@ -3830,6 +3840,16 @@
     {
       "catalog_source": "github",
       "github_user": "utkarsh-wadalkar",
+      "name": "Ghosthand",
+      "github_url": "https://github.com/utkarsh-wadalkar/Ghosthand",
+      "description": "A lightweight, Windows-native AI desktop assistant. Focus any app, press Ctrl+Win, and let it click, type, and automate with human-in-the-loop safety.",
+      "language": "",
+      "updated_at": "2026-09-23T18:52:43Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
       "name": "Hands-On-PY-Pandas",
       "github_url": "https://github.com/utkarsh-wadalkar/Hands-On-PY-Pandas",
       "description": "",
@@ -3846,6 +3866,16 @@
       "language": "HTML",
       "updated_at": "2025-02-17T14:08:29Z",
       "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "internship-cli",
+      "github_url": "https://github.com/utkarsh-wadalkar/internship-cli",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-09-21T21:28:52Z",
+      "fork": true
     },
     {
       "catalog_source": "github",
@@ -3960,9 +3990,29 @@
     {
       "catalog_source": "local",
       "catalog_root": "D:\\ALL Programming",
+      "name": ".github",
+      "path": "D:\\ALL Programming\\my_.github\\.github",
+      "marker": ".git",
+      "remotes": [
+        "https://github.com/utkarsh-wadalkar/.github.git"
+      ],
+      "github_url": "https://github.com/utkarsh-wadalkar/.github"
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
       "name": "01-backend-api",
       "path": "D:\\ALL Programming\\0-WebDev\\Hacker_House\\EchoQuery-RAG-based-STT\\01-backend-api",
       "marker": "requirements.txt",
+      "remotes": [],
+      "github_url": null
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
+      "name": "Agentic Fraud Investigation",
+      "path": "D:\\ALL Programming\\0-WebDev\\Hacker_House\\Agentic Fraud Investigation",
+      "marker": ".git",
       "remotes": [],
       "github_url": null
     },
@@ -4232,6 +4282,15 @@
     {
       "catalog_source": "local",
       "catalog_root": "D:\\ALL Programming",
+      "name": "my_.github",
+      "path": "D:\\ALL Programming\\my_.github",
+      "marker": ".git",
+      "remotes": [],
+      "github_url": null
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
       "name": "obsidian_mem",
       "path": "D:\\ALL Programming\\obsidian_mem",
       "marker": ".git",
@@ -4386,7 +4445,7 @@
       "utkarsh-wadalkar"
     ],
     "github_checked_at": {
-      "utkarsh-wadalkar": 1789671430
+      "utkarsh-wadalkar": 1790243595
     }
   }
 }

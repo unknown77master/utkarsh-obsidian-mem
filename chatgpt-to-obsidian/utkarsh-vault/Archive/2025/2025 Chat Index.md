@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "year"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-17"
+updated: "2026-09-24"
 transcript_count: 92
 year: "2025"
 ---

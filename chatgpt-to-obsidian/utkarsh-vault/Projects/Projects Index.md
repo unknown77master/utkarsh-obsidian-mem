@@ -2,8 +2,8 @@
 type: "project-index"
 scope: "projects"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-17"
-project_count: 47
+updated: "2026-09-24"
+project_count: 51
 ---
 # Projects Index
 
@@ -11,8 +11,9 @@ Use this map to retrieve local repositories, public GitHub repositories, durable
 
 ## Project indexes
 
-- [[Projects/github Project Index|.github]] — 1 GitHub
+- [[Projects/github Project Index|.github]] — 1 local, 1 GitHub
 - [[Projects/01-backend-api Project Index|01-backend-api]] — 1 local
+- [[Projects/Agentic-Fraud-Investigation Project Index|Agentic-Fraud-Investigation]] — 1 local, 1 GitHub
 - [[Projects/AI-interview-Qs-gen Project Index|AI-interview-Qs-gen]] — 1 GitHub
 - [[Projects/Aideo Project Index|Aideo]] — 1 local, 1 chat
 - [[Projects/app Project Index|app]] — 1 local
@@ -28,9 +29,11 @@ Use this map to retrieve local repositories, public GitHub repositories, durable
 - [[Projects/FaceChain Project Index|FaceChain]] — 1 local, 1 GitHub
 - [[Projects/Fake-News-ML Project Index|Fake-News-ML]] — 1 local, 1 GitHub
 - [[Projects/frontend Project Index|frontend]] — 3 local
+- [[Projects/Ghosthand Project Index|Ghosthand]] — 1 GitHub
 - [[Projects/Hands-On-PY-Pandas Project Index|Hands-On-PY-Pandas]] — 1 local, 1 GitHub
 - [[Projects/homepage Project Index|homepage]] — 1 local
 - [[Projects/HTML-CSS Project Index|HTML-CSS]] — 1 local, 1 GitHub
+- [[Projects/internship-cli Project Index|internship-cli]] — 1 GitHub
 - [[Projects/Intrview Ques gen Project Index|Intrview Ques gen]] — 1 local
 - [[Projects/itr-wala Project Index|itr-wala]] — 1 local
 - [[Projects/JavaScript-Assignments Project Index|JavaScript-Assignments]] — 1 GitHub
@@ -40,6 +43,7 @@ Use this map to retrieve local repositories, public GitHub repositories, durable
 - [[Projects/ML-Pipeline Project Index|ML-Pipeline]] — 1 local, 1 GitHub
 - [[Projects/MLops-DVC Project Index|MLops-DVC]] — 1 local, 1 GitHub
 - [[Projects/MongoTodo Project Index|MongoTodo]] — 1 local, 1 GitHub
+- [[Projects/my_.github Project Index|my_.github]] — 1 local
 - [[Projects/obsidian_mem Project Index|obsidian_mem]] — 1 local
 - [[Projects/OCR GST Project Index|OCR GST]] — 1 local, 1 chat
 - [[Projects/Parkinson-Disease-Prediction Project Index|Parkinson-Disease-Prediction]] — 1 local, 1 GitHub

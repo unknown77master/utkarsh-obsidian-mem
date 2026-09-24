@@ -28,15 +28,15 @@
 - Raw files copied: 0
 - Raw files checksum-verified and skipped: 439
 - Stale raw files removed: 0
-- Local coding projects catalogued: 41
-- Public GitHub repositories catalogued: 20
+- Local coding projects catalogued: 44
+- Public GitHub repositories catalogued: 23
 - Errors: 0
 - Memories extracted: 187
 - Duplicates merged: 0
 - Project references detected: 6
-- Project indexes generated: 47
+- Project indexes generated: 51
 - Categories generated: 7
-- Output files created: 318
+- Output files created: 322
 
 ## Errors
 

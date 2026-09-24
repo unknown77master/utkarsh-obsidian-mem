@@ -3,7 +3,7 @@ type: "project-index"
 scope: "project"
 project: "Audora"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-17"
+updated: "2026-09-24"
 durable_context_count: 2
 chat_count: 2
 local_repository_count: 1

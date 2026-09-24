@@ -1,7 +1,7 @@
 ---
 type: "memory-category"
 source: "ChatGPT export"
-created: "2026-09-17"
+created: "2026-09-24"
 ---
 # Preferences
 

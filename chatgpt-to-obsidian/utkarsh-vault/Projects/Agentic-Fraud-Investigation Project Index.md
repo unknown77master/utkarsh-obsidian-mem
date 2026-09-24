@@ -1,0 +1,33 @@
+---
+type: "project-index"
+scope: "project"
+project: "Agentic-Fraud-Investigation"
+generated_by: "chatgpt-to-obsidian"
+updated: "2026-09-24"
+durable_context_count: 0
+chat_count: 0
+local_repository_count: 1
+github_repository_count: 1
+---
+# Agentic-Fraud-Investigation Project Index
+
+This note groups only project names stated explicitly in the export. It links to the canonical transcripts and their preserved resources; it does not copy or reinterpret them.
+
+## Local repositories
+
+- `D:\ALL Programming\0-WebDev\Hacker_House\Agentic Fraud Investigation` — detected by `.git`
+
+## Public GitHub repositories
+
+- [Agentic-Fraud-Investigation](https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation) — 2026-09-24T09:37:08Z
+
+## Durable context
+
+- No durable ChatGPT context has been extracted for this project yet.
+
+## Related chats
+
+
+## Resources
+
+- [Agentic-Fraud-Investigation repository](https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation)
