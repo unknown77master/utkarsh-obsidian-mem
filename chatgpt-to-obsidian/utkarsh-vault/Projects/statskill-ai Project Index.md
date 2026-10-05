@@ -3,7 +3,7 @@ type: "project-index"
 scope: "project"
 project: "statskill-ai"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
+updated: "2026-09-29"
 durable_context_count: 0
 chat_count: 0
 local_repository_count: 1
@@ -16,7 +16,7 @@ This note groups only project names stated explicitly in the export. It links to
 ## Local repositories
 
 - `D:\ALL Programming\0-WebDev\SIH\statskill-ai` — detected by `.git`
-  - Remote: [https://github.com/DgrnBoi/statskill-ai.git](https://github.com/DgrnBoi/statskill-ai.git)
+  - Remote: [https://github.com/utkarsh-wadalkar/statskill-ai.git](https://github.com/utkarsh-wadalkar/statskill-ai.git)
 
 ## Durable context
 

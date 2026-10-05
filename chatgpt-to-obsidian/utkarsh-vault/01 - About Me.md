@@ -1,7 +1,7 @@
 ---
 type: "memory-category"
 source: "ChatGPT export"
-created: "2026-09-24"
+created: "2026-09-29"
 ---
 # About Me
 
@@ -80,9 +80,19 @@ created: "2026-09-24"
   - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
 - I am DMing for claude code community meetup not cursor
   - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
-- i am writing this in .env not .env.example
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
 - for stt i am using local modal
   - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
 - No that is sem 7 I am asking for sem 8, they will come during this time period, check past time table
   - Confidence: 0.82; Sources: 6a9a897e-f218-83e8-b29a-60289518fb90 (Draft Internship Exam Note)
+- I am filling form
+  - Confidence: 0.82; Sources: 6a4cf3ea-f630-83e8-a470-d4966e71ebd8 (LaTeX Resume)
+- i am writing this in .env not .env.example
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- yes i have access to, i am added as contributor by unknown (btw, is my secondary account)
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- there are some changes to it, i am going to use Neo4j as graph knowledge base
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (BE_project)
+- No this is my father's journey not, I am going not
+  - Confidence: 0.82; Sources: 6aafb066-0b58-83ee-aa52-b681596c30ea (Daily Productivity Plan)
+- there is other repo on which i am working, i want to aks agent to what skill should use, like u suggested for this one, i want for that one
+  - Confidence: 0.82; Sources: 6ab3c023-5bd8-83ee-9a9c-e9f9302cfcd6 (List Mattpocock Skills)

@@ -3,7 +3,7 @@ type: "chatgpt-conversation"
 source: "ChatGPT export"
 conversation_id: "6a81ac51-7894-83ee-9d19-b4c68d755e51"
 created: 1786883205.793189
-updated: 1788560665.332512
+updated: 1789679101.797401
 resource_section: true
 ---
 
@@ -21790,6 +21790,664 @@ That is sufficient for downloading `ai4bharat/MSMARCO-XI` and accessing Hugging 
 
 We can always create a separate token later if EchoQuery genuinely needs Hugging Face hosted inference. There is no reason to give the RAG/data pipeline full account access now.
 
+## User
+
+ok revise what have we done and what we have to do, also dont forget https://chatgpt.com/share/6aac03d6-bd94-83e9-9791-77e0e2466940 echoquery is BE_project and its scope, direction is changed but i want to follow implementation of echoquery the strong focous on low latency 200ms part, i want that low latency part concept, but now not soo much focus on specifically 200ms, cuz now we are not building this for hackathon selection, we are making it as my final year project
+
+## Assistant
+
+Worked for 13s
+
+## Assistant
+
+Yes. I’m updating the mental model of **EchoQuery → your B.E. Final Year Project**. The old hackathon implementation is useful engineering groundwork, but it is **not the authoritative scope anymore**.
+
+I also tried opening the shared ChatGPT link you gave, but it isn't fetchable from my side right now. I do have the newer B.E. project context from our previous work and your project documents, including the Neo4j direction. memcite
+
+## 1. What EchoQuery started as
+
+Originally, **EchoQuery-RAG-based-STT** was built around the hackathon/SIH problem:
+
+```text
+Voice
+ ↓
+Sarvam STT
+ ↓
+Transcript
+ ↓
+Embedding
+ ↓
+Qdrant
+ ↓
+Vector Retrieval
+ ↓
+Reranking
+ ↓
+Sarvam-105B
+ ↓
+Answer
+```
+
+The important engineering goal was extremely low latency. We originally represented:
+
+```text
+RAG_LATENCY_TARGET_MS=200
+```
+
+with **STT excluded** from that measurement.
+
+That led us to care heavily about things like precomputed embeddings, efficient chunking, small `top_k`, vector-search latency, reranking cost, avoiding unnecessary LLM calls, WebSockets, streaming, P50/P95/P100 measurement, and keeping the critical request path short.
+
+That work is **not wasted**.
+
+---
+
+# 2. What we already implemented/worked on
+
+There is substantial groundwork in the existing project.
+
+The AI/RAG side already has work around:
+
+```text
+03-ai-rag-engine/
+├── ingestion/
+├── chunking/
+├── embeddings/
+├── retrieval/
+├── generation/
+├── guardrails/
+├── orchestration/
+├── observability/
+└── tests/
+```
+
+We worked on ingestion, multiple chunking strategies, embedding abstractions, local/vector indexing abstractions, retrieval, reranking, evaluation tooling, tests, index-building scripts and architecture decisions.
+
+We also did significant analysis of **AI4Bharat MSMARCO-XI**, including the huge Hindi split and its answerability/selected-passage behaviour. We discovered the important `No Answer Present`/Hindi equivalent issue and investigated the 417 unusual zero-selected-but-answer-present cases.
+
+On the application side, we established the FastAPI/WebSocket architecture and STT layer. Sarvam became the production STT direction, with Voxtral/Mistral useful during experimentation.
+
+We also created the project contracts and deliberately separated components instead of letting frontend/backend/RAG communicate through arbitrary structures.
+
+Those principles remain valuable.
+
+---
+
+# 3. The B.E. project is now different
+
+The current project is better thought of as:
+
+## **KaushalVaani / EchoQuery**
+### Voice-First Livelihood Intelligence using Knowledge Graphs
+
+It is **not primarily a multilingual document-question-answering RAG system anymore**.
+
+The central problem is now:
+
+> Understand a beneficiary's existing skills, education, interests and circumstances, reason over structured livelihood/qualification relationships, identify skill gaps, and recommend explainable NSQF-aligned pathways.
+
+The new core flow is:
+
+```text
+Voice
+ ↓
+STT + Language Detection
+ ↓
+Structured Beneficiary Profile
+ ↓
+Profile / User Subgraph
+ ↓
+Neo4j Knowledge Graph
+ │
+ ├── Skills
+ ├── Occupations
+ ├── Sectors
+ ├── Qualifications
+ ├── NSQF Levels
+ ├── NOS / Modules
+ ├── Eligibility
+ ├── Progression Paths
+ └── Regional Opportunities
+ ↓
+Skill-Gap Reasoning
+ ↓
+Hybrid Ranking
+ ↓
+Top Pathways
+ ↓
+LLM Explanation
+ ↓
+TTS / UI
+```
+
+That is now the architecture we should optimize and implement.
+
+---
+
+# 4. The biggest architectural change: Neo4j becomes central
+
+Previously:
+
+```text
+MSMARCO-XI
+ ↓
+Chunks
+ ↓
+Embeddings
+ ↓
+Qdrant
+ ↓
+Semantic Retrieval
+```
+
+Now the authoritative knowledge should primarily be structured as:
+
+```text
+ ┌── Skill
+ │
+Beneficiary ────────┼── Qualification
+ │
+ ├── Occupation
+ │
+ └── Location
+
+Qualification ──REQUIRES──> Skill
+Qualification ──HAS_LEVEL─> NSQF Level
+Qualification ──CONTAINS──> NOS
+Occupation ─────REQUIRES──> Skill
+Occupation ─────BELONGS_TO─> Sector
+Qualification ──LEADS_TO──> Occupation
+Occupation ─────AVAILABLE_IN──> Region
+```
+
+Neo4j/Cypher therefore becomes the main reasoning/retrieval mechanism.
+
+The LLM should **not invent authoritative NSQF facts**. It can help extract information from speech, ask clarification questions and turn graph-derived results into natural-language explanations.
+
+That separation is extremely important for the final-year project because it gives you something academically stronger than:
+
+> "We sent everything to an LLM and asked it for recommendations."
+
+You can demonstrate the actual reasoning path.
+
+---
+
+# 5. What happens to RAG and Qdrant?
+
+We should **not blindly delete the old RAG implementation**.
+
+But it is no longer the architectural centre.
+
+Think of the system as:
+
+```text
+ STRUCTURED KNOWLEDGE
+ ↓
+ Neo4j
+ ↓
+ Graph reasoning
+ ↓
+ Ranking
+ │
+ │
+ ┌───────────┴───────────┐
+ ↓ ↓
+ Structured evidence Supporting text
+ ↓
+ Vector retrieval
+ (where useful)
+ ↓
+ LLM explanation
+```
+
+So the eventual architecture can legitimately become **Graph + retrieval + LLM**, rather than classic vector RAG.
+
+We should preserve the old Qdrant/RAG code while we migrate and verify the new architecture. Once the final pipeline is proven, we can decide which pieces remain production components and which become legacy/experimental code.
+
+---
+
+# 6. The 200 ms idea: KEEP it, change the objective
+
+This is the part of your request I especially want to lock.
+
+### Old hackathon objective
+
+```text
+RAG < 200 ms
+```
+
+was effectively a pass/fail requirement.
+
+### New B.E. objective
+
+We should change this to:
+
+> **Design and evaluate a latency-conscious voice-first knowledge-graph reasoning system.**
+
+In other words:
+
+**200 ms is no longer the number we build the entire architecture around.**
+
+But the engineering philosophy stays.
+
+Instead of trying to make a questionable claim such as:
+
+> "EchoQuery responds in under 200 ms."
+
+we instrument the complete pipeline:
+
+```text
+Voice
+ │
+ ├─ STT latency
+ │
+ ▼
+Profile extraction
+ │
+ ├─ extraction latency
+ │
+ ▼
+Neo4j
+ │
+ ├─ Cypher/query latency
+ │
+ ▼
+Skill-gap reasoning
+ │
+ ├─ reasoning latency
+ │
+ ▼
+Hybrid ranking
+ │
+ ├─ ranking latency
+ │
+ ▼
+LLM
+ │
+ ├─ TTFT
+ │
+ └─ generation latency
+ ▼
+Response
+```
+
+And report:
+
+```text
+P50
+P95
+P99
+
+STT latency
+Profile extraction latency
+Graph-query latency
+Reasoning latency
+Ranking latency
+LLM TTFT
+End-to-end latency
+```
+
+That is actually **better final-year-project material** than obsessing over a single 200 ms number.
+
+---
+
+# 7. We should still aggressively optimize the deterministic path
+
+There's one particularly useful distinction.
+
+We should try to make this portion extremely fast:
+
+```text
+Structured profile
+ ↓
+Neo4j query
+ ↓
+Skill-gap calculation
+ ↓
+Candidate filtering
+ ↓
+Hybrid ranking
+ ↓
+Evidence
+```
+
+Call this the **reasoning core**.
+
+The LLM sits **after** that core:
+
+```text
+FAST / DETERMINISTIC
+
+Profile
+ → Graph traversal
+ → Gap calculation
+ → Ranking
+ → Evidence
+
+ ↓
+
+SLOWER / GENERATIVE
+
+ LLM explanation
+ ↓
+ TTS
+```
+
+This preserves one of the best ideas from the original EchoQuery architecture:
+
+> **Don't put an LLM in a critical path when deterministic computation can do the job faster and more reliably.**
+
+For example, don't ask Sarvam-105B:
+
+> "What NSQF qualification should this person take?"
+
+Instead:
+
+```text
+Neo4j
+ ↓
+Qualification A
+Qualification B
+Qualification C
+ ↓
+ranking algorithm
+ ↓
+A = 0.86
+B = 0.78
+C = 0.71
+ ↓
+LLM
+"Explain these recommendations naturally
+in Marathi using this evidence."
+```
+
+That should remain one of EchoQuery's central architectural principles.
+
+---
+
+# 8. Current MVP boundary
+
+For the B.E. implementation, our current sensible scope is:
+
+**Languages**
+
+```text
+Marathi
+Hindi
+English
+```
+
+instead of trying to demonstrate all 11 languages immediately.
+
+**Knowledge domain**
+
+Curated Maharashtra-focused livelihood data with selected sectors, occupations and NSQF/NQR qualifications.
+
+**User flow**
+
+```text
+Speak profile
+ ↓
+System extracts profile
+ ↓
+Show beneficiary graph
+ ↓
+Identify skill gaps
+ ↓
+Show Top 3 pathways
+ ↓
+Explain:
+
+"Why?"
+"What am I missing?"
+"What qualification should I take?"
+"What does this lead to?"
+```
+
+Local opportunities can initially use controlled/simulated data rather than turning the project into an employment-market data aggregation project.
+
+---
+
+# 9. What we need to do now
+
+The old checklist should therefore **not simply continue from "set up Qdrant and deploy RAG."** The project changed enough that doing that would waste time.
+
+Our implementation sequence should now be:
+
+1. **Synchronize the repository with the new B.E. specification.** Clearly mark old hackathon assumptions as legacy, current implemented components as current, and Neo4j livelihood intelligence as the target architecture.
+
+2. **Lock the graph schema and contracts before coding the migration.** Beneficiary, Skill, Occupation, Qualification, NSQF Level, NOS, Sector, Region and the relationships between them need stable schemas.
+
+3. **Build the NQR/NSQF ingestion pipeline → Neo4j.** This becomes the equivalent of the old MSMARCO ingestion/indexing stage.
+
+4. **Implement beneficiary-profile extraction.** Voice → STT → structured language-neutral profile.
+
+5. **Implement graph-based skill-gap reasoning.**
+
+6. **Implement hybrid pathway ranking.** Profile fit + skill-gap distance + eligibility + regional opportunity/demand signals.
+
+7. **Attach the LLM explanation layer.** It explains graph-derived evidence rather than becoming the source of truth.
+
+8. **Instrument latency from day one.** Every major stage gets timing/observability, with P50/P95/P99 evaluation.
+
+9. **Integrate frontend/TTS and build the final voice experience.**
+
+10. **Evaluate it as a B.E. project:** recommendation quality, explainability/traceability, multilingual behaviour, graph reasoning correctness and latency.
+
+This gives us a stable direction rather than continuously redesigning EchoQuery.
+
+## The principle I would lock into the project now
+
+> **EchoQuery/KaushalVaani is a low-latency, voice-first, multilingual livelihood intelligence system where Neo4j provides authoritative graph-grounded reasoning, deterministic components perform skill-gap analysis and pathway ranking, and LLMs are primarily used for language understanding and evidence-grounded explanation.**
+
+The **hard `<200 ms` requirement is retired**. The **low-latency engineering philosophy is not**.
+
+And importantly, we won't throw away the work already done. We'll migrate deliberately from the existing RAG implementation instead of starting another codebase from zero. memcite
+
+## User
+
+no, it is multilingual, add that, remember that
+
+## Assistant
+
+Yes — correction locked in: **EchoQuery is fundamentally multilingual.**
+
+The updated project definition should be:
+
+> **EchoQuery is a low-latency, voice-first, multilingual livelihood intelligence system that understands a beneficiary’s skills, education, interests and circumstances across languages, uses Neo4j for graph-grounded skill-gap and career-pathway reasoning, and provides explainable NSQF-aligned recommendations in the user’s language.**
+
+So multilingual support is **not an optional feature or later enhancement**. It is one of the core pillars:
+
+**Voice-first + Multilingual + Knowledge Graph + Skill-gap reasoning + Explainable recommendations + Low-latency engineering.**
+
+And my earlier wording — “not primarily a multilingual … system anymore” — should **not** be interpreted as removing multilingual capability. What changed is **document-QA/vector RAG being the center**, not multilingualism. Multilingual input, understanding, retrieval/reasoning interfaces, explanations, and voice output remain central to EchoQuery. memcite
+
+## User
+
+ok this is my new obsidian vault at https://github.com/unknown77master/utkarsh-obsidian-mem path: chatgpt-to-obsidian/utkarsh-vault 
+push new part of chat to my obsidian vault
+first verify that u can read, write, push, make changes and follow its safety rules, including never modifying `Raw/Export/` or its migration/manifest files.
+
+## Assistant
+
+Worked for 57s
+
+## Assistant
+
+I verified the access path before touching anything.
+
+The **GitHub integration is connected** and is allowed to perform low-risk actions; it exposes read, create, update, and commit/push operations. However, when I tried to access `unknown77master/utkarsh-obsidian-mem`, GitHub returned **404 / Not Found**. That usually means this specific private repository is not included in the GitHub connection's authorized repository access. I also checked the local-computer route, but no Desktop Commander device is currently connected.
+
+So right now:
+
+- **Read repository:** ❌ not yet — repo authorization is missing
+- **Write/change files:** ✅ capability exists, but ❌ cannot use it on this repo yet
+- **Commit/push:** ✅ capability exists, but ❌ cannot use it on this repo yet
+- **Read and obey vault safety rules:** ❌ cannot verify them until I can read the repo
+- **`Raw/Export/`:** I will treat it as **strictly read-only / untouchable**
+- **Migration/manifest files:** **never modify**
+- **Changes made so far:** **none**
+
+Once access works, my order will be: read the repository/vault instructions first → inspect `chatgpt-to-obsidian/utkarsh-vault` → identify the correct existing note(s) for this EchoQuery update → make only the minimal Markdown changes → verify the diff contains **nothing under `Raw/Export/` and no migration/manifest files** → commit and push.
+
+Please open your **GitHub plugin/connection settings** in ChatGPT and make sure the connection has access to:
+
+`unknown77master/utkarsh-obsidian-mem`
+
+If GitHub asks which repositories the ChatGPT app may access, include that repository. Then tell me **done** and I’ll re-verify access and push the new EchoQuery/B.E.-project scope update.
+
+## User
+
+yes i have access to, i am added as contributor by unknown (btw, is my secondary account)
+
+## Assistant
+
+Worked for 19s
+
+## Assistant
+
+Yes — your screenshots confirm that **your `utkarsh-wadalkar` GitHub account itself has contributor access** to the private repository owned by `unknown77master`.
+
+The problem is narrower: the **GitHub connection available to me in ChatGPT does not currently have that repository installed/authorized**.
+
+I verified the connection directly:
+
+```text
+Authenticated GitHub user:
+utkarsh-wadalkar
+```
+
+But when I asked the connection which collaborator repositories it can access, it only returned:
+
+```text
+DgrnBoi/statskill-ai
+Yash151005/FaceChain
+```
+
+And the GitHub App installation visible to this ChatGPT connection is currently:
+
+```text
+DgrnBoi
+```
+
+So these are two different permissions:
+
+```text
+utkarsh-wadalkar ── collaborator ──> unknown77master/utkarsh-obsidian-mem
+ ✅
+
+ChatGPT GitHub App ────────────────> unknown77master/utkarsh-obsidian-mem
+ ❌ currently not installed/authorized
+```
+
+Because `unknown77master` is your secondary account, the clean fix is to **install/authorize the ChatGPT GitHub App from the `unknown77master` account** and give it access to `utkarsh-obsidian-mem`.
+
+After that, I can verify all four things you originally asked for before modifying anything:
+
+1. Read `chatgpt-to-obsidian/utkarsh-vault`.
+2. Read the vault's own agent/safety instructions first.
+3. Verify I can create/update files and push commits.
+4. Explicitly protect:
+ - `chatgpt-to-obsidian/utkarsh-vault/Raw/Export/**`
+ - `.chatgpt-migration-state.json`
+ - any migration/manifest files specified by the vault
+ - any other protected paths defined by its instructions.
+
+Your screenshot also shows `.chatgpt-migration-state.json` at the vault root. **I will not touch it.**
+
+Once you've added the GitHub App access for that repo, just say **done**. I'll test the connection again; if it succeeds, I'll read the safety rules before making the EchoQuery update.
+
+## User
+
+ok, now lets go back to main chat topic of KaushalVaani
+
+## Assistant
+
+Worked for 6s
+
+## Assistant
+
+Yes — back to **KaushalVaani**.
+
+The current locked direction is:
+
+**KaushalVaani / EchoQuery** is your **B.E. final-year project**, not a hackathon prototype anymore. It remains **multilingual, voice-first, low-latency-focused**, but the architecture has shifted from classic vector-RAG being the center to **Neo4j knowledge-graph reasoning** being the center.
+
+The implementation philosophy we’re keeping from old EchoQuery is important:
+
+> keep the deterministic reasoning path fast, measurable, and explainable; use LLMs mainly for language understanding and explanation, not as the source of truth.
+
+So the core system is now:
+
+```text
+Voice
+ ↓
+Multilingual STT
+ ↓
+Structured Beneficiary Profile
+ ↓
+Neo4j Knowledge Graph
+ ↓
+Skill-gap / eligibility / pathway reasoning
+ ↓
+Candidate ranking
+ ↓
+Evidence-backed recommendation
+ ↓
+Multilingual LLM explanation
+ ↓
+TTS / UI
+```
+
+And for latency, we are **not forcing an artificial `<200 ms` end-to-end claim anymore**. Instead, we preserve the concept and measure the full pipeline properly:
+
+```text
+STT latency
+Profile extraction latency
+Graph query latency
+Reasoning latency
+Ranking latency
+LLM TTFT
+Generation latency
+End-to-end latency
+```
+
+with **P50 / P95 / P99** where useful.
+
+The next implementation step I would lock is **not coding immediately**. We should first define the **authoritative graph schema and contracts** so we don’t end up redesigning Neo4j halfway through development.
+
+That means fixing entities such as:
+
+```text
+Beneficiary
+Skill
+Occupation
+Qualification
+NSQFLevel
+NOS
+Sector
+Region
+TrainingProvider
+Opportunity
+```
+
+and relations such as:
+
+```text
+HAS_SKILL
+REQUIRES_SKILL
+LEADS_TO
+BELONGS_TO
+HAS_LEVEL
+CONTAINS_NOS
+ELIGIBLE_FOR
+AVAILABLE_IN
+REQUIRES_QUALIFICATION
+PROGRESSES_TO
+```
+
+Once that is stable, we can move into **NQR/NSQF ingestion → Neo4j** and then beneficiary-profile reasoning.
+
 ## Resources
 
 ### Local attachments
@@ -21806,6 +22464,8 @@ We can always create a separate token later if EchoQuery genuinely needs Hugging
 - [2026-08-21-ai-rag-engine.md](../../../Raw/Export/file_00000000eb0082118c14ea3bf7ea93a6.dat)
 - [128d6bdb-aa37-40e6-8552-dcf790874bf5.png](../../../Raw/Export/file_0000000044e08211879d11e94678bd7c.dat)
 - [dc84ba55-0f81-4107-8fed-04293cabf814.png](../../../Raw/Export/file_00000000028882119bf880dda76c34c9.dat)
+- [ab53400f-4418-4008-a797-8f4126c1d820.png](../../../Raw/Export/file_00000000970881fa990c518a5a5428a4.dat)
+- [3368a691-5c44-4534-8ddb-a8c1f9398c19.png](../../../Raw/Export/file_000000004e4c820bbe6cdf40d8efdaab.dat)
 
 ### External references
 - [ai4bharat/MSMARCO-XI at 8c40bdb395dec0c60ae44f900b11f036bd5311be](https://huggingface.co/datasets/ai4bharat/MSMARCO-XI/tree/8c40bdb395dec0c60ae44f900b11f036bd5311be?utm_source=chatgpt.com)
@@ -21998,3 +22658,19 @@ We can always create a separate token later if EchoQuery genuinely needs Hugging
 - [Builder classes · Hugging Face](https://huggingface.co/docs/datasets/v2.5.1/package_reference/builder_classes?utm_source=chatgpt.com)
 - [JuICe.py · koutch/JuICe at main](https://huggingface.co/datasets/koutch/JuICe/blob/main/JuICe.py?utm_source=chatgpt.com)
 - [evalkit_tf437/lib/python3.10/site-packages/datasets/load.py · ZTWHHH/envs_1 at febc4e7308454cdb404ca56813de579e77776059](https://huggingface.co/datasets/ZTWHHH/envs_1/blob/febc4e7308454cdb404ca56813de579e77776059/evalkit_tf437/lib/python3.10/site-packages/datasets/load.py?utm_source=chatgpt.com)
+- [BE_project](https://chatgpt.com/c/6aa3ae89-8230-83ee-944b-49974d284f05)
+- [EchoQuery](https://chatgpt.com/c/6a81ac51-7894-83ee-9d19-b4c68d755e51)
+- [Change Git Remote Repository](https://chatgpt.com/c/6aac0539-0f9c-83ee-9f81-92fce0e7a690)
+- [Create Codex Goal Prompt](https://chatgpt.com/c/6a8b2301-b040-83e9-a74c-dbd4ec0d153a)
+- [GitHub - chaneaidu/obsidian-memory · GitHub](https://github.com/chaneaidu/obsidian-memory?utm_source=chatgpt.com)
+- [GitHub - i-iooi-i/obsidian-memoria: 浮墨式碎片笔记瀑布流，数据永远是纯 Markdown，自由属于你。Waterfall-style memo plugin for flomo-like fleeting thoughts, stored as plain Markdown. · GitHub](https://github.com/i-iooi-i/obsidian-memoria?utm_source=chatgpt.com)
+- [GitHub - kkonstvol-lab/obsidian-memory: Obsidian LLM Wiki + Agent Memory system · GitHub](https://github.com/kkonstvol-lab/obsidian-memory?utm_source=chatgpt.com)
+- [obsidian-memory/AGENTS.md at master · kkonstvol-lab/obsidian-memory · GitHub](https://github.com/kkonstvol-lab/obsidian-memory/blob/master/AGENTS.md?utm_source=chatgpt.com)
+- [GitHub - aguitasantacruz-git/obsidian-ia-memory: Universal persistent memory system for AI tools (Claude Code, Codex, Cursor...) using Obsidian as the single source of truth · GitHub](https://github.com/aguitasantacruz-git/obsidian-ia-memory?utm_source=chatgpt.com)
+- [GitHub - honam867/obsidian-memory-layer-mcp · GitHub](https://github.com/honam867/obsidian-memory-layer-mcp?utm_source=chatgpt.com)
+- [GitHub - macbyclp/obsidian-memorry: Obsidian companion plugin for memorry -- search, filter, and browse your synced AI-memory notes from a sidebar pane. · GitHub](https://github.com/macbyclp/obsidian-memorry?utm_source=chatgpt.com)
+- [GitHub - LostBirdx/obsidian-memo · GitHub](https://github.com/LostBirdx/obsidian-memo?utm_source=chatgpt.com)
+- [GitHub - mithunyc/obsidian-agent-memory: A production-grade memory system for AI coding agents. Context Capsules, Tiered Retrieval, Contradiction Resolution. · GitHub](https://github.com/mithunyc/obsidian-agent-memory?utm_source=chatgpt.com)
+- [GitHub - TT-Wang/memem: A Claude Code plugin that gives Claude persistent memory across sessions — stores lessons and decisions as markdown in your Obsidian vault, searches them with SQLite FTS5, and mines past transcripts automatically. · GitHub](https://github.com/TT-Wang/memem?utm_source=chatgpt.com)
+- [GitHub - dang1507/Obsidian-Memos: A quick capture plugin for Obsidian, all data from your notes. · GitHub](https://github.com/dang1507/Obsidian-Memos?utm_source=chatgpt.com)
+- [GitHub - georgeantonopoulos/obsidian-cli-memory-bank-skill: Local-first Obsidian memory bank CLI for AI coding agents, with run logging, linked project notes, compaction, and search. · GitHub](https://github.com/georgeantonopoulos/obsidian-cli-memory-bank-skill?utm_source=chatgpt.com)

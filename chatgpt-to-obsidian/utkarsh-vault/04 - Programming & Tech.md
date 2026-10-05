@@ -1,7 +1,7 @@
 ---
 type: "memory-category"
 source: "ChatGPT export"
-created: "2026-09-24"
+created: "2026-09-29"
 ---
 # Programming & Tech
 
@@ -72,7 +72,7 @@ created: "2026-09-24"
 - which one should i use i order to replace this the work done by gemini-2.0-flash
   - Confidence: 0.82; Sources: 69872b8b-b684-83a8-a489-baec6179bca6 (n8n output webhook setup)
 - i want to create this
-  - Confidence: 0.82; Sources: 6989f9f4-f594-8323-affd-1fac010257df (Get API Key Instructions), 6a95e183-1508-83ee-8856-621ea191b4a4 (AI Demo VIdeo SaaS), 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup)
+  - Confidence: 0.82; Sources: 6989f9f4-f594-8323-affd-1fac010257df (Get API Key Instructions), 6a95e183-1508-83ee-8856-621ea191b4a4 (AI Demo VIdeo SaaS), 6a4bdcbf-8ca0-83ee-9e01-f7d961f07879 (Apple Music ALAC Setup), 6aafb066-0b58-83ee-aa52-b681596c30ea (Daily Productivity Plan)
 - but i want generationConfig\": {\n \"responseModalities\": \[\n \"TEXT\",\n \"IMAGE\"
   - Confidence: 0.82; Sources: 6989f9f4-f594-8323-affd-1fac010257df (Get API Key Instructions)
 - i want to make this reop private, will code rabbit be able to work properly
@@ -109,8 +109,6 @@ created: "2026-09-24"
   - Confidence: 0.82; Sources: 6a4a8ba2-5818-83ee-b816-c1dbcac25d8d (Mneme Memory Ownership)
 - what about that time when i build a automation to download apple music songs in high quality ALAC
   - Confidence: 0.82; Sources: 6a4a8ba2-5818-83ee-b816-c1dbcac25d8d (Mneme Memory Ownership)
-- https://github.com/utkarsh-wadalkar add more relevant projects, because i want to appear for interview of python/ai/ml:
-  - Confidence: 0.82; Sources: 6a4cf3ea-f630-83e8-a470-d4966e71ebd8 (LaTeX Resume)
 - give all these ports, i want to learn them
   - Confidence: 0.82; Sources: 6a587917-e970-83ee-8274-644c8882a140 (HTTP HTTPS Port Numbers), 6a9acb11-f954-83e8-a1ac-49cdbcb93919 (AI Engineer Learning Roadmap)
 - and will limits reset after 2 days to 0 and i can use again and again, only if i need limits above 10$ i need to buy subscription else it is free
@@ -193,32 +191,12 @@ created: "2026-09-24"
   - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
 - i want to comment on this post, write suggestions for what shold i comment
   - Confidence: 0.82; Sources: 6a815dcb-7e94-83ee-a606-ece9f3b02a01 (Request for Event Approval)
-- me and my team of 2 other members are working to build this before, tasks needs to be delegated, tell me what should i work on
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
-- ok give me entire idea of what are we doing here, and i will be using codex, but i need plan orchestration and things to keep eye on because i have worked previously with speach to text model which was voxtral mini multi langual
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
-- what was the part of project which i need to cover and other 2
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
-- ok now i need to start doind this, i have not downloaded dataset so lets start setting up entire thing manually
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
-- The success of this project would forever change the world forever making it known that something this powerful can be manmade.', 'The Manhattan Project was the name for a project conducted during World War II, to develop the first atomic bomb.
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
-- my friend pushed frontend code i want to pull in my pc but not in worktree
-  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
 - just one sem one subject one topic because i want to record a video for shortlisting process
   - Confidence: 0.82; Sources: 6a89d21e-12a0-83e8-8202-ba608ffb9656 (iQOO)
 - this is the message i get i want it to view my screen
   - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
 - i want openwisper to view my screen
   - Confidence: 0.82; Sources: 6a9838a7-3550-83e8-a635-91a8c98cafe1 (Enable Screen Viewing)
-- This project should be architecture-first but NOT overengineered.
-  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
-- Act as the senior engineer/architect working with me on this project.
-  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
-- yes this is what i want to make fro gthe start
-  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
-- i want 3rd option
-  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
 - now i want to redesign preexisting fronted of https://github.com/DgrnBoi/statskill-ai, user has added me as contributor, so i can make changes, give me prompt for this
   - Confidence: 0.82; Sources: 6a9d8ccb-d424-83e8-b5ae-8416e35b1de9 (Codex, Claude Skills List)
 - how can i use 8500 rs to buy gpt plus plan with those credits only not from my bank
@@ -231,12 +209,44 @@ created: "2026-09-24"
   - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
 - i want to delete this
   - Confidence: 0.82; Sources: 6aa18396-1f20-83ee-a41a-c4b433c4f573 (Create Live SVG Card)
-- I want to present this PDF for my fourth-year project, and this PDF will act as an ideation idea presentation to my teacher.
-  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (Modify SIH26097 PDF)
 - but please i want graphical remote access, i donr like using cmd to do things on pc
   - Confidence: 0.82; Sources: 6aa6bd79-08cc-83ee-b7b1-8795f3222aa4 (Omarchy USB Setup)
 - Yes thanks what I want
   - Confidence: 0.82; Sources: 6aa6bd79-08cc-83ee-b7b1-8795f3222aa4 (Omarchy USB Setup)
+- https://github.com/utkarsh-wadalkar add more relevant projects, because i want to appear for interview of python/ai/ml:
+  - Confidence: 0.82; Sources: 6a4cf3ea-f630-83e8-a470-d4966e71ebd8 (LaTeX Resume)
+- me and my team of 2 other members are working to build this before, tasks needs to be delegated, tell me what should i work on
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- ok give me entire idea of what are we doing here, and i will be using codex, but i need plan orchestration and things to keep eye on because i have worked previously with speach to text model which was voxtral mini multi langual
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- what was the part of project which i need to cover and other 2
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- ok now i need to start doind this, i have not downloaded dataset so lets start setting up entire thing manually
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- The success of this project would forever change the world forever making it known that something this powerful can be manmade.', 'The Manhattan Project was the name for a project conducted during World War II, to develop the first atomic bomb.
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- my friend pushed frontend code i want to pull in my pc but not in worktree
+  - Confidence: 0.82; Sources: 6a81ac51-7894-83ee-9d19-b4c68d755e51 (EchoQuery)
+- This project should be architecture-first but NOT overengineered.
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- Act as the senior engineer/architect working with me on this project.
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- yes this is what i want to make fro gthe start
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- i want 3rd option
+  - Confidence: 0.82; Sources: 6a9bfee1-cfac-83ee-8f44-1f37bcaef079 (OCR GST Chat)
+- I want to present this PDF for my fourth-year project, and this PDF will act as an ideation idea presentation to my teacher.
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (BE_project)
+- ok i want to update codex on it, he is far behind on this, please give me, prompt so that it updates projects .context folder
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (BE_project)
+- which skill should i use with model tera high or xhigh
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (BE_project)
+- i want to use it globally
+  - Confidence: 0.82; Sources: 6aa3ae89-8230-83ee-944b-49974d284f05 (BE_project)
+- i want to change remote repo from existing to
+  - Confidence: 0.82; Sources: 6aac0539-0f9c-83ee-9f81-92fce0e7a690 (Change Git Remote Repository)
+- I want to try it, give me all sources
+  - Confidence: 0.82; Sources: 6ab0efec-b3f4-83e9-9508-2c76235cde45 (Find All Sources)
 
 ## Technologies
 
@@ -245,5 +255,6 @@ created: "2026-09-24"
 - [[Technologies/Go]]
 - [[Technologies/Java]]
 - [[Technologies/Linux]]
+- [[Technologies/Obsidian]]
 - [[Technologies/Python]]
 - [[Technologies/Windows]]

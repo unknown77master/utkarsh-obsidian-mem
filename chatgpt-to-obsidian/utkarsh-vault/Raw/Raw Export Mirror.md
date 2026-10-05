@@ -2,7 +2,7 @@
 type: "raw-export-index"
 scope: "raw-export"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
+updated: "2026-09-29"
 ---
 # Raw Export Mirror
 

@@ -234,7 +234,7 @@
     "6a4347f2-60a8-83ee-863f-97917b9ad7a0": "1b3b6ba07e92de2b8b63ed5247ff8465cf9d3f22e0e83bb15fb325c24782fcdc",
     "6a4a8ba2-5818-83ee-b816-c1dbcac25d8d": "287e9a295658e1e720da387ba9bd23c376479d1047cf848aaf9b8e8ad60727b3",
     "6a4bdcbf-8ca0-83ee-9e01-f7d961f07879": "2bcee129c3a54ec32a3d910ffe71ab1d4db691b79a7130f8aa7091195f842443",
-    "6a4cf3ea-f630-83e8-a470-d4966e71ebd8": "c28176af72cc53c619d1e769eda4eb5aa92fe291ab7be1337805d267c979ae20",
+    "6a4cf3ea-f630-83e8-a470-d4966e71ebd8": "48ff4f9d9c829059d3e9ffc3f876f37e0d6d7b00afb18ae6181dac892743c154",
     "6a50ef7e-e788-83ee-9e1c-4ebb376a592a": "157b37d85d81aa1b40fe29a56152ff51a90a8fc441295d7347d394c975f6aaaf",
     "6a524cc9-a9c8-83ee-bcae-ae6ec83175d6": "d61138d7885d954b044c8f72c553cd00e21ef70fccbc531ebb2fcc9539bb9244",
     "6a53322b-57fc-83ee-aec0-555b9ee47d94": "0134411cec04fbc2de8069fb35ed4650b1b760893e4e98f03feab50e8bf6c133",
@@ -280,10 +280,10 @@
     "6a7d37ae-7d8c-83e8-8325-0c5f778bfb79": "31b158bfa94997733e03553c01c15bea91135b9cd2e9e42beaff206d2d457d41",
     "6a7eb19a-e7d8-83e8-abbc-6ea3b3bc2b0e": "d32772a03da2b096a7c5d6bb6b3872c0655220db80d232d8206365349910cf51",
     "6a808a73-cef4-83e8-82b7-a7ee448cf63e": "0cd93c9e844812ba65fda60bed9a4559eff396d515346477f9b0fa51ac1a592c",
-    "6a813e3f-ddb8-83ee-932c-8164d4de0a90": "c7d4af42d57dfc3e27bb11d8ac3c7bfc20b5618b52fa174805d33dfc1c198e20",
+    "6a813e3f-ddb8-83ee-932c-8164d4de0a90": "1fc19d8619b1321a7a5315e0b6180a6678159b6cb35836541915934d9452b9d8",
     "6a814231-fd04-83e8-8efd-b0f59ec9d17b": "39bce32158afdcbe61bf07ba6b851fd0c272153084f7f658fa2e7e0ef20ff482",
     "6a815dcb-7e94-83ee-a606-ece9f3b02a01": "0cf67a8933560722aae2a34a394d817f06548ae788550eb9b3888a5c8b1d85e9",
-    "6a81ac51-7894-83ee-9d19-b4c68d755e51": "6a30c29b80dfe9b05d2d000453dd953eadeac31046121de63f4e6a1d51b73fff",
+    "6a81ac51-7894-83ee-9d19-b4c68d755e51": "5473c4b71748abd463b8d252161766c82a10eedd2d80d8234ea84e17ad539204",
     "6a84173a-d6a8-83ee-bf61-cc08f6e77696": "9d443df4f89b1e02ec80680419546d31f3f213d5871c7474e9653355666e2ab9",
     "6a88085f-5324-83ee-a420-a8b3799e32ef": "7d44480c48bea8c071fa50ebc0d71b9cf8b4c93ae7d914dadd3e867bb412b204",
     "6a89d21e-12a0-83e8-8202-ba608ffb9656": "9055ae1dc36d1ae0c16f82e08cd614025729166afb5205173b811452e73f5585",
@@ -336,23 +336,30 @@
     "ff610650-276a-4c6f-a589-51e355bfd182": "152381d29c8926f7aa7004db1091c0976a1c60bf3e7646309d6bcee0dad00dd3",
     "fffa7430-c456-4188-bbe3-1d0eadafe08e": "2853878d97e45c0fedbf0bcc9044959ba694eb5f429a366f423a446cc76e3638",
     "6a980e0e-d3c0-83e9-911c-e63144b8288f": "a8e7abe21d5585bc0b98c5cda1c5c9cfcd5b0b02cdd351993db9c74e6a95b2f7",
-    "6a981e65-0f2c-83ee-8778-42ae81c0bb79": "297b914e0662100c989bf79637c2ffb5221396e218f35de9680de05d1d78e5a9",
-    "6a981e89-e374-83ee-8c62-f14e7936d5b4": "6a9caa1f921801d5ef63b57c8698cd22e278891b6f934f404ecc92fac1b21cc8",
+    "6a981e65-0f2c-83ee-8778-42ae81c0bb79": "8ab18c89bf97882a4c86cfb4d4b03c819309603a8b325cbde58d3abc279cf804",
+    "6a981e89-e374-83ee-8c62-f14e7936d5b4": "5c7e8b6ff4357de587878dbfe18857afd26d67f69f456b7154e241c7bc68477b",
     "6a9838a7-3550-83e8-a635-91a8c98cafe1": "44b9ea1c6e69b2c890e18482cb38d96d1809ec82ea50fda0c323a8078651027a",
     "6a9a897e-f218-83e8-b29a-60289518fb90": "40ed557bbec52616ee31f2c01a1ba0a6f86e9dc72ebcf1dbb19fa8244a6c69e9",
     "6a9acb11-f954-83e8-a1ac-49cdbcb93919": "383078705f15bea29d5feac6adf90c5c1732a5a1de4af99cddf0d52e28eb4f2b",
     "6a9b351a-f734-83e8-a01e-0fc1a52a6fbb": "d65e6a368dad04c58129262537ed196376e0ea3f237a08bc9535e0a6dd0ee948",
-    "6a9bfee1-cfac-83ee-8f44-1f37bcaef079": "9e8855a7cb496e2fdf83a850db3248d239a3026e05e88039fa272c39307322c8",
+    "6a9bfee1-cfac-83ee-8f44-1f37bcaef079": "9ced5a1df4c7ef3f6c78134b9b1f6e246e388dfdef063a59d0f94ab5cf0288ae",
     "6a9d8ccb-d424-83e8-b5ae-8416e35b1de9": "54e5052fbc05e1f9ad536e3dc4eb21d98da2adc6ceb048ee3c202330bb7fe0ed",
     "6a9dd2a9-6638-83ee-943d-bfd46a6cb6ea": "f8c0b30818b757a025739f7e373322af44c86595b8f6e4b9befd2e68e459c9bb",
     "6a9ddd6f-7c58-83ee-9482-ebbf8cd6b1dc": "b3a85d7b5c39ea49169df126a4b63f0b70d3fe0b0fa4b3ff7a422507553f88aa",
     "6a9fa886-b71c-83e8-ad8b-9c3434e10d45": "61fee4da90999253c6b56bc64c73e53ac0907a69ed6018926419385e9b1fdb63",
     "6aa18396-1f20-83ee-a41a-c4b433c4f573": "5bd8044c90485af95eb85a2ca6e61e50ca37174b62e9bcd21e2fc23adee8ac16",
-    "6aa3ae89-8230-83ee-944b-49974d284f05": "c4b629fa512ba065d94665979d4d288c76262e5f8b93da3daba2c512fb1e9e6f",
+    "6aa3ae89-8230-83ee-944b-49974d284f05": "694bd5254b1cc12d5f14739bbd536973b6981d715bc3edc99422018ff0be9f60",
     "6aa69329-ec58-83ee-b874-8b6558fab624": "818653c0eb98903e856878ffadd9064b4a8357414312df4329c79ff17f9aa25d",
     "6aa6bd79-08cc-83ee-b7b1-8795f3222aa4": "3341c187a22978485d10ae86465f4d36839083ef9f5675a41d8ac0fbba5fb120",
     "6aa9963d-7060-83ee-ae16-fbe8bdf7e015": "4a6c931942fc77d7104d3e90a91383127728f4b2e87f470eb57fe84876cede5e",
-    "6aaa276e-7d8c-83e8-81d6-23bc5a8a2e40": "deb6e1cdad17667368b3dd9dd0895b8e35ec24f13f18e4de3fda9107f14ab7ed"
+    "6aaa276e-7d8c-83e8-81d6-23bc5a8a2e40": "deb6e1cdad17667368b3dd9dd0895b8e35ec24f13f18e4de3fda9107f14ab7ed",
+    "6aaacb49-e69c-83e8-bf87-4eba67bb32e5": "5bd2604c6d2fa6464108808d0e2eeae76faa9c1861b9946d37cb623c399177b5",
+    "6aabcc2a-2448-83e8-9fa9-f4d76756642d": "3c165fec1e2738c6b8687f199d6866da4fed22db344359d2f30449ecfcce5739",
+    "6aac0539-0f9c-83ee-9f81-92fce0e7a690": "35a944df66a6657f968b035d8cc235373b301684e32e62d4ed5cb3e74de9663d",
+    "6aacd970-8ee8-83ee-8739-a32eaa2a7c56": "91d853111ac14591ce86549c9e25d4f2269108594c1e95f13f63b7bb303f0354",
+    "6aafb066-0b58-83ee-aa52-b681596c30ea": "224d1ba84ffe282fb9fe8a845edeb121926c1ee067a1fd2d79f64d7fdc853e66",
+    "6ab0efec-b3f4-83e9-9508-2c76235cde45": "5d89d78793cd7c149b4c1c329786a1505523d0d53cd99f0c6569080078870b41",
+    "6ab3c023-5bd8-83ee-9a9c-e9f9302cfcd6": "caa0aa4f3e23cef3998b3f9ae53cd13cbb7af72a94edb40cdf2f4dc3f60772e2"
   },
   "memories": [
     {
@@ -1258,7 +1265,9 @@
       "category": "technical_context",
       "confidence": 0.82,
       "durability": "durable",
-      "technologies": [],
+      "technologies": [
+        "Obsidian"
+      ],
       "sources": [
         {
           "conversation_id": "6989f9f4-f594-8323-affd-1fac010257df",
@@ -1274,6 +1283,11 @@
           "conversation_id": "6a4bdcbf-8ca0-83ee-9e01-f7d961f07879",
           "title": "Apple Music ALAC Setup",
           "timestamp": 1783356779.071
+        },
+        {
+          "conversation_id": "6aafb066-0b58-83ee-aa52-b681596c30ea",
+          "title": "Daily Productivity Plan",
+          "timestamp": 1789898847.789
         }
       ]
     },
@@ -1558,6 +1572,11 @@
           "conversation_id": "6a21337e-4910-83ab-9881-9486a42594d5",
           "title": "CS ANN",
           "timestamp": 1780560780.642
+        },
+        {
+          "conversation_id": "6aabcc2a-2448-83e8-9fa9-f4d76756642d",
+          "title": "Improve Coding Instructions",
+          "timestamp": 1789643986.457
         }
       ]
     },
@@ -1656,22 +1675,6 @@
           "conversation_id": "6a4a8ba2-5818-83ee-b816-c1dbcac25d8d",
           "title": "Mneme Memory Ownership",
           "timestamp": 1783356336.655
-        }
-      ]
-    },
-    {
-      "statement": "https://github.com/utkarsh-wadalkar add more relevant projects, because i want to appear for interview of python/ai/ml:",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [
-        "Python"
-      ],
-      "sources": [
-        {
-          "conversation_id": "6a4cf3ea-f630-83e8-a470-d4966e71ebd8",
-          "title": "LaTeX Resume",
-          "timestamp": 1783428617.002
         }
       ]
     },
@@ -2713,104 +2716,6 @@
       ]
     },
     {
-      "statement": "me and my team of 2 other members are working to build this before, tasks needs to be delegated, tell me what should i work on",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1786883181.692
-        }
-      ]
-    },
-    {
-      "statement": "ok give me entire idea of what are we doing here, and i will be using codex, but i need plan orchestration and things to keep eye on because i have worked previously with speach to text model which was voxtral mini multi langual",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1786884063.674
-        }
-      ]
-    },
-    {
-      "statement": "i am writing this in .env not .env.example",
-      "category": "about_me",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1786986020.839
-        }
-      ]
-    },
-    {
-      "statement": "what was the part of project which i need to cover and other 2",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1786998461.988
-        }
-      ]
-    },
-    {
-      "statement": "ok now i need to start doind this, i have not downloaded dataset so lets start setting up entire thing manually",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1787003005.144
-        }
-      ]
-    },
-    {
-      "statement": "The success of this project would forever change the world forever making it known that something this powerful can be manmade.', 'The Manhattan Project was the name for a project conducted during World War II, to develop the first atomic bomb.",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1787156179.282
-        }
-      ]
-    },
-    {
-      "statement": "my friend pushed frontend code i want to pull in my pc but not in worktree",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
-          "title": "EchoQuery",
-          "timestamp": 1787298201.799
-        }
-      ]
-    },
-    {
       "statement": "just one sem one subject one topic because i want to record a video for shortlisting process",
       "category": "technical_context",
       "confidence": 0.82,
@@ -2891,76 +2796,6 @@
           "conversation_id": "6a9acb11-f954-83e8-a1ac-49cdbcb93919",
           "title": "AI Engineer Learning Roadmap",
           "timestamp": 1788529591.100708
-        }
-      ]
-    },
-    {
-      "statement": "should i use langchain langraph llama model olama for finetuning or should i use langchain langraph and sarvam multilingual ocr model api or should i make n8n workflow",
-      "category": "workflow",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
-          "title": "OCR GST Chat",
-          "timestamp": 1788612454.669
-        }
-      ]
-    },
-    {
-      "statement": "This project should be architecture-first but NOT overengineered.",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
-          "title": "OCR GST Chat",
-          "timestamp": 1788707280.276
-        }
-      ]
-    },
-    {
-      "statement": "Act as the senior engineer/architect working with me on this project.",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
-          "title": "OCR GST Chat",
-          "timestamp": 1788707280.276
-        }
-      ]
-    },
-    {
-      "statement": "yes this is what i want to make fro gthe start",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
-          "title": "OCR GST Chat",
-          "timestamp": 1788945096.862
-        }
-      ]
-    },
-    {
-      "statement": "i want 3rd option",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
-          "title": "OCR GST Chat",
-          "timestamp": 1788950726.369
         }
       ]
     },
@@ -3079,34 +2914,6 @@
       ]
     },
     {
-      "statement": "I want to present this PDF for my fourth-year project, and this PDF will act as an ideation idea presentation to my teacher.",
-      "category": "technical_context",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
-          "title": "Modify SIH26097 PDF",
-          "timestamp": 1789111946.249321
-        }
-      ]
-    },
-    {
-      "statement": "I want to write down the problem statement for my project.",
-      "category": "project",
-      "confidence": 0.82,
-      "durability": "durable",
-      "technologies": [],
-      "sources": [
-        {
-          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
-          "title": "Modify SIH26097 PDF",
-          "timestamp": 1789119488.505868
-        }
-      ]
-    },
-    {
       "statement": "i want to make a boot pendrive for omarchy linux for my old pc, use @Firecrawl to get all relevant information to do it.",
       "category": "environment",
       "confidence": 0.82,
@@ -3147,6 +2954,386 @@
           "conversation_id": "6aa6bd79-08cc-83ee-b7b1-8795f3222aa4",
           "title": "Omarchy USB Setup",
           "timestamp": 1789489308.748632
+        }
+      ]
+    },
+    {
+      "statement": "https://github.com/utkarsh-wadalkar add more relevant projects, because i want to appear for interview of python/ai/ml:",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [
+        "Python"
+      ],
+      "sources": [
+        {
+          "conversation_id": "6a4cf3ea-f630-83e8-a470-d4966e71ebd8",
+          "title": "LaTeX Resume",
+          "timestamp": 1783428617.002
+        }
+      ]
+    },
+    {
+      "statement": "I am filling form",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a4cf3ea-f630-83e8-a470-d4966e71ebd8",
+          "title": "LaTeX Resume",
+          "timestamp": 1789663045.015581
+        }
+      ]
+    },
+    {
+      "statement": "me and my team of 2 other members are working to build this before, tasks needs to be delegated, tell me what should i work on",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1786883181.692
+        }
+      ]
+    },
+    {
+      "statement": "ok give me entire idea of what are we doing here, and i will be using codex, but i need plan orchestration and things to keep eye on because i have worked previously with speach to text model which was voxtral mini multi langual",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1786884063.674
+        }
+      ]
+    },
+    {
+      "statement": "i am writing this in .env not .env.example",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1786986020.839
+        }
+      ]
+    },
+    {
+      "statement": "what was the part of project which i need to cover and other 2",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1786998461.988
+        }
+      ]
+    },
+    {
+      "statement": "ok now i need to start doind this, i have not downloaded dataset so lets start setting up entire thing manually",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1787003005.144
+        }
+      ]
+    },
+    {
+      "statement": "The success of this project would forever change the world forever making it known that something this powerful can be manmade.', 'The Manhattan Project was the name for a project conducted during World War II, to develop the first atomic bomb.",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1787156179.282
+        }
+      ]
+    },
+    {
+      "statement": "my friend pushed frontend code i want to pull in my pc but not in worktree",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1787298201.799
+        }
+      ]
+    },
+    {
+      "statement": "ok revise what have we done and what we have to do, also dont forget https://chatgpt.com/share/6aac03d6-bd94-83e9-9791-77e0e2466940 echoquery is BE_project and its scope, direction is changed but i want to follow implementation of echoquery the strong focous on low latency 200ms part, i want that low latency part concept, but now not soo much focus on specifically 200ms, cuz now we are not building this for hackathon selection, we are making it as my final year project",
+      "category": "project",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1789663780.094
+        }
+      ]
+    },
+    {
+      "statement": "yes i have access to, i am added as contributor by unknown (btw, is my secondary account)",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a81ac51-7894-83ee-9d19-b4c68d755e51",
+          "title": "EchoQuery",
+          "timestamp": 1789669666.404
+        }
+      ]
+    },
+    {
+      "statement": "should i use langchain langraph llama model olama for finetuning or should i use langchain langraph and sarvam multilingual ocr model api or should i make n8n workflow",
+      "category": "workflow",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
+          "title": "OCR GST Chat",
+          "timestamp": 1788612454.669
+        }
+      ]
+    },
+    {
+      "statement": "This project should be architecture-first but NOT overengineered.",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
+          "title": "OCR GST Chat",
+          "timestamp": 1788707280.276
+        }
+      ]
+    },
+    {
+      "statement": "Act as the senior engineer/architect working with me on this project.",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
+          "title": "OCR GST Chat",
+          "timestamp": 1788707280.276
+        }
+      ]
+    },
+    {
+      "statement": "yes this is what i want to make fro gthe start",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
+          "title": "OCR GST Chat",
+          "timestamp": 1788945096.862
+        }
+      ]
+    },
+    {
+      "statement": "i want 3rd option",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6a9bfee1-cfac-83ee-8f44-1f37bcaef079",
+          "title": "OCR GST Chat",
+          "timestamp": 1788950726.369
+        }
+      ]
+    },
+    {
+      "statement": "I want to present this PDF for my fourth-year project, and this PDF will act as an ideation idea presentation to my teacher.",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789111946.249321
+        }
+      ]
+    },
+    {
+      "statement": "I want to write down the problem statement for my project.",
+      "category": "project",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789119488.505868
+        }
+      ]
+    },
+    {
+      "statement": "do you know my project EchoQuery",
+      "category": "project",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789564191.457
+        }
+      ]
+    },
+    {
+      "statement": "there are some changes to it, i am going to use Neo4j as graph knowledge base",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789564265.544
+        }
+      ]
+    },
+    {
+      "statement": "ok i want to update codex on it, he is far behind on this, please give me, prompt so that it updates projects .context folder",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789564446.778
+        }
+      ]
+    },
+    {
+      "statement": "which skill should i use with model tera high or xhigh",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789564553.824
+        }
+      ]
+    },
+    {
+      "statement": "i want to use it globally",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aa3ae89-8230-83ee-944b-49974d284f05",
+          "title": "BE_project",
+          "timestamp": 1789564872.766
+        }
+      ]
+    },
+    {
+      "statement": "i want to change remote repo from existing to",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aac0539-0f9c-83ee-9f81-92fce0e7a690",
+          "title": "Change Git Remote Repository",
+          "timestamp": 1789658423.788
+        }
+      ]
+    },
+    {
+      "statement": "No this is my father's journey not, I am going not",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6aafb066-0b58-83ee-aa52-b681596c30ea",
+          "title": "Daily Productivity Plan",
+          "timestamp": 1789978675.91212
+        }
+      ]
+    },
+    {
+      "statement": "I want to try it, give me all sources",
+      "category": "technical_context",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6ab0efec-b3f4-83e9-9508-2c76235cde45",
+          "title": "Find All Sources",
+          "timestamp": 1789980693.336383
+        }
+      ]
+    },
+    {
+      "statement": "there is other repo on which i am working, i want to aks agent to what skill should use, like u suggested for this one, i want for that one",
+      "category": "about_me",
+      "confidence": 0.82,
+      "durability": "durable",
+      "technologies": [],
+      "sources": [
+        {
+          "conversation_id": "6ab3c023-5bd8-83ee-9a9c-e9f9302cfcd6",
+          "title": "List Mattpocock Skills",
+          "timestamp": 1790165620.613
         }
       ]
     }
@@ -3499,11 +3686,18 @@
     "6a9ddd6f-7c58-83ee-9482-ebbf8cd6b1dc": "Archive/2026/2026-09-06/Next Steps After Merge--6a9ddd6f-7c5.md",
     "6a9fa886-b71c-83e8-ad8b-9c3434e10d45": "Archive/2026/2026-09-08/About Section Content--6a9fa886-b71.md",
     "6aa18396-1f20-83ee-a41a-c4b433c4f573": "Archive/2026/2026-09-09/Create Live SVG Card--6aa18396-1f2.md",
-    "6aa3ae89-8230-83ee-944b-49974d284f05": "Archive/2026/2026-09-11/Modify SIH26097 PDF--6aa3ae89-823.md",
+    "6aa3ae89-8230-83ee-944b-49974d284f05": "Archive/2026/2026-09-11/BE_project--6aa3ae89-823.md",
     "6aa69329-ec58-83ee-b874-8b6558fab624": "Archive/2026/2026-09-13/codekitchen Hackathon Idea Submission--6aa69329-ec5.md",
     "6aa6bd79-08cc-83ee-b7b1-8795f3222aa4": "Archive/2026/2026-09-13/Omarchy USB Setup--6aa6bd79-08c.md",
     "6aa9963d-7060-83ee-ae16-fbe8bdf7e015": "Archive/2026/2026-09-15/Python Static Typing Example--6aa9963d-706.md",
-    "6aaa276e-7d8c-83e8-81d6-23bc5a8a2e40": "Archive/2026/2026-09-16/Move Docker To D Drive--6aaa276e-7d8.md"
+    "6aaa276e-7d8c-83e8-81d6-23bc5a8a2e40": "Archive/2026/2026-09-16/Move Docker To D Drive--6aaa276e-7d8.md",
+    "6aaacb49-e69c-83e8-bf87-4eba67bb32e5": "Archive/2026/2026-09-16/UPI MDR Impact Analysis--6aaacb49-e69.md",
+    "6aabcc2a-2448-83e8-9fa9-f4d76756642d": "Archive/2026/2026-09-17/Improve Coding Instructions--6aabcc2a-244.md",
+    "6aac0539-0f9c-83ee-9f81-92fce0e7a690": "Archive/2026/2026-09-17/Change Git Remote Repository--6aac0539-0f9.md",
+    "6aacd970-8ee8-83ee-8739-a32eaa2a7c56": "Archive/2026/2026-09-18/Project selection recommendation--6aacd970-8ee.md",
+    "6aafb066-0b58-83ee-aa52-b681596c30ea": "Archive/2026/2026-09-20/Daily Productivity Plan--6aafb066-0b5.md",
+    "6ab0efec-b3f4-83e9-9508-2c76235cde45": "Archive/2026/2026-09-21/Find All Sources--6ab0efec-b3f.md",
+    "6ab3c023-5bd8-83ee-9a9c-e9f9302cfcd6": "Archive/2026/2026-09-23/List Mattpocock Skills--6ab3c023-5bd.md"
   },
   "archive_indexes": [
     "Archive/Chat History Index.md",
@@ -3754,239 +3948,14 @@
     "Archive/2026/2026-09-11/2026-09-11 Chat Index.md",
     "Archive/2026/2026-09-13/2026-09-13 Chat Index.md",
     "Archive/2026/2026-09-15/2026-09-15 Chat Index.md",
-    "Archive/2026/2026-09-16/2026-09-16 Chat Index.md"
+    "Archive/2026/2026-09-16/2026-09-16 Chat Index.md",
+    "Archive/2026/2026-09-17/2026-09-17 Chat Index.md",
+    "Archive/2026/2026-09-18/2026-09-18 Chat Index.md",
+    "Archive/2026/2026-09-20/2026-09-20 Chat Index.md",
+    "Archive/2026/2026-09-21/2026-09-21 Chat Index.md",
+    "Archive/2026/2026-09-23/2026-09-23 Chat Index.md"
   ],
   "project_catalog": [
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": ".github",
-      "github_url": "https://github.com/utkarsh-wadalkar/.github",
-      "description": "Config files for my GitHub profile.",
-      "language": "",
-      "updated_at": "2026-09-20T19:15:26Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Agentic-Fraud-Investigation",
-      "github_url": "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-09-24T13:14:04Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "AI-interview-Qs-gen",
-      "github_url": "https://github.com/utkarsh-wadalkar/AI-interview-Qs-gen",
-      "description": "",
-      "language": "JavaScript",
-      "updated_at": "2026-08-11T05:49:30Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Audora",
-      "github_url": "https://github.com/utkarsh-wadalkar/Audora",
-      "description": "Music downloader on your local device ",
-      "language": "Python",
-      "updated_at": "2026-09-16T14:13:47Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Django_1",
-      "github_url": "https://github.com/utkarsh-wadalkar/Django_1",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-06-30T13:45:13Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "DSA",
-      "github_url": "https://github.com/utkarsh-wadalkar/DSA",
-      "description": "A collection of LeetCode questions",
-      "language": "Python",
-      "updated_at": "2026-07-16T12:20:16Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "FaceChain",
-      "github_url": "https://github.com/utkarsh-wadalkar/FaceChain",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-09-07T21:46:04Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Fake-News-ML",
-      "github_url": "https://github.com/utkarsh-wadalkar/Fake-News-ML",
-      "description": "This is Supervised ML project consisting of Logistic Regression, Decision Tree Classifier,  Random Forest Classifier algo. Made for pattern recognition of fake news. Completed entire implementation, from frontend to backend of this ML project",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-05-20T07:56:00Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Ghosthand",
-      "github_url": "https://github.com/utkarsh-wadalkar/Ghosthand",
-      "description": "A lightweight, Windows-native AI desktop assistant. Focus any app, press Ctrl+Win, and let it click, type, and automate with human-in-the-loop safety.",
-      "language": "",
-      "updated_at": "2026-09-23T18:52:43Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Hands-On-PY-Pandas",
-      "github_url": "https://github.com/utkarsh-wadalkar/Hands-On-PY-Pandas",
-      "description": "",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-02-17T14:51:45Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "HTML-CSS",
-      "github_url": "https://github.com/utkarsh-wadalkar/HTML-CSS",
-      "description": "",
-      "language": "HTML",
-      "updated_at": "2025-02-17T14:08:29Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "internship-cli",
-      "github_url": "https://github.com/utkarsh-wadalkar/internship-cli",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-09-21T21:28:52Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "JavaScript-Assignments",
-      "github_url": "https://github.com/utkarsh-wadalkar/JavaScript-Assignments",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-03-13T13:30:05Z",
-      "fork": true
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "KaushalVaani",
-      "github_url": "https://github.com/utkarsh-wadalkar/KaushalVaani",
-      "description": "Voice-First Livelihood Intelligence using Knowledge Graphs Multilingual beneficiary profiling -> graph-based skill-gap reasoning -> NSQF-aligned training -> local livelihood pathway",
-      "language": "Python",
-      "updated_at": "2026-09-17T15:48:54Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "ML-Pipeline",
-      "github_url": "https://github.com/utkarsh-wadalkar/ML-Pipeline",
-      "description": "This project covers understanding for creating a MLOps pipeline and working using DVC for experiment tracking and data versioning using AWS S3",
-      "language": "",
-      "updated_at": "2026-07-16T12:28:44Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "MLops-DVC",
-      "github_url": "https://github.com/utkarsh-wadalkar/MLops-DVC",
-      "description": "This repo implements the idea of data versioning using DVC tool",
-      "language": "Python",
-      "updated_at": "2026-07-11T16:49:27Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "MongoTodo",
-      "github_url": "https://github.com/utkarsh-wadalkar/MongoTodo",
-      "description": "Full-stack todo app with React, Node.js, Express, and MongoDB",
-      "language": "CSS",
-      "updated_at": "2026-02-03T23:23:36Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Parkinson-Disease-Prediction",
-      "github_url": "https://github.com/utkarsh-wadalkar/Parkinson-Disease-Prediction",
-      "description": "Machine learning model to predict Parkinson’s disease using biomedical voice features with EDA, preprocessing, and multi-model evaluation.",
-      "language": "Jupyter Notebook",
-      "updated_at": "2025-08-15T09:15:46Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "PowerBI",
-      "github_url": "https://github.com/utkarsh-wadalkar/PowerBI",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-03-15T17:45:18Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Sales-Forecasting-using-Machine-Learning",
-      "github_url": "https://github.com/utkarsh-wadalkar/Sales-Forecasting-using-Machine-Learning",
-      "description": "End-to-end ML pipeline for retail sales forecasting with data cleaning, feature engineering, EDA, and advanced model tuning.",
-      "language": "HTML",
-      "updated_at": "2025-08-15T09:09:16Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "SQL",
-      "github_url": "https://github.com/utkarsh-wadalkar/SQL",
-      "description": "",
-      "language": "",
-      "updated_at": "2025-02-17T14:07:25Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "TeachBack",
-      "github_url": "https://github.com/utkarsh-wadalkar/TeachBack",
-      "description": "",
-      "language": "Python",
-      "updated_at": "2026-09-01T06:42:39Z",
-      "fork": false
-    },
-    {
-      "catalog_source": "github",
-      "github_user": "utkarsh-wadalkar",
-      "name": "Youtube-Agent",
-      "github_url": "https://github.com/utkarsh-wadalkar/Youtube-Agent",
-      "description": "",
-      "language": "",
-      "updated_at": "2026-02-09T16:24:12Z",
-      "fork": true
-    },
     {
       "catalog_source": "local",
       "catalog_root": "D:\\ALL Programming",
@@ -4079,6 +4048,17 @@
     {
       "catalog_source": "local",
       "catalog_root": "D:\\ALL Programming",
+      "name": "CC 6.0",
+      "path": "D:\\ALL Programming\\0-WebDev\\CC 6.0",
+      "marker": ".git",
+      "remotes": [
+        "https://github.com/utkarsh-wadalkar/Edge-Memory.git"
+      ],
+      "github_url": "https://github.com/utkarsh-wadalkar/Edge-Memory"
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
       "name": "chatgpt-to-obsidian",
       "path": "D:\\ALL Programming\\obsidian_mem\\chatgpt-to-obsidian",
       "marker": "requirements.txt",
@@ -4099,6 +4079,15 @@
       "catalog_root": "D:\\ALL Programming",
       "name": "dashboard",
       "path": "D:\\ALL Programming\\GitHub\\Understand-Anything\\understand-anything-plugin\\packages\\dashboard",
+      "marker": "package.json",
+      "remotes": [],
+      "github_url": null
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
+      "name": "demo-video",
+      "path": "D:\\ALL Programming\\0-WebDev\\Hacker_House\\Agentic Fraud Investigation\\submission\\demo-video",
       "marker": "package.json",
       "remotes": [],
       "github_url": null
@@ -4374,9 +4363,20 @@
       "path": "D:\\ALL Programming\\0-WebDev\\SIH\\statskill-ai",
       "marker": ".git",
       "remotes": [
-        "https://github.com/DgrnBoi/statskill-ai.git"
+        "https://github.com/utkarsh-wadalkar/statskill-ai.git"
       ],
-      "github_url": "https://github.com/DgrnBoi/statskill-ai"
+      "github_url": "https://github.com/utkarsh-wadalkar/statskill-ai"
+    },
+    {
+      "catalog_source": "local",
+      "catalog_root": "D:\\ALL Programming",
+      "name": "supercut",
+      "path": "D:\\ALL Programming\\All_cloned_repo\\supercut",
+      "marker": ".git",
+      "remotes": [
+        "https://github.com/Co-Messi/supercut"
+      ],
+      "github_url": "https://github.com/Co-Messi/supercut"
     },
     {
       "catalog_source": "local",
@@ -4437,6 +4437,246 @@
         "https://github.com/utkarsh-wadalkar/whoburnedmore-endpoint.git"
       ],
       "github_url": "https://github.com/utkarsh-wadalkar/whoburnedmore-endpoint"
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": ".github",
+      "github_url": "https://github.com/utkarsh-wadalkar/.github",
+      "description": "Config files for my GitHub profile.",
+      "language": "",
+      "updated_at": "2026-09-25T10:42:11Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Agentic-Fraud-Investigation",
+      "github_url": "https://github.com/utkarsh-wadalkar/Agentic-Fraud-Investigation",
+      "description": "Sentinel Graph is an evidence-first fraud investigation agent built with LangGraph and TigerGraph MCP. It analyzes 590K+ transactions, retrieves connected graph context, applies policy guardrails, requests missing evidence, writes reusable case memory, and produces 20 validated, auditable investigations.",
+      "language": "Python",
+      "updated_at": "2026-09-24T17:34:31Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "AI-interview-Qs-gen",
+      "github_url": "https://github.com/utkarsh-wadalkar/AI-interview-Qs-gen",
+      "description": "",
+      "language": "JavaScript",
+      "updated_at": "2026-08-11T05:49:30Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Audora",
+      "github_url": "https://github.com/utkarsh-wadalkar/Audora",
+      "description": "Music downloader on your local device ",
+      "language": "Python",
+      "updated_at": "2026-09-16T14:13:47Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Django_1",
+      "github_url": "https://github.com/utkarsh-wadalkar/Django_1",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-06-30T13:45:13Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "DSA",
+      "github_url": "https://github.com/utkarsh-wadalkar/DSA",
+      "description": "A collection of LeetCode questions",
+      "language": "Python",
+      "updated_at": "2026-07-16T12:20:16Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Edge-Memory",
+      "github_url": "https://github.com/utkarsh-wadalkar/Edge-Memory",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-09-28T05:50:20Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "FaceChain",
+      "github_url": "https://github.com/utkarsh-wadalkar/FaceChain",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-09-07T21:46:04Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Fake-News-ML",
+      "github_url": "https://github.com/utkarsh-wadalkar/Fake-News-ML",
+      "description": "This is Supervised ML project consisting of Logistic Regression, Decision Tree Classifier,  Random Forest Classifier algo. Made for pattern recognition of fake news. Completed entire implementation, from frontend to backend of this ML project",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-05-20T07:56:00Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Ghosthand",
+      "github_url": "https://github.com/utkarsh-wadalkar/Ghosthand",
+      "description": "A lightweight, Windows-native AI desktop assistant. Focus any app, press Ctrl+Win, and let it click, type, and automate with human-in-the-loop safety.",
+      "language": "",
+      "updated_at": "2026-09-23T18:52:43Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Hands-On-PY-Pandas",
+      "github_url": "https://github.com/utkarsh-wadalkar/Hands-On-PY-Pandas",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-02-17T14:51:45Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "HTML-CSS",
+      "github_url": "https://github.com/utkarsh-wadalkar/HTML-CSS",
+      "description": "",
+      "language": "HTML",
+      "updated_at": "2025-02-17T14:08:29Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "internship-cli",
+      "github_url": "https://github.com/utkarsh-wadalkar/internship-cli",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-09-21T21:28:52Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "JavaScript-Assignments",
+      "github_url": "https://github.com/utkarsh-wadalkar/JavaScript-Assignments",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-03-13T13:30:05Z",
+      "fork": true
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "KaushalVaani",
+      "github_url": "https://github.com/utkarsh-wadalkar/KaushalVaani",
+      "description": "Voice-First Livelihood Intelligence using Knowledge Graphs Multilingual beneficiary profiling -> graph-based skill-gap reasoning -> NSQF-aligned training -> local livelihood pathway",
+      "language": "Python",
+      "updated_at": "2026-09-17T15:48:54Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "ML-Pipeline",
+      "github_url": "https://github.com/utkarsh-wadalkar/ML-Pipeline",
+      "description": "This project covers understanding for creating a MLOps pipeline and working using DVC for experiment tracking and data versioning using AWS S3",
+      "language": "",
+      "updated_at": "2026-07-16T12:28:44Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "MLops-DVC",
+      "github_url": "https://github.com/utkarsh-wadalkar/MLops-DVC",
+      "description": "This repo implements the idea of data versioning using DVC tool",
+      "language": "Python",
+      "updated_at": "2026-07-11T16:49:27Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "MongoTodo",
+      "github_url": "https://github.com/utkarsh-wadalkar/MongoTodo",
+      "description": "Full-stack todo app with React, Node.js, Express, and MongoDB",
+      "language": "CSS",
+      "updated_at": "2026-02-03T23:23:36Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Parkinson-Disease-Prediction",
+      "github_url": "https://github.com/utkarsh-wadalkar/Parkinson-Disease-Prediction",
+      "description": "Machine learning model to predict Parkinson’s disease using biomedical voice features with EDA, preprocessing, and multi-model evaluation.",
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-08-15T09:15:46Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "PowerBI",
+      "github_url": "https://github.com/utkarsh-wadalkar/PowerBI",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-03-15T17:45:18Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Sales-Forecasting-using-Machine-Learning",
+      "github_url": "https://github.com/utkarsh-wadalkar/Sales-Forecasting-using-Machine-Learning",
+      "description": "End-to-end ML pipeline for retail sales forecasting with data cleaning, feature engineering, EDA, and advanced model tuning.",
+      "language": "HTML",
+      "updated_at": "2025-08-15T09:09:16Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "SQL",
+      "github_url": "https://github.com/utkarsh-wadalkar/SQL",
+      "description": "",
+      "language": "",
+      "updated_at": "2025-02-17T14:07:25Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "TeachBack",
+      "github_url": "https://github.com/utkarsh-wadalkar/TeachBack",
+      "description": "",
+      "language": "Python",
+      "updated_at": "2026-09-01T06:42:39Z",
+      "fork": false
+    },
+    {
+      "catalog_source": "github",
+      "github_user": "utkarsh-wadalkar",
+      "name": "Youtube-Agent",
+      "github_url": "https://github.com/utkarsh-wadalkar/Youtube-Agent",
+      "description": "",
+      "language": "",
+      "updated_at": "2026-02-09T16:24:12Z",
+      "fork": true
     }
   ],
   "project_sources": {
@@ -4447,7 +4687,7 @@
       "utkarsh-wadalkar"
     ],
     "github_checked_at": {
-      "utkarsh-wadalkar": 1790256890
+      "utkarsh-wadalkar": 1790671775
     }
   }
 }

@@ -1,7 +1,7 @@
 ---
 type: "memory-category"
 source: "ChatGPT export"
-created: "2026-09-24"
+created: "2026-09-29"
 ---
 # Education
 
@@ -11,7 +11,7 @@ created: "2026-09-24"
 
   - Confidence: 0.82; Sources: 689ddc1c-3b2c-832f-8ed1-a0bd457159fc (Text cleaning request)
 - Writing Style Instructions for this subject exam paper solving chat Full-length university exam style Theory-focused answers Point and paragraph answers Proper headings and subheadings (of small size, dont use too much space) Examples included Use tables for comparisons Special instruction: do not use Horizontal Rule tag and save space I need to print this chat after-wards so using less pages to print chat is good
-  - Confidence: 0.82; Sources: 6a21337e-4910-83ab-9881-9486a42594d5 (CS ANN)
+  - Confidence: 0.82; Sources: 6a21337e-4910-83ab-9881-9486a42594d5 (CS ANN), 6aabcc2a-2448-83e8-9fa9-f4d76756642d (Improve Coding Instructions)
 - i want to publish research paper for my BE degree, suggest me some topics, and i am intrested in publishing paper in ieee
   - Confidence: 0.82; Sources: 6a74f22a-523c-83ee-936d-227d48a37a49 (IEEE Paper Topics BE)
 - I am a student in Zeal college of engineering

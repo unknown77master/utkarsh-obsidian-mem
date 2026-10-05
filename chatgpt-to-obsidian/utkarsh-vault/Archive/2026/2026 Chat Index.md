@@ -2,8 +2,8 @@
 type: "chat-index"
 scope: "year"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
-transcript_count: 160
+updated: "2026-09-29"
+transcript_count: 167
 year: "2026"
 ---
 
@@ -115,4 +115,9 @@ year: "2026"
 - [[Archive/2026/2026-09-11/2026-09-11 Chat Index|2026-09-11 — 1 chats]]
 - [[Archive/2026/2026-09-13/2026-09-13 Chat Index|2026-09-13 — 2 chats]]
 - [[Archive/2026/2026-09-15/2026-09-15 Chat Index|2026-09-15 — 1 chats]]
-- [[Archive/2026/2026-09-16/2026-09-16 Chat Index|2026-09-16 — 1 chats]]
+- [[Archive/2026/2026-09-16/2026-09-16 Chat Index|2026-09-16 — 2 chats]]
+- [[Archive/2026/2026-09-17/2026-09-17 Chat Index|2026-09-17 — 2 chats]]
+- [[Archive/2026/2026-09-18/2026-09-18 Chat Index|2026-09-18 — 1 chats]]
+- [[Archive/2026/2026-09-20/2026-09-20 Chat Index|2026-09-20 — 1 chats]]
+- [[Archive/2026/2026-09-21/2026-09-21 Chat Index|2026-09-21 — 1 chats]]
+- [[Archive/2026/2026-09-23/2026-09-23 Chat Index|2026-09-23 — 1 chats]]

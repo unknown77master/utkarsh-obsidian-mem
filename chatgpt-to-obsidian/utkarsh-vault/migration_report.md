@@ -19,24 +19,24 @@
 
 ## Results
 
-- Conversations discovered: 352
+- Conversations discovered: 359
 - Conversations successfully processed: 0
-- Conversations skipped: 352
-- Searchable transcripts: 352
-- Raw mirror files: 439
-- Raw mirror bytes: 220635386
+- Conversations skipped: 359
+- Searchable transcripts: 359
+- Raw mirror files: 463
+- Raw mirror bytes: 225730380
 - Raw files copied: 0
-- Raw files checksum-verified and skipped: 439
+- Raw files checksum-verified and skipped: 463
 - Stale raw files removed: 0
-- Local coding projects catalogued: 44
-- Public GitHub repositories catalogued: 23
+- Local coding projects catalogued: 47
+- Public GitHub repositories catalogued: 24
 - Errors: 0
-- Memories extracted: 187
+- Memories extracted: 199
 - Duplicates merged: 0
-- Project references detected: 6
-- Project indexes generated: 51
+- Project references detected: 8
+- Project indexes generated: 57
 - Categories generated: 7
-- Output files created: 322
+- Output files created: 334
 
 ## Errors
 

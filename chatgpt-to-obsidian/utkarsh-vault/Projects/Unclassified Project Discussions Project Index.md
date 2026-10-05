@@ -3,7 +3,7 @@ type: "project-index"
 scope: "project"
 project: "Unclassified Project Discussions"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
+updated: "2026-09-29"
 durable_context_count: 3
 chat_count: 3
 local_repository_count: 0
@@ -21,12 +21,12 @@ These conversations contain durable project context, but no unambiguous project 
 
 ## Related chats
 
+- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823|BE_project]]
 - [[Archive/2025/2025-05-04/Content Integration Request--68173e31-6d7|Content Integration Request]]
-- [[Archive/2026/2026-09-11/Modify SIH26097 PDF--6aa3ae89-823|Modify SIH26097 PDF]]
 - [[Archive/2025/2025-08-14/Text cleaning request--689ddc1c-3b2|Text cleaning request]]
 
 ## Resources
 
+- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823#Resources|BE_project resources]]
 - [[Archive/2025/2025-05-04/Content Integration Request--68173e31-6d7#Resources|Content Integration Request resources]]
-- [[Archive/2026/2026-09-11/Modify SIH26097 PDF--6aa3ae89-823#Resources|Modify SIH26097 PDF resources]]
 - [[Archive/2025/2025-08-14/Text cleaning request--689ddc1c-3b2#Resources|Text cleaning request resources]]

@@ -2,7 +2,7 @@
 
 ## Canonical vault
 
-This personal-memory vault is located at `D:\ALL Programming\obsidian_mem\chatgpt-to-obsidian\utkarsh-vault`. Start with [[00 - Agent Memory]] whenever a task needs Utkarsh's personal context, projects, preferences, or ChatGPT history.
+This personal-memory vault is located at `D:\ALL Programming\obsidian_mem\chatgpt-to-obsidian\utkarsh-vault`. Start with [[00 - Agent Memory]] whenever a task needs Utkarsh's personal context, projects, preferences, or ChatGPT history. Then all the files in utkarsh-vault folder are authoritative source of context
 
 ## Authority order
 

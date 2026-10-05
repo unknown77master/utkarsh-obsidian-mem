@@ -3,7 +3,7 @@ type: "project-index"
 scope: "project"
 project: "ML-Pipeline"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
+updated: "2026-09-29"
 durable_context_count: 0
 chat_count: 0
 local_repository_count: 1

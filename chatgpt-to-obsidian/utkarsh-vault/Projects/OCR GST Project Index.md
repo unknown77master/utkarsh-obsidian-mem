@@ -3,7 +3,7 @@ type: "project-index"
 scope: "project"
 project: "OCR GST"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-24"
+updated: "2026-09-29"
 durable_context_count: 1
 chat_count: 1
 local_repository_count: 1

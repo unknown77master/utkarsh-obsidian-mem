@@ -3,7 +3,7 @@ type: "chatgpt-conversation"
 source: "ChatGPT export"
 conversation_id: "6a9bfee1-cfac-83ee-8f44-1f37bcaef079"
 created: 1788608265.519619
-updated: 1788969093.816014
+updated: 1789571610.521775
 resource_section: true
 ---
 
@@ -3031,6 +3031,91 @@ So my final verdict is:
 7. defer the “separate codebase” decision for org/CA products.
 
 With those changes, this is a solid Phase 1 architecture and I would stop redesigning it unless implementation uncovers a genuine blocker.
+
+## User
+
+can you refresh me about that repo which was most close to waht we are doing about gst
+
+## Assistant
+
+Worked for a couple of seconds
+
+## Assistant
+
+Yes — the repo we found that was **closest to your GST product direction** was **Hisaabo**:
+
+**GitHub:** https://github.com/hisaabo/hisaabo
+
+It was much closer than `itr-wala` because Hisaabo is built around **Indian business finance + GST workflows**, not income tax.
+
+What made it relevant to us was that it already covers a lot of the downstream GST/accounting side:
+
+- GST-compliant sales and purchase invoices
+- CGST / SGST / IGST logic
+- GSTIN validation
+- HSN/SAC handling
+- GSTR-1 generation
+- GSTR-3B generation
+- GSTR-9
+- GSTR-2B reconciliation
+- ITC tracking
+- e-invoicing / IRN
+- e-way bills
+- bank reconciliation
+- multi-business support
+- audit trails
+- mobile + desktop + web-style clients
+- APIs / CLI / MCP
+
+Its architecture was also very relevant conceptually:
+
+```text
+Web / Mobile / Desktop / CLI / MCP
+ ↓
+ Typed API
+ ↓
+ GST + accounting logic
+ ↓
+ PostgreSQL
+```
+
+The important difference is that **Hisaabo starts from structured business transactions**, while **your product starts from messy documents**.
+
+So Hisaabo is roughly:
+
+```text
+User/business creates transaction
+→ accounting record
+→ GST logic
+→ GSTR workflows
+```
+
+Your product is:
+
+```text
+Receipt / invoice image or PDF
+→ Sarvam Document AI
+→ canonical financial record
+→ human review
+→ Google Sheets sync
+→ later GST validation/reconciliation/accounting
+```
+
+That means your strongest differentiation is still:
+
+> **documents first, GST/accounting later**
+
+Another key point: Hisaabo’s roadmap included **PDF invoice OCR / photographed purchase bill extraction**, which overlaps with your Phase 1, but that was not its core implemented foundation when we checked.
+
+And the license mattered a lot: Hisaabo uses an **O'Saasy-style non-compete license**, so for your commercial SaaS you should **study it, not fork it**. Use it as a reference for GST domain modeling, accounting flows, testing, auditability, and APIs, but keep your code independent.
+
+We also found smaller repos useful for individual pieces, such as:
+- `ayush2635/Invoiscope` — GST invoice OCR/extraction ideas
+- `bhuvannarula/offlineGST` — GSTR-1 JSON generation
+- `tks18/gstr-json-2-excel` — GSTR JSON processing
+- `salilbh/GST-Returns-Automation---GSTR-3B` — GSTR-3B automation
+
+But **Hisaabo was the closest overall product reference**. memcite
 
 ## Resources
 
