@@ -21,12 +21,12 @@ These conversations contain durable project context, but no unambiguous project 
 
 ## Related chats
 
-- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823|BE_project]]
-- [[Archive/2025/2025-05-04/Content Integration Request--68173e31-6d7|Content Integration Request]]
-- [[Archive/2025/2025-08-14/Text cleaning request--689ddc1c-3b2|Text cleaning request]]
+- [BE_project](<../Archive/2026/2026-09-11/BE_project--6aa3ae89-823.md>)
+- [Content Integration Request](<../Archive/2025/2025-05-04/Content%20Integration%20Request--68173e31-6d7.md>)
+- [Text cleaning request](<../Archive/2025/2025-08-14/Text%20cleaning%20request--689ddc1c-3b2.md>)
 
 ## Resources
 
-- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823#Resources|BE_project resources]]
-- [[Archive/2025/2025-05-04/Content Integration Request--68173e31-6d7#Resources|Content Integration Request resources]]
-- [[Archive/2025/2025-08-14/Text cleaning request--689ddc1c-3b2#Resources|Text cleaning request resources]]
+- [BE_project resources](<../Archive/2026/2026-09-11/BE_project--6aa3ae89-823.md#Resources>)
+- [Content Integration Request resources](<../Archive/2025/2025-05-04/Content%20Integration%20Request--68173e31-6d7.md#Resources>)
+- [Text cleaning request resources](<../Archive/2025/2025-08-14/Text%20cleaning%20request--689ddc1c-3b2.md#Resources>)

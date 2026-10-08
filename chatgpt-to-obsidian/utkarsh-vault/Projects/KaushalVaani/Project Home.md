@@ -24,13 +24,14 @@ tags:
 
 ## Start here
 
-- [[Current State|Current state and blockers]]
-- [[PRD|Product requirements and acceptance criteria]]
-- [[Timeline|Timeline and decision log]]
-- [[Handoff|Latest handoff]]
-- [[Project|Project details and code map]]
-- [[Inbox/Promotion Inbox|Knowledge awaiting review]]
-- [[../KaushalVaani Project Index|Earlier project index]]
+- [Current state and blockers](<Current State.md>)
+- [Product requirements and acceptance criteria](PRD.md)
+- [Timeline and decision log](Timeline.md)
+- [Latest handoff](Handoff.md)
+- [Project details and code map](Project.md)
+- [Knowledge awaiting review](<Inbox/Promotion Inbox.md>)
+- [Earlier project index](<../KaushalVaani Project Index.md>)
+- [EchoQuery project index](<../EchoQuery Project Index.md>) — earlier name and related archived chat; use the timeline to separate old and current scope.
 
 ## Implementation map
 

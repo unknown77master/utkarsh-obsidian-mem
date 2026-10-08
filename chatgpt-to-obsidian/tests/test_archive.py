@@ -40,5 +40,5 @@ class ArchiveTests(unittest.TestCase):
             date_index = output / "Archive" / "2024" / "2024-01-02" / "2024-01-02 Chat Index.md"
             self.assertIn("Archive/2024/2024-01-01/2024-01-01 Chat Index.md", indexes)
             self.assertTrue(date_index.is_file())
-            self.assertIn("[[Archive/2024/2024-01-02/Second--two|Second]]", date_index.read_text(encoding="utf-8"))
+            self.assertIn("[Second](<Second--two.md>)", date_index.read_text(encoding="utf-8"))
             self.assertFalse((output / "Archive" / "README.md").exists())

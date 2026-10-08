@@ -19,8 +19,8 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Related chats
 
-- [[Archive/2026/2026-08-16/EchoQuery--6a81ac51-789|EchoQuery]]
+- [EchoQuery](<../Archive/2026/2026-08-16/EchoQuery--6a81ac51-789.md>)
 
 ## Resources
 
-- [[Archive/2026/2026-08-16/EchoQuery--6a81ac51-789#Resources|EchoQuery resources]]
+- [EchoQuery resources](<../Archive/2026/2026-08-16/EchoQuery--6a81ac51-789.md#Resources>)

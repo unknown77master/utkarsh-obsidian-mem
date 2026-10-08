@@ -16,4 +16,4 @@ created: "2026-09-29"
 
 ## Related
 
-- [[04 - Programming & Tech]]
+- [Programming & Tech](<../04 - Programming & Tech.md>)

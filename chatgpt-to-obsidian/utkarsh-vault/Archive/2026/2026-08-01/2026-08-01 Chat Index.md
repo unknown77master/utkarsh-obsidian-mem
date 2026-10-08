@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 1
 year: "2026"
 date: "2026-08-01"
@@ -10,4 +10,4 @@ date: "2026-08-01"
 
 # 2026-08-01 Chat Index
 
-- [[Archive/2026/2026-08-01/Professional Invitation Request--6a6d54f5-a61|Professional Invitation Request]]
+- [Professional Invitation Request](<Professional%20Invitation%20Request--6a6d54f5-a61.md>)

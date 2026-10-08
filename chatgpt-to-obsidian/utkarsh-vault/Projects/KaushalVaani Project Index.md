@@ -11,7 +11,11 @@ github_repository_count: 1
 ---
 # KaushalVaani Project Index
 
-This note groups only project names stated explicitly in the export. It links to the canonical transcripts and their preserved resources; it does not copy or reinterpret them.
+This generated index groups exact project-name matches from the export and repository catalogue. Its counts describe automatic extraction, not all available project context.
+
+## Start here
+
+- [KaushalVaani Project Home](<KaushalVaani/Project Home.md>) — maintained context and links to current status, requirements, and history.
 
 ## Public GitHub repositories
 
@@ -19,15 +23,12 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Durable context
 
-- No durable ChatGPT context has been extracted for this project yet.
+- No statements were automatically assigned to this exact project name. Check maintained notes and earlier names before concluding that context is absent.
 
 ## Related chats
 
+- No chats were automatically assigned to this exact project name.
 
 ## Resources
 
 - [KaushalVaani repository](https://github.com/utkarsh-wadalkar/KaushalVaani)
-
-## Current maintained project memory
-
-- [[KaushalVaani/Project Home|Project Home]] — PRD, timeline, current state, handoff, and blockers. This section is maintained separately from the export-derived counts above.

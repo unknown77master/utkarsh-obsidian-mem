@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 2
 year: "2025"
 date: "2025-02-15"
@@ -10,5 +10,5 @@ date: "2025-02-15"
 
 # 2025-02-15 Chat Index
 
-- [[Archive/2025/2025-02-15/Import News API Sheets--67b0ce0a-31e|Import News API Sheets]]
-- [[Archive/2025/2025-02-15/Types of Python Implementations--67b012a2-1ce|Types of Python Implementations]]
+- [Import News API Sheets](<Import%20News%20API%20Sheets--67b0ce0a-31e.md>)
+- [Types of Python Implementations](<Types%20of%20Python%20Implementations--67b012a2-1ce.md>)

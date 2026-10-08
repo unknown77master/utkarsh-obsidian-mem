@@ -2,6 +2,8 @@
 
 Read `chatgpt-to-obsidian/utkarsh-vault/AGENTS.md` before using personal memory. Resolve vault paths relative to this repository in cloud checkouts.
 
+For a named project, check `chatgpt-to-obsidian/utkarsh-vault/Projects/Projects Index.md`, then its project index and any maintained `Project Home.md`. A generated index's zero extracted-memory or chat count only describes automatic exact-name matching, not the absence of project context. Check alternate names, related chats, current maintained notes, and source dates before answering.
+
 ## Commit messages — all local and cloud agents
 
 Every memory commit subject must use actual current **Asia/Kolkata (IST)** time:

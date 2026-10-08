@@ -9,46 +9,30 @@ This vault is self-contained: it includes searchable transcripts and a complete 
 
 ## Agent entry point
 
-- [[00 - Agent Memory]]
-- [[AGENTS]]
+- [Agent Memory](<00 - Agent Memory.md>)
+- [AGENTS.md](AGENTS.md)
 
-## Personal Context
+## Personal context
 
-- [[01 - About Me]]
-- [[02 - Preferences]]
-
-## Education
-
-- [[03 - Education]]
-
-## Technical
-
-- [[04 - Programming & Tech]]
-- [[07 - Development Environment]]
+- [About Me](<01 - About Me.md>)
+- [Preferences](<02 - Preferences.md>)
+- [Education](<03 - Education.md>)
+- [Programming & Tech](<04 - Programming & Tech.md>)
+- [Development Environment](<07 - Development Environment.md>)
+- [Career](<06 - Career.md>)
+- [Important Context](<08 - Important Context.md>)
 
 ## Projects
 
-- [[05 - Projects]] — durable project context
-- [[Projects/Projects Index]] — project navigation
+- [Projects](<05 - Projects.md>) — export-derived project context
+- [Projects Index](<Projects/Projects Index.md>) — project directory
 
-## Chats
+## Chats and resources
 
-- [[Archive/Chat History Index]] — searchable history by year, date, and conversation title
-
-## Resources
-
-- [[Raw/Raw Export Mirror]] — raw export, attachments, and metadata
-- [[04 - Programming & Tech]] — technology resources
-
-## Career
-
-- [[06 - Career]]
-
-## Important Context
-
-- [[08 - Important Context]]
+- [Chat History Index](<Archive/Chat History Index.md>) — history by year, date, and title
+- [Raw Export Mirror](<Raw/Raw Export Mirror.md>) — original export and attachments
 
 ## Maintenance
 
-- [[migration_report]]
-- [[review_queue]]
+- [Migration Report](migration_report.md)
+- [Review Queue](review_queue.md)

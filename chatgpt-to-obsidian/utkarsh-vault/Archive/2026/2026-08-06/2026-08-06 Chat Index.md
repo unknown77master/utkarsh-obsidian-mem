@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 3
 year: "2026"
 date: "2026-08-06"
@@ -10,6 +10,6 @@ date: "2026-08-06"
 
 # 2026-08-06 Chat Index
 
-- [[Archive/2026/2026-08-06/ai-interview-Qs--6a747601-01b|ai-interview-Qs]]
-- [[Archive/2026/2026-08-06/IEEE Paper Topics BE--6a74f22a-523|IEEE Paper Topics BE]]
-- [[Archive/2026/2026-08-06/Interview Prep from Resume--6a742762-e90|Interview Prep from Resume]]
+- [ai-interview-Qs](<ai-interview-Qs--6a747601-01b.md>)
+- [IEEE Paper Topics BE](<IEEE%20Paper%20Topics%20BE--6a74f22a-523.md>)
+- [Interview Prep from Resume](<Interview%20Prep%20from%20Resume--6a742762-e90.md>)

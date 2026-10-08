@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 1
 year: "2026"
 date: "2026-06-30"
@@ -10,4 +10,4 @@ date: "2026-06-30"
 
 # 2026-06-30 Chat Index
 
-- [[Archive/2026/2026-06-30/Career Path Recommendation--6a4347f2-60a|Career Path Recommendation]]
+- [Career Path Recommendation](<Career%20Path%20Recommendation--6a4347f2-60a.md>)

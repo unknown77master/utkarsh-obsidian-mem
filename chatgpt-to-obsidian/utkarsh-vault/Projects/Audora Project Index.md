@@ -29,11 +29,11 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Related chats
 
-- [[Archive/2026/2026-08-16/Request for Event Approval--6a815dcb-7e9|Request for Event Approval]]
-- [[Archive/2026/2026-08-11/Res-Audors--6a7b0bba-082|Res-Audors]]
+- [Request for Event Approval](<../Archive/2026/2026-08-16/Request%20for%20Event%20Approval--6a815dcb-7e9.md>)
+- [Res-Audors](<../Archive/2026/2026-08-11/Res-Audors--6a7b0bba-082.md>)
 
 ## Resources
 
 - [Audora repository](https://github.com/utkarsh-wadalkar/Audora)
-- [[Archive/2026/2026-08-16/Request for Event Approval--6a815dcb-7e9#Resources|Request for Event Approval resources]]
-- [[Archive/2026/2026-08-11/Res-Audors--6a7b0bba-082#Resources|Res-Audors resources]]
+- [Request for Event Approval resources](<../Archive/2026/2026-08-16/Request%20for%20Event%20Approval--6a815dcb-7e9.md#Resources>)
+- [Res-Audors resources](<../Archive/2026/2026-08-11/Res-Audors--6a7b0bba-082.md#Resources>)

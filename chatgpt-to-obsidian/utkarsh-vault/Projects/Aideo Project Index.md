@@ -24,8 +24,8 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Related chats
 
-- [[Archive/2026/2026-08-16/Request for Event Approval--6a815dcb-7e9|Request for Event Approval]]
+- [Request for Event Approval](<../Archive/2026/2026-08-16/Request%20for%20Event%20Approval--6a815dcb-7e9.md>)
 
 ## Resources
 
-- [[Archive/2026/2026-08-16/Request for Event Approval--6a815dcb-7e9#Resources|Request for Event Approval resources]]
+- [Request for Event Approval resources](<../Archive/2026/2026-08-16/Request%20for%20Event%20Approval--6a815dcb-7e9.md#Resources>)

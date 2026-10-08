@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 1
 year: "2024"
 date: "2024-11-20"
@@ -10,4 +10,4 @@ date: "2024-11-20"
 
 # 2024-11-20 Chat Index
 
-- [[Archive/2024/2024-11-20/Huffman Tree Construction--673d77a7-21a|Huffman Tree Construction]]
+- [Huffman Tree Construction](<Huffman%20Tree%20Construction--673d77a7-21a.md>)

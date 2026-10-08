@@ -4,6 +4,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 from .obsidian import _write, _yaml, markdown_escape, safe_name
 from .resources import AssetCatalog, message_resources, relative_asset_url
@@ -24,6 +25,10 @@ def _index_frontmatter(scope: str, transcript_count: int, year: str | None = Non
     if date:
         data["date"] = date
     return _yaml(data)
+
+
+def _index_link(label: str, relative_path: str) -> str:
+    return f"[{markdown_escape(label)}](<{quote(relative_path, safe='/-_.~')}>)"
 
 
 def _resource_section(conversation: dict[str, Any], catalog: AssetCatalog) -> str:
@@ -108,18 +113,17 @@ def render_archive_indexes(output: Path, archive_paths: dict[str, str], previous
         year_transcripts = sum(len(items) for items in grouped[year].values())
         year_readme = f"Archive/{year}/{year} Chat Index.md"
         current.append(year_readme)
-        root_lines.append(f"- [[Archive/{year}/{year} Chat Index|{year} — {year_transcripts} chats]]")
+        root_lines.append(f"- {_index_link(f'{year} — {year_transcripts} chats', f'{year}/{year} Chat Index.md')}")
         year_lines = [_index_frontmatter("year", year_transcripts, year=year), f"# {year} Chat Index", ""]
         for date in sorted(grouped[year]):
             date_transcripts = len(grouped[year][date])
             date_readme = f"Archive/{year}/{date}/{date} Chat Index.md"
             current.append(date_readme)
-            year_lines.append(f"- [[Archive/{year}/{date}/{date} Chat Index|{date} — {date_transcripts} chats]]")
+            year_lines.append(f"- {_index_link(f'{date} — {date_transcripts} chats', f'{date}/{date} Chat Index.md')}")
             date_lines = [_index_frontmatter("date", date_transcripts, year=year, date=date), f"# {date} Chat Index", ""]
             for relative in sorted(grouped[year][date], key=str.lower):
-                target = Path(relative).with_suffix("").as_posix()
                 topic = Path(relative).stem.rsplit("--", 1)[0]
-                date_lines.append(f"- [[{target}|{topic}]]")
+                date_lines.append(f"- {_index_link(topic, Path(relative).name)}")
             _write(output / date_readme, "\n".join(date_lines) + "\n")
         _write(output / year_readme, "\n".join(year_lines) + "\n")
     _write(archive_root / "Chat History Index.md", "\n".join(root_lines) + "\n")

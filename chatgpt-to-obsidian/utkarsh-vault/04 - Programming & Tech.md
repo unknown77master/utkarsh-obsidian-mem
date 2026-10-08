@@ -250,11 +250,11 @@ created: "2026-09-29"
 
 ## Technologies
 
-- [[Technologies/Docker]]
-- [[Technologies/Git]]
-- [[Technologies/Go]]
-- [[Technologies/Java]]
-- [[Technologies/Linux]]
-- [[Technologies/Obsidian]]
-- [[Technologies/Python]]
-- [[Technologies/Windows]]
+- [Docker](<Technologies/Docker.md>)
+- [Git](<Technologies/Git.md>)
+- [Go](<Technologies/Go.md>)
+- [Java](<Technologies/Java.md>)
+- [Linux](<Technologies/Linux.md>)
+- [Obsidian](<Technologies/Obsidian.md>)
+- [Python](<Technologies/Python.md>)
+- [Windows](<Technologies/Windows.md>)

@@ -19,8 +19,8 @@ This note groups only project names stated explicitly in the export. It links to
 
 ## Related chats
 
-- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823|BE_project]]
+- [BE_project](<../Archive/2026/2026-09-11/BE_project--6aa3ae89-823.md>)
 
 ## Resources
 
-- [[Archive/2026/2026-09-11/BE_project--6aa3ae89-823#Resources|BE_project resources]]
+- [BE_project resources](<../Archive/2026/2026-09-11/BE_project--6aa3ae89-823.md#Resources>)

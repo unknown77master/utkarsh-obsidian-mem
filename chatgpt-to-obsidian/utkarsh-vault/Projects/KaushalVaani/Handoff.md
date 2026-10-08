@@ -11,7 +11,7 @@ generated_from:
 
 ## Objective
 
-Complete repository `09-docs/context/tasks.md` toward an evidence-backed KaushalVaani judge demo. Use [[PRD]] for product acceptance and [[Timeline]] for the decision history.
+Complete repository `09-docs/context/tasks.md` toward an evidence-backed KaushalVaani judge demo. Use [PRD](<PRD.md>) for product acceptance and [Timeline](<Timeline.md>) for the decision history.
 
 ## Current position
 

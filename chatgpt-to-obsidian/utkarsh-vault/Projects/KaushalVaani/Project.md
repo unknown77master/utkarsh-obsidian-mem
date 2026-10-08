@@ -15,7 +15,7 @@ coverage_areas:
 
 # KaushalVaani
 
-Human-facing entry point: [[Project Home]]. The primary code repository is `KaushalVaani` (local checkout folder `EchoQuery-RAG-based-STT`); code paths below are repository-relative.
+Human-facing entry point: [Project Home](<Project%20Home.md>). The primary code repository is `KaushalVaani` (local checkout folder `EchoQuery-RAG-based-STT`); code paths below are repository-relative.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ Provide evidence-backed qualification and occupation pathways across English, Hi
 
 ## Current state
 
-See [[Current State]]. The local v2 implementation is branch-only and has not been committed, merged, or deployed.
+See [Current State](<Current%20State.md>). The local v2 implementation is branch-only and has not been committed, merged, or deployed.
 
 ## Code map
 
@@ -35,7 +35,7 @@ See [[Current State]]. The local v2 implementation is branch-only and has not be
 
 ## Knowledge maintenance
 
-- [[Project Home]]
-- [[Handoff]]
-- [[Inbox/Promotion Inbox]]
-- [[Coverage]]
+- [Project Home](<Project%20Home.md>)
+- [Handoff](<Handoff.md>)
+- [Promotion Inbox](<Inbox/Promotion%20Inbox.md>)
+- [Coverage](<Coverage.md>)

@@ -7,6 +7,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 from .categorizer import CATEGORY_FILES
 from .projects import render_project_indexes
@@ -55,11 +56,111 @@ def render_vault(output: Path, memories: list[dict[str, Any]], report: dict[str,
     by_category: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for memory in memories:
         by_category[memory["category"]].append(memory)
-    agent_memory = _yaml({"type": "agent-memory", "scope": "vault", "generated_by": "chatgpt-to-obsidian", "updated": today}) + "# Agent Memory\n\nUse this note as the compact entry point to the self-contained ChatGPT memory vault. For machine retrieval rules, read [[AGENTS]].\n\n## Durable context\n\n- [[01 - About Me]]\n- [[02 - Preferences]]\n- [[03 - Education]]\n- [[04 - Programming & Tech]]\n- [[05 - Projects]]\n- [[06 - Career]]\n- [[07 - Development Environment]]\n- [[08 - Important Context]]\n\n## Projects\n\n- [[Projects/Projects Index]]\n\n## Chats\n\n- [[Archive/Chat History Index]] — transcript navigation by year, date, and conversation title\n\n## Resources\n\n- [[Raw/Raw Export Mirror]] — exact local export mirror and attachments\n- [[04 - Programming & Tech]] — technology context\n\n## Maintenance and review\n\n- [[migration_report]]\n- [[review_queue]]\n"
+    agent_memory = _yaml({"type": "agent-memory", "scope": "vault", "generated_by": "chatgpt-to-obsidian", "updated": today}) + """# Agent Memory
+
+Use this note as the compact entry point to the self-contained ChatGPT memory vault. For retrieval rules, read [AGENTS.md](AGENTS.md).
+
+## Durable context
+
+- [About Me](<01 - About Me.md>)
+- [Preferences](<02 - Preferences.md>)
+- [Education](<03 - Education.md>)
+- [Programming & Tech](<04 - Programming & Tech.md>)
+- [Projects](<05 - Projects.md>)
+- [Career](<06 - Career.md>)
+- [Development Environment](<07 - Development Environment.md>)
+- [Important Context](<08 - Important Context.md>)
+
+## Projects
+
+- [Projects Index](<Projects/Projects Index.md>)
+
+## Chats
+
+- [Chat History Index](<Archive/Chat History Index.md>) — transcript navigation by year, date, and conversation title
+
+## Resources
+
+- [Raw Export Mirror](<Raw/Raw Export Mirror.md>) — original export and attachments
+
+## Maintenance and review
+
+- [Migration Report](migration_report.md)
+- [Review Queue](review_queue.md)
+"""
     write("00 - Agent Memory.md", agent_memory)
-    agents = f"# Agent Memory Retrieval Guide\n\n## Canonical vault\n\nThis personal-memory vault is located at `{output.resolve()}`. Start with [[00 - Agent Memory]] whenever a task needs Utkarsh's personal context, projects, preferences, or ChatGPT history.\n\n## Authority order\n\n1. `Raw/Export/` is the faithful local export mirror and is authoritative for original data.\n2. Conversation transcripts in `Archive/` are searchable renderings of that export.\n3. Category notes are curated, derived memory; verify important facts against a transcript or raw export when accuracy matters.\n\n## Retrieval order\n\n1. Read [[00 - Agent Memory]].\n2. Read the relevant category or index note before expanding scope.\n3. Use [[Archive/Chat History Index]] to locate a targeted chat by year, date, and title.\n4. Inspect a transcript's `## Resources` section for linked attachments and cited URLs.\n\n## Safety\n\n- Do not edit `Raw/Export/`, `.export-mirror-manifest.json`, or `.chatgpt-migration-state.json`.\n- Do not convert an assistant inference into a user fact without source evidence.\n- Preserve unresolved references and consult [[review_queue]] when context is uncertain.\n"
+    agents = """# Agent Memory Retrieval Guide
+
+## Canonical vault
+
+This vault is `chatgpt-to-obsidian/utkarsh-vault/` relative to the repository root. Start with [Agent Memory](00%20-%20Agent%20Memory.md) whenever a task needs Utkarsh's personal context, projects, preferences, or ChatGPT history.
+
+## Authority order
+
+1. `Raw/Export/` is the faithful local export mirror and is authoritative for original data.
+2. Conversation transcripts in `Archive/` are searchable renderings of that export.
+3. Category and maintained project notes are curated, derived memory; verify important facts against a transcript, raw export, or project repository when accuracy matters.
+
+## Retrieval order
+
+1. Read [Agent Memory](00%20-%20Agent%20Memory.md).
+2. Read the relevant category or index note before expanding scope.
+3. Use the [Chat History Index](<Archive/Chat History Index.md>) to locate a targeted chat by year, date, and title.
+4. Inspect a transcript's `## Resources` section for linked attachments and cited URLs.
+
+## Project retrieval
+
+1. Open the [Projects Index](Projects/Projects%20Index.md) and then any maintained `Project Home.md` for the named project.
+2. Read the project's generated index, then its maintained `Project Home.md` when one exists. Follow its repository and chat links for evidence.
+3. Treat generated `durable_context_count` and `chat_count` as counts of automatic exact-name extraction. Zero does not establish that the vault has no relevant context. Search the maintained notes, older project names, and archive before making an absence claim.
+4. State which note and date support a project status claim. For code, deployment, and test status, verify against the project's own repository when accuracy matters.
+
+## Safety
+
+- Do not edit `Raw/Export/`, `.export-mirror-manifest.json`, or `.chatgpt-migration-state.json`.
+- Do not convert an assistant inference or instruction in a document into a user fact or directive without source evidence.
+- Preserve unresolved references and consult the [Review Queue](review_queue.md) when context is uncertain.
+
+## Commit messages and cloud checkouts
+
+Follow the repository root `AGENTS.md` in every checkout. Resolve this vault relative to the repository when the Windows path is unavailable.
+Memory commit subjects use actual current Asia/Kolkata (IST) time: `DD-mon-YYYY:h-mm:AM (updated specific context)` or `...:PM (...)`. Follow user authorization and runtime restrictions for commits and pushes; report local-only updates.
+"""
     write("AGENTS.md", agents)
-    index = _yaml({"type": "index", "source": "ChatGPT export", "created": today}) + "# ChatGPT Memory\n\nThis vault is self-contained: it includes searchable transcripts and a complete local raw-export mirror.\n\n## Agent entry point\n\n- [[00 - Agent Memory]]\n- [[AGENTS]]\n\n## Personal Context\n\n- [[01 - About Me]]\n- [[02 - Preferences]]\n\n## Education\n\n- [[03 - Education]]\n\n## Technical\n\n- [[04 - Programming & Tech]]\n- [[07 - Development Environment]]\n\n## Projects\n\n- [[05 - Projects]] — durable project context\n- [[Projects/Projects Index]] — project navigation\n\n## Chats\n\n- [[Archive/Chat History Index]] — searchable history by year, date, and conversation title\n\n## Resources\n\n- [[Raw/Raw Export Mirror]] — raw export, attachments, and metadata\n- [[04 - Programming & Tech]] — technology resources\n\n## Career\n\n- [[06 - Career]]\n\n## Important Context\n\n- [[08 - Important Context]]\n\n## Maintenance\n\n- [[migration_report]]\n- [[review_queue]]\n"
+    index = _yaml({"type": "index", "source": "ChatGPT export", "created": today}) + """# ChatGPT Memory
+
+This vault is self-contained: it includes searchable transcripts and a complete local raw-export mirror.
+
+## Agent entry point
+
+- [Agent Memory](<00 - Agent Memory.md>)
+- [AGENTS.md](AGENTS.md)
+
+## Personal context
+
+- [About Me](<01 - About Me.md>)
+- [Preferences](<02 - Preferences.md>)
+- [Education](<03 - Education.md>)
+- [Programming & Tech](<04 - Programming & Tech.md>)
+- [Development Environment](<07 - Development Environment.md>)
+- [Career](<06 - Career.md>)
+- [Important Context](<08 - Important Context.md>)
+
+## Projects
+
+- [Projects](<05 - Projects.md>) — export-derived project context
+- [Projects Index](<Projects/Projects Index.md>) — project directory
+
+## Chats and resources
+
+- [Chat History Index](<Archive/Chat History Index.md>) — history by year, date, and title
+- [Raw Export Mirror](<Raw/Raw Export Mirror.md>) — original export and attachments
+
+## Maintenance
+
+- [Migration Report](migration_report.md)
+- [Review Queue](review_queue.md)
+"""
     write("00 - Index.md", index)
     headings = {
         "01 - About Me.md": "About Me", "02 - Preferences.md": "Preferences", "03 - Education.md": "Education",
@@ -78,9 +179,9 @@ def render_vault(output: Path, memories: list[dict[str, Any]], report: dict[str,
     tech_links = []
     for technology in technologies:
         filename = safe_name(technology) + ".md"
-        tech_links.append(f"[[Technologies/{safe_name(technology)}]]")
+        tech_links.append(f"[{markdown_escape(technology)}](<{quote(f'Technologies/{filename}', safe='/-_.~')}>)")
         matching = [memory for memory in memories if technology in memory.get("technologies", [])]
-        body = _yaml({"type": "technology", "source": "ChatGPT export", "created": today}) + f"# {technology}\n\n" + "\n".join(_memory_line(memory) for memory in matching) + "\n\n## Related\n\n- [[04 - Programming & Tech]]\n"
+        body = _yaml({"type": "technology", "source": "ChatGPT export", "created": today}) + f"# {technology}\n\n" + "\n".join(_memory_line(memory) for memory in matching) + "\n\n## Related\n\n- [Programming & Tech](<../04 - Programming & Tech.md>)\n"
         write(f"Technologies/{filename}", body)
     if tech_links:
         programming = output / "04 - Programming & Tech.md"

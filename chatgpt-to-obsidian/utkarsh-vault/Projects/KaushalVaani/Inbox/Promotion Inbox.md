@@ -14,7 +14,7 @@ Items here are proposals, not durable project truth until reviewed and applied.
 
 - Status: pending
 - Operation: update
-- Target: [[Current State]]
+- Target: [Current State](<../Current%20State.md>)
 - Confidence: confirmed for the local branch only
 - Applies to branch: `codex/kaushalvaani-foundation` at base revision `9c9687a`
 - Evidence: repository `tasks.md`, v2 source files, and local validation on 2026-10-02

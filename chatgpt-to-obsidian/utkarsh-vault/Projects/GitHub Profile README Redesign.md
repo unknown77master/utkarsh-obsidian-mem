@@ -38,14 +38,14 @@ The GitHub profile README in `D:\ALL Programming\my_.github\.github\profile` kee
 
 ## Flagship repositories featured
 
-- [[Projects/Audora Project Index|Audora]]
-- [[Projects/KaushalVaani Project Index|KaushalVaani]]
-- [[Projects/TeachBack Project Index|TeachBack]]
-- [[Projects/AI-interview-Qs-gen Project Index|AI-interview-Qs-gen]]
-- [[Projects/FaceChain Project Index|FaceChain]]
-- [[Projects/ML-Pipeline Project Index|ML-Pipeline]]
-- [[Projects/Parkinson-Disease-Prediction Project Index|Parkinson-Disease-Prediction]]
-- [[Projects/Sales-Forecasting-using-Machine-Learning Project Index|Sales-Forecasting-using-Machine-Learning]]
+- [Audora](<Audora%20Project%20Index.md>)
+- [KaushalVaani](<KaushalVaani%20Project%20Index.md>)
+- [TeachBack](<TeachBack%20Project%20Index.md>)
+- [AI-interview-Qs-gen](<AI-interview-Qs-gen%20Project%20Index.md>)
+- [FaceChain](<FaceChain%20Project%20Index.md>)
+- [ML-Pipeline](<ML-Pipeline%20Project%20Index.md>)
+- [Parkinson-Disease-Prediction](<Parkinson-Disease-Prediction%20Project%20Index.md>)
+- [Sales-Forecasting-using-Machine-Learning](<Sales-Forecasting-using-Machine-Learning%20Project%20Index.md>)
 
 ## Initial design decisions
 

@@ -8,6 +8,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 _AFTER_PROJECT = re.compile(
     r"\b(?:my\s+)?project\s+(?:(?:called|named)\s+)?[\"'`*]*(?P<names>[A-Za-z0-9][A-Za-z0-9_-]*(?:\s+(?:and|&)\s+[A-Za-z0-9][A-Za-z0-9_-]*)*)",
@@ -66,8 +67,8 @@ def _project_names(statement: str) -> list[str]:
     return list(dict.fromkeys(names))
 
 
-def _link_target(relative: str) -> str:
-    return relative[:-3] if relative.endswith(".md") else relative
+def _archive_href(relative: str) -> str:
+    return quote("../" + relative.replace("\\", "/"), safe="/-_.~")
 
 
 def _managed_project_index(path: Path) -> bool:
@@ -127,7 +128,7 @@ def _sources(memories: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(known.values(), key=lambda source: ((source.get("title") or "Untitled").casefold(), source["conversation_id"]))
 
 
-def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated: str) -> str:
+def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated: str, has_project_home: bool = False) -> str:
     memories = group["memories"]
     sources = _sources(memories)
     frontmatter = _yaml({
@@ -142,8 +143,8 @@ def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated
         "github_repository_count": len(group["github"]),
     })
     explanation = (
-        "This note groups only project names stated explicitly in the export. "
-        "It links to the canonical transcripts and their preserved resources; it does not copy or reinterpret them."
+        "This generated index groups exact project-name matches from the export and repository catalogue. "
+        "Its counts describe automatic extraction, not all available project context."
     )
     if group.get("unclassified"):
         explanation = (
@@ -151,6 +152,9 @@ def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated
             "They remain grouped here for review rather than being assigned an invented project name."
         )
     lines = [frontmatter + f"# {group['name']} Project Index\n", explanation]
+    if has_project_home:
+        home_directory = safe_name(group["name"])
+        lines.extend(["", "## Start here", "", f"- [{markdown_escape(group['name'])} Project Home](<{home_directory}/Project Home.md>) — maintained context and links to current status, requirements, and history."])
     if group["local"]:
         lines.extend(["", "## Local repositories", ""])
         for project in group["local"]:
@@ -171,15 +175,17 @@ def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated
     lines.extend(["", "## Durable context", ""])
     lines.extend(f"- {markdown_escape(memory['statement'])}" for memory in memories)
     if not memories:
-        lines.append("- No durable ChatGPT context has been extracted for this project yet.")
+        lines.append("- No statements were automatically assigned to this exact project name. Check maintained notes and earlier names before concluding that context is absent.")
     lines.extend(["", "## Related chats", ""])
     for source in sources:
         target = archive_paths.get(source["conversation_id"])
         title = markdown_escape(source.get("title") or "Untitled conversation")
         if target:
-            lines.append(f"- [[{_link_target(target)}|{title}]]")
+            lines.append(f"- [{title}](<{_archive_href(target)}>)")
         else:
             lines.append(f"- {title} (transcript unavailable; conversation ID `{source['conversation_id']}`)")
+    if not sources:
+        lines.append("- No chats were automatically assigned to this exact project name.")
     lines.extend(["", "## Resources", ""])
     resource_links = []
     for project in group["github"]:
@@ -188,7 +194,7 @@ def _index_content(group: dict[str, Any], archive_paths: dict[str, str], updated
         target = archive_paths.get(source["conversation_id"])
         if target:
             title = markdown_escape(source.get("title") or "Untitled conversation")
-            resource_links.append(f"- [[{_link_target(target)}#Resources|{title} resources]]")
+            resource_links.append(f"- [{title} resources](<{_archive_href(target)}#Resources>)")
     lines.extend(resource_links or ["- No linked transcript resources are available yet."])
     return "\n".join(lines) + "\n"
 
@@ -201,6 +207,7 @@ def render_project_indexes(output: Path, memories: list[dict[str, Any]], archive
     paths: list[Path] = []
     used_names: set[str] = set()
     index_rows: list[tuple[dict[str, Any], Path, int]] = []
+    project_homes: list[tuple[str, Path]] = []
     for group in groups:
         filename = safe_name(f"{group['name']} Project Index")
         key = filename.casefold()
@@ -209,7 +216,11 @@ def render_project_indexes(output: Path, memories: list[dict[str, Any]], archive
             filename = f"{filename}--{suffix}"
         used_names.add(filename.casefold())
         path = projects_directory / f"{filename}.md"
-        _write(path, _index_content(group, archive_paths, updated))
+        project_home = projects_directory / safe_name(group["name"]) / "Project Home.md"
+        has_project_home = project_home.is_file()
+        _write(path, _index_content(group, archive_paths, updated, has_project_home))
+        if has_project_home:
+            project_homes.append((group["name"], project_home))
         paths.append(path)
         index_rows.append((group, path, len(_sources(group["memories"]))))
     root = projects_directory / "Projects Index.md"
@@ -222,11 +233,15 @@ def render_project_indexes(output: Path, memories: list[dict[str, Any]], archive
             "project_count": len(groups),
         }) + "# Projects Index\n",
         "Use this map to retrieve local repositories, public GitHub repositories, durable context, source chats, and their resource sections. "
-        "[[05 - Projects]] remains the consolidated memory-category note.",
-        "",
-        "## Project indexes",
+        "[Projects](<../05 - Projects.md>) remains the consolidated memory-category note. Generated counts refer only to automatic exact-name extraction; check maintained project homes and older names before concluding that context is absent.",
         "",
     ]
+    if project_homes:
+        root_lines.extend(["## Maintained project homes", ""])
+        for name, home in project_homes:
+            root_lines.append(f"- [{markdown_escape(name)}](<{home.relative_to(projects_directory).as_posix()}>)")
+        root_lines.append("")
+    root_lines.extend(["## Project indexes", ""])
     if index_rows:
         for group, path, chat_count in index_rows:
             sources = []
@@ -236,7 +251,7 @@ def render_project_indexes(output: Path, memories: list[dict[str, Any]], archive
                 sources.append(f"{len(group['github'])} GitHub")
             if chat_count:
                 sources.append(f"{chat_count} chat{'s' if chat_count != 1 else ''}")
-            root_lines.append(f"- [[Projects/{path.stem}|{markdown_escape(group['name'])}]]" + (f" — {', '.join(sources)}" if sources else ""))
+            root_lines.append(f"- [{markdown_escape(group['name'])}](<{path.name}>)" + (f" — {', '.join(sources)}" if sources else ""))
     else:
         root_lines.append("- No durable project references were extracted yet.")
     _write(root, "\n".join(root_lines) + "\n")

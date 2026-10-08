@@ -2,7 +2,7 @@
 type: "chat-index"
 scope: "date"
 generated_by: "chatgpt-to-obsidian"
-updated: "2026-09-29"
+updated: "2026-10-08"
 transcript_count: 1
 year: "2025"
 date: "2025-01-27"
@@ -10,4 +10,4 @@ date: "2025-01-27"
 
 # 2025-01-27 Chat Index
 
-- [[Archive/2025/2025-01-27/Function Dry Run Explanation--6797a10c-b2f|Function Dry Run Explanation]]
+- [Function Dry Run Explanation](<Function%20Dry%20Run%20Explanation--6797a10c-b2f.md>)

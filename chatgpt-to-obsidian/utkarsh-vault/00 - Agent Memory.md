@@ -6,33 +6,32 @@ updated: "2026-09-29"
 ---
 # Agent Memory
 
-Use this note as the compact entry point to the self-contained ChatGPT memory vault. For machine retrieval rules, read [[AGENTS]].
+Use this note as the compact entry point to the self-contained ChatGPT memory vault. For retrieval rules, read [AGENTS.md](AGENTS.md).
 
 ## Durable context
 
-- [[01 - About Me]]
-- [[02 - Preferences]]
-- [[03 - Education]]
-- [[04 - Programming & Tech]]
-- [[05 - Projects]]
-- [[06 - Career]]
-- [[07 - Development Environment]]
-- [[08 - Important Context]]
+- [About Me](<01 - About Me.md>)
+- [Preferences](<02 - Preferences.md>)
+- [Education](<03 - Education.md>)
+- [Programming & Tech](<04 - Programming & Tech.md>)
+- [Projects](<05 - Projects.md>)
+- [Career](<06 - Career.md>)
+- [Development Environment](<07 - Development Environment.md>)
+- [Important Context](<08 - Important Context.md>)
 
 ## Projects
 
-- [[Projects/Projects Index]]
+- [Projects Index](<Projects/Projects Index.md>)
 
 ## Chats
 
-- [[Archive/Chat History Index]] — transcript navigation by year, date, and conversation title
+- [Chat History Index](<Archive/Chat History Index.md>) — transcript navigation by year, date, and conversation title
 
 ## Resources
 
-- [[Raw/Raw Export Mirror]] — exact local export mirror and attachments
-- [[04 - Programming & Tech]] — technology context
+- [Raw Export Mirror](<Raw/Raw Export Mirror.md>) — original export and attachments
 
 ## Maintenance and review
 
-- [[migration_report]]
-- [[review_queue]]
+- [Migration Report](migration_report.md)
+- [Review Queue](review_queue.md)

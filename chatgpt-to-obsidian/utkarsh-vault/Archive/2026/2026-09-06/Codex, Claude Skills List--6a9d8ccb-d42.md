@@ -6,13 +6,10 @@ created: 1788710093.101284
 updated: 1788854657.238761
 resource_section: true
 ---
-
 # Codex, Claude Skills List
-
 ## User
 
 what were the skills i gave to codex, list all of them
-
 ## Assistant
 
 Worked for 10s

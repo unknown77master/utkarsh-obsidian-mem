@@ -13,7 +13,7 @@ applies_to_revision: 6e9104d
 
 ## Summary
 
-The local v2 foundation is implemented in the working tree on `codex/kaushalvaani-foundation`. It is uncommitted, unmerged, and not deployed. On 2026-10-02 the backend suite passed 51 tests, frontend Vitest passed 3 tests, TypeScript and Vite build passed, and the graph fixture verified. These are recorded historical checks; no fresh October 8 app test run is claimed. The maintained checklist is repository `09-docs/context/tasks.md`; a root `tasks.md` is absent in this checkout. See [[PRD]] and [[Timeline]].
+The local v2 foundation is implemented in the working tree on `codex/kaushalvaani-foundation`. It is uncommitted, unmerged, and not deployed. On 2026-10-02 the backend suite passed 51 tests, frontend Vitest passed 3 tests, TypeScript and Vite build passed, and the graph fixture verified. These are recorded historical checks; no fresh October 8 app test run is claimed. The maintained checklist is repository `09-docs/context/tasks.md`; a root `tasks.md` is absent in this checkout. See [PRD](<PRD.md>) and [Timeline](<Timeline.md>).
 
 ## Source-release progress
 
