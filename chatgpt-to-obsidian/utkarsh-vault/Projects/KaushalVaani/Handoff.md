@@ -1,7 +1,7 @@
 ---
 type: handoff
 project_id: kaushalvaani
-updated: 2026-10-02
+updated: 2026-10-08
 generated_from:
   - "[[Project]]"
   - "[[Current State]]"
@@ -11,19 +11,19 @@ generated_from:
 
 ## Objective
 
-Complete the repository `tasks.md` toward an evidence-backed KaushalVaani judge demo.
+Complete repository `09-docs/context/tasks.md` toward an evidence-backed KaushalVaani judge demo. Use [[PRD]] for product acceptance and [[Timeline]] for the decision history.
 
 ## Current position
 
-Local v2 foundation validated, branch-only, unmerged, not deployed. Four-sector NQR summary candidate pinned and verified; it is not a judge release.
+Local v2 foundation validated on 2026-10-02, still uncommitted, unmerged, and not deployed. Four-sector NQR summary and a newer NCO Volume I concordance candidate are both non-deployable; neither is a judge release.
 
 ## Recent work
 
-Pinned four official PDFs and source hashes, assembled a non-deployable graph candidate, added local source-package verification, tightened deployable-release validation, and corrected top-1 evaluation scoring. Backend tests passed 49 on 2026-10-02.
+On 2026-10-02, four official NQR PDFs and hashes were pinned, a non-deployable summary candidate was assembled, source-package verification was added, release validation was tightened, and top-1 evaluation scoring was corrected. The consolidated repository ledger reports 51 passing backend tests and 3 frontend tests on that date; the earlier 49-test count was an intermediate run. A manifest generated on 2026-10-03 records 3,445 NCO Volume I occupation references and a combined 6,904-node/13,806-relationship non-deployable candidate. No October 8 app tests were run for this memory update.
 
 ## Blockers
 
-The owner reports NCO export or reproduction permission and provider accounts, and will review mappings. The NCO export path/permission evidence, specific mapping and eligibility approvals, verified local providers, provider secrets/configuration, and GPU billing controls remain pending. Do not fabricate approvals or deploy the candidate release.
+The owner reports NCO export or reproduction permission and provider accounts, and will review mappings. The NCO export path/permission grant reference, specific mapping and eligibility approvals, verified local providers, provider secrets/configuration, and GPU billing controls remain pending. Do not fabricate approvals or deploy the candidate release.
 
 ## Next actions
 
@@ -31,4 +31,4 @@ Continue the national and deep NQR source layer; obtain the owner-reported NCO e
 
 ## References
 
-Repository `tasks.md`, `05-data/seed/candidates/README.md`, `09-docs/operations/judge-demo-runbook.md`.
+Repository `09-docs/context/tasks.md`, `05-data/seed/candidates/README.md`, `05-data/seed/candidates/nco-national-nqr-four-sectors-2026-10-02.manifest.json`, `09-docs/operations/judge-demo-runbook.md`.

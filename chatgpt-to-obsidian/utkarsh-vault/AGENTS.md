@@ -22,3 +22,9 @@ This personal-memory vault is located at `D:\ALL Programming\obsidian_mem\chatgp
 - Do not edit `Raw/Export/`, `.export-mirror-manifest.json`, or `.chatgpt-migration-state.json`.
 - Do not convert an assistant inference into a user fact without source evidence.
 - Preserve unresolved references and consult [[review_queue]] when context is uncertain.
+
+## Commit messages and cloud checkouts
+
+Follow the repository root `AGENTS.md` in every checkout. Resolve this vault relative to the repository when the Windows path is unavailable.
+
+Memory commit subjects use actual current Asia/Kolkata (IST) time: `DD-mon-YYYY:h-mm:AM (updated specific context)` or `...:PM (...)`. Use English lowercase months, two-digit day/minute, and a 12-hour hour without a leading zero. Example: `06-oct-2026:2-58:AM (updated coding projects and preferences)`. Follow user authorization and runtime restrictions for commits and pushes; report local-only updates.

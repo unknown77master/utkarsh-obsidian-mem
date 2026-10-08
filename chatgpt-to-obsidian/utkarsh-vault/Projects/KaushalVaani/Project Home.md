@@ -2,7 +2,7 @@
 type: project-home
 project_id: kaushalvaani
 status: active
-updated: 2026-10-02
+updated: 2026-10-08
 review_after: 2026-11-02
 tags:
   - project-memory
@@ -17,14 +17,16 @@ tags:
 
 | | |
 |---|---|
-| **Status** | Local v2 foundation validated on `codex/kaushalvaani-foundation`; unmerged and not deployed. |
-| **Current focus** | Build a provenance-pinned, reviewed NQR/NSQF and NCO graph release. |
-| **Next milestone** | Obtain lawful NCO source access and mapping review; then assemble and verify a deployable release. |
-| **Last reviewed** | 2026-10-02 |
+| **Status** | Local v2 working tree; uncommitted, unmerged, and not deployed. |
+| **Current focus** | Turn source-pinned NQR/NCO candidates into a reviewed, deployable graph release. |
+| **Next milestone** | Record NCO permission evidence and approve mappings/rules, then assemble and verify a deployable release. |
+| **Last reviewed** | 2026-10-08 |
 
 ## Start here
 
 - [[Current State|Current state and blockers]]
+- [[PRD|Product requirements and acceptance criteria]]
+- [[Timeline|Timeline and decision log]]
 - [[Handoff|Latest handoff]]
 - [[Project|Project details and code map]]
 - [[Inbox/Promotion Inbox|Knowledge awaiting review]]
@@ -45,6 +47,7 @@ The FastAPI v2 API performs deterministic profile, eligibility, skill-gap, ranki
 ## Risks and next actions
 
 - The four-sector NQR candidate is intentionally non-deployable and contains summary facts only.
-- DGE's NCO site policy requires permission for reproduction; a licensed export or written permission is needed before NCO ingestion.
+- A newer NCO Volume I concordance candidate exists (3,445 occupation references); its combined release remains non-deployable.
+- DGE's NCO site policy requires permission for reproduction. The owner reported permission, but the grant/reference is not recorded in project evidence.
 - Canonical mappings and eligibility rules need a domain reviewer; live Aura, Modal, Vercel, Clerk, and Sarvam work needs owner account and secret configuration.
-- Follow the repository's `tasks.md` for the maintained checklist.
+- Follow repository `09-docs/context/tasks.md` for the maintained checklist; the root `tasks.md` referenced in older notes is absent in this checkout.

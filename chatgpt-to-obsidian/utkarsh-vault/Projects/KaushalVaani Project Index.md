@@ -27,3 +27,7 @@ This note groups only project names stated explicitly in the export. It links to
 ## Resources
 
 - [KaushalVaani repository](https://github.com/utkarsh-wadalkar/KaushalVaani)
+
+## Current maintained project memory
+
+- [[KaushalVaani/Project Home|Project Home]] — PRD, timeline, current state, handoff, and blockers. This section is maintained separately from the export-derived counts above.
